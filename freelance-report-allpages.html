@@ -16,7 +16,7 @@
    tr, td {
         border: 2px solid grey;
         padding-top: 1%;
-        padding-bottom: 1%;
+        padding-bottom: 2%;
         padding-left: 5%;
         padding-right: 10%;
         text-align: center;
@@ -26,16 +26,16 @@
     }
 
     .table.header {
-        border-bottom: 2px solid black;
+        /* border-bottom: 2px solid black; */
         background-color: rgba(10,50,255);
-        background-color: rgba(10,50,255);
+        
        
     }
     .table.title {
 
         padding-left: 5%;
         -webkit-text-fill-color: white;
-        border: 10px solid rgba(10,50,255);
+        /* border: 10px solid rgba(10,50,255); */
         
     }
 
@@ -66,7 +66,7 @@
         position: absolute;
         top: 50%;
         /* left: 50%; */
-        transform: translate(210px, -395px);
+        transform: translate(210px, -410px);
         text-align: center;
         -webkit-text-fill-color: #0000FF;
     }
@@ -98,6 +98,95 @@
         text-align: center;
         -webkit-text-fill-color: #0000FF;
     }
+    
+    h1,h2,h3,h4{
+        padding: 2%;
+        -webkit-text-fill-color: #0000FF;
+    }
+
+    /* line below header for all other pages */
+    .Page.header{
+        border-bottom: 2px solid #0000FF;
+    }
+
+    /* line below header for page one custom template */
+    .Page.one.header{
+        border-bottom: 2px solid #0000FF;
+    }
+
+    /* styling for the page one.  */
+    
+    .Page.one.container{
+
+    }
+    /* first page elements positioned to represent pdf format */
+    .Page.one.text{
+        padding-bottom: 250px;
+
+    }
+
+    .Page.one.bottom.name{
+
+    }
+
+    .Page.one.bottom.title{
+
+    }
+
+    .Page.one.bottom.rest{
+
+    }
+
+    .Page.one.sig{
+
+    }
+    /* <!-- General Text --> */
+    p{
+        width: 85%;
+        text-align: left;
+
+    }
+    footer{
+        border-top: 1px solid;
+    }
+
+    .Page.two.dashed.line{
+        border: dashed grey;
+        width: 200px;
+        height: 50px;
+        transform: translate(500px, 0px);
+    }
+
+    .Page.two p{
+        position: relative;
+        transform:translate(420px,10px);
+        width: 300px;
+    }
+
+    .Big.bubble{
+        position: absolute;
+        transform:translate(200px,0px);
+        background-color: #0000FF;
+        border-radius: 138px;
+        width:200px;
+        height:200px;
+    }
+
+    .Big.bubble h2{
+        position: relative;
+        transform: translate(30px,0px);
+        font-size: 20px;
+        -webkit-text-fill-color: white;
+    }
+
+    .Big .bubble p{
+        /* position: relative; */
+        transform: translate(30px,20px);
+        font-size: 16px;
+        -webkit-text-fill-color: white;
+    }
+
+
 </style>
 
 
@@ -127,75 +216,96 @@
 </body>
 
 <!-- page 1-->
-<body class = "page 1">
-    <h1 class = "Page 1 header">INLEIDING</h1>
+<body>
+    <h1 class = "Page one header">INLEIDING</h1>
     <!-- logo header needs to go here-->
-    <div class "line below header"></div>
+    <div class "Page one line below header"></div>
+    <div class = "Page one container">
 
-    <p class = "Page one text">
-        Beste heer/mevrouw, 
-        <br />
-        <br />
-        Hartelijk dank voor uw belangstelling in onze producten en/of diensten. Wij doen ons uiterste best om u zo goed mogelijk te voorzien van informatie en advies. Dat doen wij zoveel mogelijk gebaseerd op data om te komen tot een goede en feitelijke onderbouwing. Dit rapport is mede tot stand gekomen door het toepassen van algoritmes. Wij geloven dat dit in toenemende mate onderdeel gaat zijn van hoe wij werken. De algoritmes zorgen voor efficiëntie, een kwaliteitsslag en innovatie. Diepere inzichten en patronen kunnen worden ontdekt waardoor wij u kunnen voorzien van het meest hoogwaardige advies. Onze experts zijn in staat om een verdere kwaliteitsslag te maken en de resultaten van algoritmes voor u te positioneren. Graag beantwoorden wij uw vragen en wij zijn u graag van dienst!      
-    </p>
-        
-    <p class = "Page one text">Met vriendelijke groet, </p>
-    <p>
-        <img alt="Image result for signature" src="#" />
-    </p>
-    <!-- image following signature-->
-    <p class = "Page one bottom name">
-    A.B.C. Jansen 
-    </p>
+        <p class = "Page one text">
+            Beste heer/mevrouw, 
+            <br />
+            <br />
+            Hartelijk dank voor uw belangstelling in onze producten en/of diensten. Wij doen ons uiterste best om u zo goed mogelijk te voorzien van informatie en advies. Dat doen wij zoveel mogelijk gebaseerd op data om te komen tot een goede en feitelijke onderbouwing. Dit rapport is mede tot stand gekomen door het toepassen van algoritmes. Wij geloven dat dit in toenemende mate onderdeel gaat zijn van hoe wij werken. De algoritmes zorgen voor efficiëntie, een kwaliteitsslag en innovatie. Diepere inzichten en patronen kunnen worden ontdekt waardoor wij u kunnen voorzien van het meest hoogwaardige advies. Onze experts zijn in staat om een verdere kwaliteitsslag te maken en de resultaten van algoritmes voor u te positioneren. Graag beantwoorden wij uw vragen en wij zijn u graag van dienst!      
+        </p>
+        <p class = "Page one sig">Met vriendelijke groet, </p>
+        <p>
+            <img alt="Image result for signature" src="images/Signature.png" />
+        </p>
+        <!-- image following signature-->
+        <p class = "Page one bottom name">
+            A.B.C. Jansen 
+        </p>
+        <span>
+            <img alt="Afbeeldingsresultaat voor buddha" src="#" />
+            <br />
+            <br />
+            <br />
 
-    <h1>
-        <img alt="Afbeeldingsresultaat voor buddha" src="#" />
+        <p class = "Page one bottom name">
+            A.B.C. Jansen, MRE FRICS
+        </p>
         <br />
-        <br />
-        <br />
-    </h1>
-    <p class = "Page one bottom name">
-        A.B.C. Jansen, MRE FRICS
-    </p>
-    <br />
-    <p class = "Page one bottom title">Partner | Directeur Taxaties, Innovatie en Consulting</p>
-    <br />
-    Mobiel: +31 6 00 00 00 00
-    <br />
-    Telefoon: +31 20 000 00 00<br />
-    E-mail: <a href="mailto:abc.jansen@000.com">abc.jansen@000.com</a>
-    <br />
-    <br />
-    Data Analyse Netherlands B.V. 
-    <br />
-    De markt 0 
-    <br />
-    0000 AA Amsterdam 
-    <br />
-    The Netherlands<br />
-    </p>
+        <p class = "Page one bottom title">Partner | Directeur Taxaties, Innovatie en Consulting</p>
+            <br />
+            Mobiel: +31 6 00 00 00 00
+            <br />
+            Telefoon: +31 20 000 00 00<br />
+            E-mail: <a href="mailto:abc.jansen@000.com">abc.jansen@000.com</a>
+            <br />
+            <br />
+            Data Analyse Netherlands B.V. 
+            <br />
+            De markt 0 
+            <br />
+            0000 AA Amsterdam 
+            <br />
+            The Netherlands<br />
+        </p>
+    </span>
+    </div>
+    <footer></footer>
 </body>
 
 <!-- page 2-->
-<body class = "page 2">
+<body>
     <p></p>
     <p></p>
     <p>	</p>
-    <h1>SAMENVATTING</h1>
+    <h1 class = "Page two header">SAMENVATTING</h1>
     <!--need bordered box around indicate-->
-    <p>BETROUWBAARHEID: zeer hoog (99,4%)
-        <br />
-        INDICATIE FOUTMARGE: 5,3%
-    </p>
-
+    <span class = "Page two">
+        <div class = "Big bubble">
+            <h2>
+                bigbubbletittle
+                <br />
+                    where are you
+                
+            </h2>
+        </div>
+        <table class = "Page two dashed line">
+            <tr>
+                <td>BETROUWBAARHEID:</td> 
+                <td>zeer hoog (99,4%)</td>
+            </tr>
+            
+            <tr>
+                <td>
+                    INDICATIE FOUTMARGE:
+                </td>
+                <td> 5,3% </td>
+            </tr>
+        </p>
+    </table>
     <p>
         Het object heeft een geschatte waarde van EUR <strong>235.000</strong>
         op 18 april 2018 met een betrouwbaarheid van 99,4%. Dit betreft de geschatte marktwaarde <sup> 1 </sup>.
         Met een indicatie van de foutmarge van 5,3% worden de ondergrens en bovengrens geschat op EUR 222.545 en EUR 247.455.
     </p>
-    <p>
-        <img alt="Afbeeldingsresultaat voor buddha" src="#"/>
-    </p>
+</span>
+<p>
+    <img alt="Afbeeldingsresultaat voor buddha" src="#"/>
+</p>
     
     <!-- need blue background to make this tabletitle-->
  
@@ -358,7 +468,7 @@
     <p>  Koraaldijk 23                      4706KK            1.250              14/12/2015    </p>
 </tr>    
 </table>
-    <!--footnotes for page 2-->
+<footer><!--footnotes for page 2-->
     <p>
         <img alt="Afbeeldingsresultaat voor buddha" src="#" />
         <br />
@@ -366,7 +476,7 @@
         <sup><a href="#footnote-2" id="footnote-ref-2">[2]</a></sup>
         <br />
     </p>
-    
+</footer>
 </body>
 <!-- page 3-->
 <body class = "page 3">
