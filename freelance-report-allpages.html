@@ -1,3 +1,54 @@
+<!-- styling-->
+<style>
+    body {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    table {
+        border: 3px solid rgba(10,50,255);
+        width: 50%;
+
+    } 
+   
+   tr, td {
+        border: 1px solid black;
+        padding-top: 1%;
+        background-color: white;
+        width: 50%;
+
+    }
+    .table.header {
+        background-color: rgba(10,50,255);
+        background-color: rgba(10,50,255);
+        width: 25%;
+    }
+    .table.title {
+        padding-left: 5%;
+        -webkit-text-fill-color: white;
+        border: 10px solid rgba(10,50,255);
+        width: 25%;
+    }
+
+</style>
+
+<!--
+    Inline styling vs organized styling by tag
+
+<div class = "table header" style = "
+background-color: rgba(10,50,255);
+border: 1px solid rgba(10,50,255);
+width: 35%;
+">
+<p class = "table title" style = "
+    background-color: 2px solid white;
+    padding-left: 5%;
+    -webkit-text-fill-color: white;
+">Object</p>
+</div>
+-->
+
+
 <!-- cover page -->
 <body class = "cover page">
     <p>
@@ -90,17 +141,13 @@
         <img alt="Afbeeldingsresultaat voor buddha" src="#"/>
     </p>
     
-    <p class = "table title">Object</p> <!-- need blue background to make this tabletitle-->
-    <div class = "table header"></div>
-    <table>
+    <!-- need blue background to make this tabletitle-->
+ 
+    <div class = "table header">
+    <table >
         <tr>
-            <td>
-
-            </td>
-            <td>
-            </td>
+            <p class = "table title">Object</p>
         </tr>
-        
         <tr>
             <td>
                 <p>Straat</p>
@@ -118,7 +165,7 @@
                 <p>131</p>
             </td>
         </tr>
-
+        
         <tr>
             <td>
                 <p>Postcode</p>
@@ -127,7 +174,7 @@
                 <p>4706KG</p>
             </td>
         </tr>
-
+        
         <tr>
             <td>
                 <p>Gemeente</p>
@@ -153,7 +200,7 @@
                 <p>1.67<sup>2</sup></p>
             </td>
         </tr>
-
+        
         <tr>
             <td>
                 <p>Bouwjaar</p>
@@ -162,7 +209,7 @@
                 <p>1980</p>
             </td>
         </tr>
-
+        
         <tr>
             <td>
                 <p>Woonoppervlakte [m<sup>2</sup>]</p>
@@ -181,19 +228,20 @@
             </td>
         </tr>
     </table>
+</div>
     <div class = "table footer"></div>
     <!--end of first table-->
-
+    
     <p>Bovenstaande tabel en foto geven enkele locatie specifieke en bouwkundige karakteristieken van het object. Onderstaande tabel geeft referentieverkopen weer.</p>
     <!-- need a table here -->
     <table>
-            <tr>
-                <td>
-                    <p>Straat</p>
-                </td>
-                <td>
-                    <p>Postcode</p>
-                </td>
+        <tr>
+            <td>
+                <p>Straat</p>
+            </td>
+            <td>
+                <p>Postcode</p>
+            </td>
                 <td>
                     <p>Prijs/m<sup>2</sup></p> 
                 </td>
