@@ -41,52 +41,73 @@
 
     /*styling according to assigned classes*/
 
-    .cover.page{
+    .Front.page{
         position: relative;
-        text-align: center;
+        /* text-align: center; */
 
     }
+    .Front.page.logo{
+        position: absolute;
+        top: 50%;
+        /* left: 50%; */
+        transform: translate(-490px, -555px);
+    }
 
-    .line.above.header{
+    .Front.page.line.above.header{
         border: 1px solid #0000FF;
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50% 200%);
+        width: 650px;
+        /* top: 50%; */
+        /* left: 50%; */
+        transform: translate(75px, -385px);
     }
 
-    .front.page.header{
+    .Front.page.header{
         position: absolute;
         top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        /* left: 50%; */
+        transform: translate(210px, -395px);
         text-align: center;
         -webkit-text-fill-color: #0000FF;
     }
     
-    .front.page.subheader{
+
+    .Front.page.line.below.header{
+        border: 1px solid #0000FF;
+        position: absolute;
+        /* top: 50%;
+        left: 50%; */
+        width: 650px;
+        transform: translate(75px, -325px);
+    }
+
+    .Front.page.subheader{
         position: absolute;
         top: 50%;
-        left: 50%;
-        transform: translate(-50%, 300%);
+        /* left: 50%; */
+        transform: translate(255px, -320px);
         text-align: center;
         -webkit-text-fill-color: #0000FF;
     }
 
-    .line.below.header{
-        border: 1px solid #0000FF;
+    .Front.page.three.lines.at.bottom{
+        position: absolute;
+        top: 50%;
+        /* left: 50%; */
+        transform: translate(255px, 420px);
+        text-align: center;
+        -webkit-text-fill-color: #0000FF;
     }
-
 </style>
 
 
 <!-- cover page -->
-<body class = "cover page">
-    <div class = "cover page container">
+<body class = "Front page">
+    <div class = "Front page container">
         <!-- background image-->
         <img alt="Image result for skyline photo background"src ="images/Front.jpg"/>
         <!-- logo image-->
-        <img alt="Afbeeldingsresultaat voor logo colliers international"src= "#" />
+        <img class = "Front page logo" alt="Afbeeldingsresultaat voor logo colliers international"src= "images/Logo.png" />
         
         <!-- add top header border line for cover page-->
         <div class = "Front page line above header"></div>    
@@ -95,11 +116,14 @@
         <div class = "Front page line below header"></div>
     
         <h4 class = "Front page subheader">MODELMATIGE WAARDESCHATTING</h4>
+        <!-- add breaks to ensure next 3 lines are footer positioned-->
+        <p class = "Front page three lines at bottom">18 april 2018
+            <br />
+            Colliers International B.V.
+            <br />
+            Buitenveldertselaan 5, 1072VA Amsterdam
+        </p>
     </div>
-    <!-- add breaks to ensure next 3 lines are footer positioned-->
-    <p class = "Front page 3 lines at bottom">18 april 2018</p>
-    <p class = "Front page 3 lines at bottom">Colliers International B.V.</p>
-    <p class = "Front page 3 lines at bottom">Buitenveldertselaan 5, 1072VA Amsterdam</p>
 </body>
 
 <!-- page 1-->
