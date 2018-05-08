@@ -41,16 +41,38 @@
 
     /*styling according to assigned classes*/
 
+    .cover.page{
+        position: relative;
+        text-align: center;
+
+    }
 
     .line.above.header{
         border: 1px solid #0000FF;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% 200%);
     }
 
     .front.page.header{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         text-align: center;
         -webkit-text-fill-color: #0000FF;
     }
-   
+    
+    .front.page.subheader{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 300%);
+        text-align: center;
+        -webkit-text-fill-color: #0000FF;
+    }
+
     .line.below.header{
         border: 1px solid #0000FF;
     }
@@ -60,20 +82,20 @@
 
 <!-- cover page -->
 <body class = "cover page">
-    <p>
+    <div class = "cover page container">
         <!-- background image-->
-        <img alt="Image result for skyline photo background"src ="images/front.jpg"/>
+        <img alt="Image result for skyline photo background"src ="images/Front.jpg"/>
         <!-- logo image-->
         <img alt="Afbeeldingsresultaat voor logo colliers international"src= "#" />
         
-    </p>
-    <!-- add top header border line for cover page-->
-    <div class = "Front page line above header"></div>    
-    <h1 class = "Front page header">Koraaldijk 131  Roosendaal</h1>
-    <!-- add lower header border line for cover page-->
-    <div class = "Front page line below header"></div>
-
-    <h4 class = "Front page subheader">MODELMATIGE WAARDESCHATTING</h4>
+        <!-- add top header border line for cover page-->
+        <div class = "Front page line above header"></div>    
+        <h1 class = "Front page header">Koraaldijk 131  Roosendaal</h1>
+        <!-- add lower header border line for cover page-->
+        <div class = "Front page line below header"></div>
+    
+        <h4 class = "Front page subheader">MODELMATIGE WAARDESCHATTING</h4>
+    </div>
     <!-- add breaks to ensure next 3 lines are footer positioned-->
     <p class = "Front page 3 lines at bottom">18 april 2018</p>
     <p class = "Front page 3 lines at bottom">Colliers International B.V.</p>
@@ -82,7 +104,7 @@
 
 <!-- page 1-->
 <body class = "page 1">
-    <h1 class = "Front page header">INLEIDING</h1>
+    <h1 class = "Page 1 header">INLEIDING</h1>
     <!-- logo header needs to go here-->
     <div class "line below header"></div>
 
