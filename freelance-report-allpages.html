@@ -1,41 +1,67 @@
 <!-- styling-->
 <style>
     /* misc general styling */
+        h1,h2,h3,h4{
+            padding: 2%;
+            -webkit-text-fill-color: #0000FF;
+        }
     body {
         margin-left: 7.5%;
         margin-right: 7.5%;
     }
 
     table {
-        border-top: 3px solid grey;
-        border-bottom: 3px solid grey;
-        width: 50%;
+        border-top: 3px solid #808080;
+        border-bottom: 3px solid #808080;
+        width: 500px;
 
     } 
+
+    .tables.line{
+        border-bottom: solid 2px grey;
+    }
    
    tr, td {
-        border: 2px solid grey;
+        /* border: 2px solid #808080; */
         padding-top: 1%;
         padding-bottom: 2%;
         padding-left: 5%;
         padding-right: 10%;
         text-align: center;
-        background-color: white;
+        background-color: #ffffff;
         
 
     }
+     /* <!-- General Text --> */
+    p{
+        width: 85%;
+        text-align: left;
+        padding: 2%;
+        
+    }
+    footer{
+        border: 25%;
+        border-top: 1px solid;
+    }
 
-    .table.header {
+    .image.container {
+
+        border: solid 2px #000000;
+        
+    }
+
+    .graph.header.fill {
         /* border-bottom: 2px solid black; */
-        background-color: rgba(10,50,255);
+        background-color: #0a32ff;
+        border-bottom: solid 2px;
         
        
     }
-    .table.title {
-
+    .graph.header.text {
+        text-align: right;
         padding-left: 5%;
-        -webkit-text-fill-color: white;
-        /* border: 10px solid rgba(10,50,255); */
+        font-size: 24px;
+        -webkit-text-fill-color: #ffffff;
         
     }
 
@@ -99,10 +125,6 @@
         -webkit-text-fill-color: #0000FF;
     }
     
-    h1,h2,h3,h4{
-        padding: 2%;
-        -webkit-text-fill-color: #0000FF;
-    }
 
     /* line below header for all other pages */
     .Page.header{
@@ -140,15 +162,6 @@
     .Page.one.sig{
 
     }
-    /* <!-- General Text --> */
-    p{
-        width: 85%;
-        text-align: left;
-
-    }
-    footer{
-        border-top: 1px solid;
-    }
 
     .Page.two.dashed.line{
         border: dashed grey;
@@ -162,29 +175,65 @@
         transform:translate(420px,10px);
         width: 300px;
     }
-
+    
     .Big.bubble{
         position: absolute;
-        transform:translate(200px,0px);
-        background-color: #0000FF;
+        
+        background-color: #0000FF; /* big bubble fill */
         border-radius: 138px;
-        width:200px;
-        height:200px;
+        width:220px;
+        height:220px;
     }
 
+    .Big.bubble.page.two{
+        transform:translate(180px,20px);
+    }
+
+    /* big bubble text primary */
     .Big.bubble h2{
         position: relative;
-        transform: translate(30px,0px);
-        font-size: 20px;
+        transform: translate(30px,50px);
+        font-size: 18px;
         -webkit-text-fill-color: white;
     }
 
-    .Big .bubble p{
-        /* position: relative; */
-        transform: translate(30px,20px);
-        font-size: 16px;
+    /* big bubble text secondary */
+    .bubble.text.secondary {
+        margin-left: 15px;
+        font-weight: light;
+        font-size: 14px;
+    }
+    /* small bubble fill */
+    .Small.bubble{
+        position: absolute;
+        background-color: #0077ff;
+        border-radius: 100%;
+        width:160px;
+        height:120px;
+    }
+    .Small.bubble.top{
+        transform:translate(40px,0px);
+    }
+    .Small.bubble.bottom{
+        transform:translate(45px,150px);
+    }
+    /* small bubble text primary */
+    .Small.bubble h2{
+        position: relative;
+        transform: translate(30px,50px);
+        font-size: 18px;
         -webkit-text-fill-color: white;
     }
+
+    /* big bubble text secondary */
+    .small.text.secondary {
+        transform: translate(0px,10px);
+        text-align: center;
+        font-weight: light;
+        font-size: 14px;
+    }
+
+   
 
 
 </style>
@@ -275,12 +324,32 @@
     <h1 class = "Page two header">SAMENVATTING</h1>
     <!--need bordered box around indicate-->
     <span class = "Page two">
-        <div class = "Big bubble">
-            <h2>
-                bigbubbletittle
+        <div class = "Big bubble page two">
+            <h2 class = "text primary">
+                MARKTWAARDE:
+            </h2>
+            <h2 class = "bubble text secondary"> 
+                    EUR 235.000
+                    <br />
+                    (EUR 1.567/m<sup>2</sup>)
+            </h2>        
+        </div>
+        <div class = "Small bubble top">
+            <h2 class = "small text secondary">
+                BOVENGRENS
                 <br />
-                    where are you
-                
+                MARKTWAARDE:
+                <br />
+                EUR 247.455
+            </h2>
+        </div>
+        <div class = "Small bubble bottom">
+            <h2 class = "small text secondary">
+                ONDERGRENS
+                <br />
+                MARKTWAARDE:
+                <br />
+                EUR 222.545
             </h2>
         </div>
         <table class = "Page two dashed line">
@@ -303,174 +372,245 @@
         Met een indicatie van de foutmarge van 5,3% worden de ondergrens en bovengrens geschat op EUR 222.545 en EUR 247.455.
     </p>
 </span>
-<p>
-    <img alt="Afbeeldingsresultaat voor buddha" src="#"/>
-</p>
-    
-    <!-- need blue background to make this tabletitle-->
- 
-    <table >
-        <td></td>
-        <td style = "background-color: blue;">
-            <p style = "
-                text-align: right;
-                -webkit-text-fill-color: white;
-                
-            " >Object</p>
-        </td>
-    </table>
-    <table >
-        <tr>
-            <td>
-                <p>Straat</p>
-            </td>
-            <td>
-                <p>Koraaldijk</p>
-            </td>
-        </tr>
-        
-        <tr>
-            <td>
-                <p>Huisnummer</p>
-            </td>
-            <td>
-                <p>131</p>
-            </td>
-        </tr>
-        
-        <tr>
-            <td>
-                <p>Postcode</p>
-            </td>
-            <td>
-                <p>4706KG</p>
-            </td>
-        </tr>
-        
-        <tr>
-            <td>
-                <p>Gemeente</p>
-            </td>
-            <td>
-                <p>Roosendaal</p>
-            </td>
-        </tr>
-        
-        <tr>
-            <td>
-                <p>Woningtype</p>
-            </td>
-            <td>
-                <p>Tussenwoning</p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>Prijs/m<sup>2</sup></p>
-            </td>
-            <td>
-                <p>1.67<sup>2</sup></p>
-            </td>
-        </tr>
-        
-        <tr>
-            <td>
-                <p>Bouwjaar</p>
-            </td>
-            <td>
-                <p>1980</p>
-            </td>
-        </tr>
-        
-        <tr>
-            <td>
-                <p>Woonoppervlakte [m<sup>2</sup>]</p>
-            </td>
-            <td>
-                <p>150</p>
-            </td>
-        </tr>
-        
-        <tr>
-            <td>
-                <p>Perceeloppervlakte [m<sup>2</sup>]</p>
-            </td>
-            <td>
-                <p>120</p>
-            </td>
-        </tr>
-    </table>
-    <div class = "table footer"></div>
-    <!--end of first table-->
-    
-    <p>Bovenstaande tabel en foto geven enkele locatie specifieke en bouwkundige karakteristieken van het object. Onderstaande tabel geeft referentieverkopen weer.</p>
-    <!-- need a table here -->
-    <table>
-        <tr>
-            <td>
-                <p>Straat</p>
-            </td>
-            <td>
-                <p>Postcode</p>
-            </td>
-                <td>
-                    <p>Prijs/m<sup>2</sup></p> 
-                </td>
-                <td>
-                    <p>Datum</p>
-                </td><!-- column titles-->
-            </tr>
-        <tr>
-            <td>
-            </td>
-            <td>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>1</p>
-            </td>
-            <td>
-                <p>  Koraaldijk 3</p>
-            </td>
-            <td> 
-                <p>4706KG</p>
-            </td>
-            <td>
-                <p>1.600</p>
-            </td>
-            <td>
-                </p>16/01/2018 </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-            <p>2</p>
-            </td>
-            <td>
-            <p>  Diamantdijk 50                 4706KA             1.267              20/04/2017    </p>
-            </td>
-        </tr>
-<tr>
-    <p>3</p>
-    <p>  Dolomietdijk 378b           4706AA             1.950              06/12/2017    </p>
-</tr>
-<tr>
-    <p>4</p>
-    <p>  Ir. Mr. Dr. van Watersc   4706BB             1.620              30/06/2016    </p>
-</tr>
-<tr> 
-    <p>5</p>
-    <p>  Chromietdijk 37bis           4706ES             1.555              04/02/2016    </p>
-</tr>
-<tr>
-    <p>6</p>
-    <p>  Koraaldijk 23                      4706KK            1.250              14/12/2015    </p>
-</tr>    
+
+<!-- need blue background to make this tabletitle-->
+
+<table >
+    <td></td>
+    <td class = "graph header fill">
+        <p class = "graph header text">Object</p>
+    </td>
 </table>
-<footer><!--footnotes for page 2-->
+<table >
+    <tr class = "tables line">
+        <td>
+            <p>Straat</p>
+        </td>
+        <td>
+            <p>Koraaldijk</p>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            <p>Huisnummer</p>
+        </td>
+        <td>
+            <p>131</p>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            <p>Postcode</p>
+        </td>
+        <td>
+            <p>4706KG</p>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            <p>Gemeente</p>
+        </td>
+        <td>
+            <p>Roosendaal</p>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            <p>Woningtype</p>
+        </td>
+        <td>
+            <p>Tussenwoning</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>Prijs/m<sup>2</sup></p>
+        </td>
+        <td>
+            <p>1.67<sup>2</sup></p>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            <p>Bouwjaar</p>
+        </td>
+        <td>
+            <p>1980</p>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            <p>Woonoppervlakte [m<sup>2</sup>]</p>
+        </td>
+        <td>
+            <p>150</p>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            <p>Perceeloppervlakte [m<sup>2</sup>]</p>
+        </td>
+        <td>
+            <p>120</p>
+        </td>
+    </tr>
+</table>
+<div style = "
+    position: relative; 
+    transform: translate(520px, -350px);
+    width: 500px;
+    height: 50px;
+    ">
+        <img alt="Afbeeldingsresultaat voor buddha" src="images/Buddha.jpg" width = "500" height = "300"/>
+</div>
+<div class = "table footer"></div>
+<!--end of first table-->
+
+<p>Bovenstaande tabel en foto geven enkele locatie specifieke en bouwkundige karakteristieken van het object. Onderstaande tabel geeft referentieverkopen weer.
+<br />
+<br />
+<br />
+</p>
+<!-- need a table here -->
+<table style = "border-top: solid 0px grey; width: 400px;">
+    <tr class = "tables line" >
+        <td class = "tables line"></td>
+        <td class = "graph header fill">
+            <p class = "graph header text">Straat</p>
+        </td>
+        <td class = "graph header fill">
+            <p class = "graph header text" >Postcode</p>
+        </td>
+        <td class = "graph header fill">
+            <p class = "graph header text" >Prijs/m<sup>2</sup></p> 
+        </td>
+        <td class = "graph header fill">
+            <p class = "graph header text" >Datum</p>
+        </td><!-- column titles-->
+    </tr>
+  
+    <tr>
+        <td class = "graph header fill">
+            <p class = "graph header text" >1</p>
+        </td>
+        <td>
+            <p>  Koraaldijk 3</p>
+        </td>
+        <td> 
+            <p>4706KG</p>
+        </td>
+        <td>
+            <p>1.600</p>
+        </td>
+        <td>
+            </p>16/01/2018 </p>
+        </td>
+    </tr>
+    <tr>
+        <td class = "graph header fill">
+            <p class = "graph header text">2</p>
+        </td>
+        <td>
+            <p>Diamantdijk 50 </p>              
+        </td>
+        <td >
+            <p>4706KA</p>
+        </td>
+        <td>
+            <p>1.267</p>
+        </td>
+        <td>
+            <p>20/04/2017</p>
+        </td>
+    </tr>
+    <tr>
+        <td class = "graph header fill">
+            <p class = "graph header text">3</p>
+        </td>
+        <td>
+            <p>Dolomietdijk 378b</p> 
+        </td>
+        <td>
+            <p>4706AA</p>
+        </td>
+        <td>
+            <p>1.950</p>
+        </td>
+        <td>
+            <p>06/12/2017</p>
+        </td>
+    </tr>
+    <tr>
+        <td class = "graph header fill">
+            <p class = "graph header text" >4</p>
+        </td>
+        <td>
+            <p>Ir. Mr. Dr. van Watersc</p>
+        </td>
+        <td>
+            <p>4706BB</p>
+        </td>
+        <td>
+            <p>1.620</p>
+        </td>
+        <td>
+            <p>30/06/2016</p>
+        </td>
+    </tr>
+    <tr> 
+        <td class = "graph header fill">
+            <p class = "graph header text" >5</p>
+        </td>
+        <td>
+            <p>Chromietdijk 37bis</p>
+        </td>
+        <td>
+            <p>4706ES</p>
+        </td>
+        <td>
+            <p>1.555</p>
+        </td>
+        <td>
+            <p>04/02/2016</p>
+        </td>
+    </tr>
+    <tr>
+        <td class = "graph header fill">
+            <p class = "graph header text" >6</p>
+        </td>
+        <td>
+            <p>Koraaldijk 23</p>
+        </td>
+        <td>
+            <p>4706KK</p>
+        </td>
+        <td>
+            <p>1.250</p>
+        </td>
+        <td>
+            <p>14/12/2015</p>
+        </td>
+    </tr>    
+</table>
+<img 
+    alt="Afbeeldingsresultaat voor buddha" 
+    src="images/Buddha.jpg" 
+    width = "350" 
+    height = "350"
+    style = "position: relative; transform: translate(700px,-400px);"/>
+
+<footer style = "position: relative; transform: translate(0px,-220px);"><!--footnotes for page 2-->
     <p>
-        <img alt="Afbeeldingsresultaat voor buddha" src="#" />
+            
+        <em>“Het geschatte bedrag waartegen een object tussen een bereidwillige koper en een bereidwillige verkoper na behoorlijke marketing in een zakelijke transactie zou worden overgedragen op de waardepeildatum, waarbij de partijen met kennis, prudent en niet onder dwang zouden hebben gehandeld” (International Valuation Standards Council, IVS 104: Bases of Value, 7 april 2016)</em> <a href="#footnote-ref-1">↑</a></p>
+                
         <br />
         <sup><a href="#footnote-1" id="footnote-ref-1">[1]</a></sup> 
         <sup><a href="#footnote-2" id="footnote-ref-2">[2]</a></sup>
@@ -479,23 +619,47 @@
 </footer>
 </body>
 <!-- page 3-->
-<body class = "page 3">
-    <h1>BETROUWBAARHEID
+<body class = "page three">
+    <h1 class = "Page three header" >BETROUWBAARHEID
         <br />
     </h1>
 
-    <p>Aantal verkopen in de afgelopen 5 jaar naar oppervlakteklasse</p>
+    
 
     <p>
         De betrouwbaarheid van de modelmatige waardeschatting is afhankelijk van een verscheidenheid aan factoren. Van grote invloed is het aantal kwalitatief goede en vergelijkbare referenties in de directe omgeving. Onderstaande grafieken maken dit duidelijker op buurtniveau, waarin het aantal verkopen in de afgelopen 5 jaar is onderverdeeld naar oppervlakteklasse, bouwjaarklasse en woningtype. Bij minder dan 10 verkopen zijn onderstaande grafieken op gemeenteniveau. 
     </p>
         
-    <h1>
-        <img alt="Afbeeldingsresultaat voor buddha" src="#"/>
-    </h1>
-    <h1>
-        <br />
-    </h1>
+    <table style = "border: 2px solid grey; width: 85%">
+        <tr>
+            <td class = "graph header fill">
+                <p class = "graph header text">Aantal verkopen in de afgelopen 5 jaar naar oppervlakteklasse</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img alt="Afbeeldingsresultaat voor buddha" src="images/Buddha.jpg"/>
+            </td>
+        </tr>
+    </table>
+    <br />
+    <br />
+    <br />
+    <table style = "border: 2px solid grey; width: 85%">
+            <tr>
+                <td class = "graph header fill">
+                    <p class = "graph header text">Aantal verkopen in de afgelopen 5 jaar naar oppervlakteklasse</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img alt="Afbeeldingsresultaat voor buddha" src="images/Buddha.jpg"/>
+                </td>
+                <td>
+                    <img alt="Afbeeldingsresultaat voor buddha" src="images/Buddha.jpg"/>
+                </td>
+            </tr>
+        </table>
     <p> 
         Aantal verkopen in de afgelopen 5 jaar naar bouwjaarklasse en wonintype 
     </p>
