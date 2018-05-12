@@ -1,6 +1,7 @@
 <!-- styling-->
 <style>
     /* Header color (all headers) */
+
     h1,
     h2,
     h3,
@@ -13,9 +14,10 @@
         max-width: 100%;
         overflow-x: hidden;
         margin-left: 20%;
-        
     }
+
     /* <!-- General Text --> */
+
     p {
         -webkit-text-fill-color: #0077ff;
         width: 85%;
@@ -25,6 +27,7 @@
     }
 
     /* <!-- tables line --> */
+
     table {
         border-top: 3px solid #808080;
         border-bottom: 3px solid #808080;
@@ -33,16 +36,20 @@
     }
 
     /* Table row and datum */
+
     tr,
     td {
         padding-top: 1%;
         padding-bottom: 2%;
         padding-left: 5%;
         padding-right: 5%;
-        background-color: #ffffff; /* background table fill */
+        background-color: #ffffff;
+        /* background table fill */
         text-align: center;
     }
+
     /* table text */
+
     td p {
         text-align: center;
         font-size: 16px;
@@ -52,32 +59,42 @@
         text-align: left;
         padding: 2%;
     }
+
     /* Table and graph header fill */
+
     .graph.header.fill {
         background-color: #0a32ff;
         border-bottom: solid 2px #808080;
     }
+
     /* Table and graph header text */
+
     .graph.header.text {
         text-align: right;
         padding-left: 5%;
         font-size: 24px;
-        -webkit-text-fill-color: #ffffff; /*tables secondary text */
+        -webkit-text-fill-color: #ffffff;
+        /*tables secondary text */
     }
-    /* Framing lines around graphs */
-    .Framing.lines.around.graphs{
-        border: 2px solid grey;
 
+    /* Framing lines around graphs */
+
+    .Framing.lines.around.graphs {
+        border: 2px solid grey;
     }
 
     footer {
         border: 25%;
         border-top: 1px solid;
-        font-size: 10px; /* Footer text */
+        font-size: 10px;
+        /* Footer text */
         -webkit-text-fill-color: #000000;
     }
+
     /* Footer text hyperlinks */
-    footer, a {
+
+    footer,
+    a {
         -webkit-text-fill-color: #0ba6e0
     }
 
@@ -85,7 +102,8 @@
         position: relative;
         /* text-align: center; */
     }
-    .sticky.header.logo{
+
+    .sticky.header.logo {
         position: fixed;
         float: right;
         transform: translate(1350%, 45%);
@@ -100,7 +118,9 @@
         /* left: 50%; */
         transform: translate(-490px, -555px);
     }
+
     /* Front page line above header */
+
     .Front.page.line.above.header {
         border: 1px solid #0000FF;
         position: absolute;
@@ -109,7 +129,9 @@
         /* left: 50%; */
         transform: translate(75px, -385px);
     }
+
     /* Front page header */
+
     .Front.page.header {
         position: absolute;
         top: 50%;
@@ -117,9 +139,11 @@
         transform: translate(210px, -410px);
         text-align: center;
         -webkit-text-fill-color: #0000FF;
-        border-bottom: rgba(255,255,255,0);
+        border-bottom: rgba(255, 255, 255, 0);
     }
+
     /* Front page line below */
+
     .Front.page.line.below.header {
         border: 1px solid #0000FF;
         position: absolute;
@@ -128,7 +152,9 @@
         width: 650px;
         transform: translate(75px, -325px);
     }
+
     /* Front page subheader */
+
     .Front.page.subheader {
         position: absolute;
         top: 50%;
@@ -137,59 +163,68 @@
         text-align: center;
         -webkit-text-fill-color: #0000FF;
     }
+
     /* Front page 3 lines at bottom */
+
     .Front.page.lines.at.bottom {
         position: relative;
         top: 700px;
         width: 100%;
-        transform: translate(-40px,0px);
+        transform: translate(-40px, 0px);
         /* left: -190px; */
-        
         text-align: center;
         -webkit-text-fill-color: #0000FF;
     }
 
     /* line below header for all other pages */
+
     .Page.header {
         border-bottom: 2px solid #0000FF;
     }
 
     /* line below header for page one custom template */
+
     .Page.one.header {
         border-bottom: 2px solid #0000FF;
     }
+
     /* Page 1 (after frontpage) text */
+
     .Page.one.text {
         padding-bottom: 250px;
     }
+
     /* Page 1 bottom name (so the A.B.C. Jansen, MRE FRICS) */
-    .Page.one.bottom.name{
+
+    .Page.one.bottom.name {
         transform: translate(200px, 0px);
     }
+
     /* Page 1 bottom title (so the Partner | Directeur Taxaties, Innovatie en Consulting) */
-    .Page.one.bottom.title{
+
+    .Page.one.bottom.title {
         transform: translate(200px, -200px);
-
     }
+
     /* Page 1 bottom rest */
-    .Page.one.bottom.rest{
 
-    }
-
+    .Page.one.bottom.rest {}
 
     /* Page 2 dashed line */
+
     .Page.two.dashed.line {
         border: dashed grey;
         width: 200px;
         height: 50px;
         transform: translate(500px, 0px);
-        background-color:#ffffff; /* page 2 fill in dashed line figure */
+        background-color: #ffffff;
+        /* page 2 fill in dashed line figure */
         /*page 2 text dashed line figure */
         font-family: 'lato';
         -webkit-text-fill-color: #808080;
         font-size: 12px;
-
     }
+
     .Page.two p {
         position: relative;
         transform: translate(420px, 10px);
@@ -261,44 +296,61 @@
         font-weight: light;
         font-size: 14px;
     }
+
     /*page 4 bubbles text above arrows */
+
     .text.above.arrows {
         position: absolute;
         -webkit-text-fill-color: #464444;
     }
+
     /*page 5 fill right part table */
+
     .page.five.fill {
-        background-color: #0077ff; /*tables secondary fill */
+        background-color: #0077ff;
+        /*tables secondary fill */
     }
+
     /*page 5 text right part table */
-    .page.five.text{
-        -webkit-text-fill-color: #ffff; /* tables secondary text */
+
+    .page.five.text {
+        -webkit-text-fill-color: #ffff;
+        /* tables secondary text */
     }
+
     /*page 11 table grey fill*/
-    .table.grey.fill{
-        background-color:#808080;
+
+    .table.grey.fill {
+        background-color: #808080;
     }
 
     /* Backpage fill */
-    .backpage.fill{
-        background-color:#0077ff;
+
+    .backpage.fill {
+        background-color: #0077ff;
         padding-bottom: 150px;
     }
+
     /* Backpage text name (so the A.B.C. Jansen, MRE FRICS)*/
-    .backpage.text{
-        transform: translate(260px,16px);
+
+    .backpage.text {
+        transform: translate(260px, 16px);
     }
+
     .backpage.text.name {
         -webkit-text-fill-color: white;
-
     }
+
     /* Backpage text title  so the Partner | Directeur Taxaties, innovatie en Consulting)*/
-    .backpage.text.title{
+
+    .backpage.text.title {
         font-size: 14px;
         -webkit-text-fill-color: white;
     }
+
     /* Backpage other text */
-    .backpage.other.text{
+
+    .backpage.other.text {
         /* transform: translate(260px,16px); */
         -webkit-text-fill-color: white;
     }
@@ -310,7 +362,8 @@
 </div> -->
 
 <!-- cover page -->
-<body >
+
+<body>
     <div class="Front page container">
         <!-- background image-->
         <img alt="Image result for skyline photo background" src="images/Front.jpg" />
@@ -324,10 +377,9 @@
         <div class="Front page line below header"></div>
 
         <h4 class="Front page subheader" style="text-align: left;">MODELMATIGE WAARDESCHATTING
-                <p class="Front page three lines at bottom">18 april 2018 <br />
-                    Colliers International B.V.
-                   <br /> Buitenveldertselaan 5, 1072VA Amsterdam
-               </p>
+            <p class="Front page three lines at bottom">18 april 2018 <br /> Colliers International B.V.
+                <br /> Buitenveldertselaan 5, 1072VA Amsterdam
+            </p>
         </h4>
         <!-- add breaks to ensure next 3 lines are footer positioned-->
     </div>
@@ -352,11 +404,11 @@
         </p>
         <p class="Page one sig">Met vriendelijke groet, </p>
         <p>
-            <img alt="Image result for signature" src="images/Signature.png"  />
+            <img alt="Image result for signature" src="images/Signature.png" />
         </p>
-                                <p >
-                                    A.B.C. Jansen
-                                </p>
+        <p>
+            A.B.C. Jansen
+        </p>
         <br />
         <br />
         <br />
@@ -364,12 +416,12 @@
         <br />
         <br />
         <!-- image following signature-->
-        <div class = "page one" style = "width:85%">
-            
-            <img alt="Afbeeldingsresultaat voor buddha" src="images/Buddha.jpg" width = "150px" height="188px" style = "padding: 35px; position:absolute;" />
-            
-        
-            <p class = "page one bottom name" >
+        <div class="page one" style="width:85%">
+
+            <img alt="Afbeeldingsresultaat voor buddha" src="images/Buddha.jpg" width="150px" height="188px" style="padding: 35px; position:absolute;" />
+
+
+            <p class="page one bottom name">
                 A.B.C. Jansen, MRE FRICS
                 <br /> Partner | Directeur Taxaties, Innovatie en Consulting
                 <br /> Mobiel: +31 6 00 00 00 00
@@ -386,7 +438,7 @@
         <br />
         <br />
         <br />
-    <footer></footer>
+        <footer></footer>
 </body>
 
 <!-- page 2-->
@@ -542,7 +594,7 @@
     width: 500px;
     height: 50px;
     ">
-        <img alt="Afbeeldingsresultaat voor buddha" src="images/Buddha.jpg" width="500" height="300" style = "position: absolute";/>
+        <img alt="Afbeeldingsresultaat voor buddha" src="images/Buddha.jpg" width="500" height="300" style="position: absolute" ;/>
     </div>
     <div class="table footer"></div>
     <!--end of first table-->
@@ -680,17 +732,17 @@
     width: 500px;
     height: 50px;
     ">
-    <img alt="Afbeeldingsresultaat voor buddha" src="images/Buddha.jpg" width="450" height="450" style="position: absolute;" />    </div>
+        <img alt="Afbeeldingsresultaat voor buddha" src="images/Buddha.jpg" width="450" height="450" style="position: absolute;" /> </div>
 
-    
 
-    <footer >
+
+    <footer>
         <!--footnotes for page 2-->
         <p>
 
-            <em>“Het geschatte bedrag waartegen een object tussen een bereidwillige koper en een bereidwillige verkoper na behoorlijke marketing in een zakelijke transactie zou worden overgedragen op de waardepeildatum, waarbij de partijen met kennis, prudent en niet onder dwang zouden hebben gehandeld” (International Valuation Standards Council, IVS 104: Bases of Value, 7 april 2016)</em>          
-              <a href="#footnote-ref-1">↑</a>
-            </p>
+            <em>“Het geschatte bedrag waartegen een object tussen een bereidwillige koper en een bereidwillige verkoper na behoorlijke marketing in een zakelijke transactie zou worden overgedragen op de waardepeildatum, waarbij de partijen met kennis, prudent en niet onder dwang zouden hebben gehandeld” (International Valuation Standards Council, IVS 104: Bases of Value, 7 april 2016)</em>
+            <a href="#footnote-ref-1">↑</a>
+        </p>
 
         <br />
         <sup><a href="#footnote-1" id="footnote-ref-1">[1]</a></sup>
@@ -713,7 +765,7 @@
         op buurtniveau, waarin het aantal verkopen in de afgelopen 5 jaar is onderverdeeld naar oppervlakteklasse, bouwjaarklasse en woningtype. Bij minder dan 10 verkopen zijn onderstaande grafieken op gemeenteniveau.
     </p>
 
-    <table class = "Framing lines around graphs" style= "width: 750px;">
+    <table class="Framing lines around graphs" style="width: 750px;">
         <tr>
             <td class="graph header fill">
                 <p class="graph header text">Aantal verkopen in de afgelopen 5 jaar naar oppervlakteklasse</p>
@@ -728,7 +780,7 @@
     <br />
     <br />
     <br />
-    <table class = "Framing lines around graphs" style="width: 750px;">
+    <table class="Framing lines around graphs" style="width: 750px;">
         <tr class="graph header fill">
             <td class="graph header fill">
                 <!-- <p style = "text-align: right" class = "graph header text">Aantal verkopen in de afgelopen 5 jaar naar oppervlakteklasse</p> -->
@@ -761,7 +813,7 @@
     </p>
     <footer>
         </p>
-        3 TVI, Nieuwsbrief TVI – Taxateur 01-07-2016, verkregen van: <a href = "http://www.tvi.nl/www/nieuws/">http://www.tvi.nl/www/nieuws/</a>
+        3 TVI, Nieuwsbrief TVI – Taxateur 01-07-2016, verkregen van: <a href="http://www.tvi.nl/www/nieuws/">http://www.tvi.nl/www/nieuws/</a>
         <p>
     </footer>
     <p>
@@ -771,7 +823,7 @@
     <p>
 
     </p>
-    <table class = "Framing lines around graphs" style="width: 750px;">
+    <table class="Framing lines around graphs" style="width: 750px;">
         <tr class="graph header fill" style="width:500px">
             <td class="graph header fill">
                 <!-- <p style = "text-align: right" class = "graph header text">Aantal verkopen in de afgelopen 5 jaar naar oppervlakteklasse</p> -->
@@ -792,7 +844,7 @@
             </td>
         </tr>
     </table>
-    
+
 
 
     <p>
@@ -807,7 +859,7 @@
         onderbouwing van de waardeschatting wordt hierna verder toegelicht aan de hand van referenties.
     </p>
 
-    <table class = "Framing lines around graphs" style=" width: 750px;">
+    <table class="Framing lines around graphs" style=" width: 750px;">
         <tr class="graph header fill" style="width:500px;">
             <td class="graph header fill">
                 <p class="graph header text">
@@ -2948,54 +3000,54 @@
     <br />
     <br />
     <br />
-    <h1 class = "page header">PRIJSONTWIKKELING</h1>
+    <h1 class="page header">PRIJSONTWIKKELING</h1>
     <p>
         <br /> Bij de modelmatige waardeschatting wordt gebruik gemaakt van indexatie. Ook bij de onderbouwing hiervan zijn de marktwaardes van referenties geïndexeerd naar de waardepeildatum. De historische prijsontwikkeling (tot aan 8 jaar terug) is
         in onderstaande grafiek weergegeven voor de buurt, wijk en gemeente van het object.
     </p>
 
     <table style="border: 2px solid grey; width: 700px;">
-            <tr>
-                <td class="graph header fill">
-                    <p class="graph header text" style="text-align: left">
-                            Marktwaarde/m<sup>2</sup>
-                        
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>
-    
-                        <img alt="Afbeeldingsresultaat voor buddha" src="images/Buddha.jpg" width="700px" height="350px" />
-    
-                    </p>
-                </td>
-            </tr>
-        </table>
-        <br />
-        <br />
-        <br />
-        <table style="border: 2px solid grey; width: 700px;">
-                <tr>
-                    <td class="graph header fill">
-                        <p class="graph header text" style="text-align: left">
-                                Jaar op jaar verandering in de marktwaarde/m<sup>2</sup>
-                            
-                        </p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p>
-        
-                            <img alt="Afbeeldingsresultaat voor buddha" src="images/Buddha.jpg" width="700px" height="350px" />
-        
-                        </p>
-                    </td>
-                </tr>
-            </table>
-       
+        <tr>
+            <td class="graph header fill">
+                <p class="graph header text" style="text-align: left">
+                    Marktwaarde/m<sup>2</sup>
+
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+
+                    <img alt="Afbeeldingsresultaat voor buddha" src="images/Buddha.jpg" width="700px" height="350px" />
+
+                </p>
+            </td>
+        </tr>
+    </table>
+    <br />
+    <br />
+    <br />
+    <table style="border: 2px solid grey; width: 700px;">
+        <tr>
+            <td class="graph header fill">
+                <p class="graph header text" style="text-align: left">
+                    Jaar op jaar verandering in de marktwaarde/m<sup>2</sup>
+
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+
+                    <img alt="Afbeeldingsresultaat voor buddha" src="images/Buddha.jpg" width="700px" height="350px" />
+
+                </p>
+            </td>
+        </tr>
+    </table>
+
 
     <br />
     <br />
@@ -3006,50 +3058,50 @@
         Onderstaande tabel geeft dit weer.
     </p>
 
-    <table style = "border-top: #ffffff">
-        <tr class = "graph header fill">
+    <table style="border-top: #ffffff">
+        <tr class="graph header fill">
             <td>
 
             </td>
-            <td class = "graph header fill">
-                <p class = "graph header text">12 maanden</p>
+            <td class="graph header fill">
+                <p class="graph header text">12 maanden</p>
             </td>
-            <td class = "graph header fill">
-                <p class = "graph header text">2 jaar</p>
+            <td class="graph header fill">
+                <p class="graph header text">2 jaar</p>
             </td>
-            <td class = "graph header fill">
-                <p class = "graph header text">3 jaar</p>
+            <td class="graph header fill">
+                <p class="graph header text">3 jaar</p>
             </td>
-            <td class = "graph header fill">
-                <p class = "graph header text">5 jaar</p>
+            <td class="graph header fill">
+                <p class="graph header text">5 jaar</p>
             </td>
-            <td class = "graph header fill">
-                <p class = "graph header text">8 jaar</p>
+            <td class="graph header fill">
+                <p class="graph header text">8 jaar</p>
             </td>
         </tr>
         <tr>
-            <td class = "page five fill">
-                <p class = "page five text">Object - prijsontwikkeling</p>
+            <td class="page five fill">
+                <p class="page five text">Object - prijsontwikkeling</p>
             </td>
-            <td class = "page five fill">
-                <p class = "page five text">+3,2%</p>
+            <td class="page five fill">
+                <p class="page five text">+3,2%</p>
             </td>
-            <td class = "page five fill">
-                <p class = "page five text">+7,1%</p>
+            <td class="page five fill">
+                <p class="page five text">+7,1%</p>
             </td>
-            <td class = "page five fill">
-                <p class = "page five text">+10,0%</p>
+            <td class="page five fill">
+                <p class="page five text">+10,0%</p>
             </td>
-            <td class = "page five fill">
-                <p class = "page five text">+11,2%</p>
+            <td class="page five fill">
+                <p class="page five text">+11,2%</p>
             </td>
-            <td class = "page five fill">
-                <p class = "page five text">+6,3%</p>
+            <td class="page five fill">
+                <p class="page five text">+6,3%</p>
             </td>
         </tr>
-       
+
         <tr>
-            <td >
+            <td>
                 <p>Buurt met hoogste prijsontwikkeling</p>
             </td>
             <td>
@@ -3089,28 +3141,28 @@
             </td>
         </tr>
         <tr>
-                <tr>
-                        <td colspan="8" cellpadding="20"></td>
-                    </tr>
+            <tr>
+                <td colspan="8" cellpadding="20"></td>
+            </tr>
         </tr>
-        <tr >
-            <td class = "page five fill">
-                <p class = "page five text">Wijk - prijsontwikkeling</p>
+        <tr>
+            <td class="page five fill">
+                <p class="page five text">Wijk - prijsontwikkeling</p>
             </td>
-            <td class = "page five fill">
-                <p class = "page five text">+1,0%</p>
+            <td class="page five fill">
+                <p class="page five text">+1,0%</p>
             </td>
-            <td class = "page five fill">
-                <p class = "page five text">+2,2%</p>
+            <td class="page five fill">
+                <p class="page five text">+2,2%</p>
             </td>
-            <td class = "page five fill">
-                <p class = "page five text">+2,4%</p>
+            <td class="page five fill">
+                <p class="page five text">+2,4%</p>
             </td>
-            <td class = "page five fill">
-                <p class = "page five text">+5,5%</p>
+            <td class="page five fill">
+                <p class="page five text">+5,5%</p>
             </td>
-            <td class = "page five fill">
-                <p class = "page five text" >+1,8%</p>
+            <td class="page five fill">
+                <p class="page five text">+1,8%</p>
             </td>
         </tr>
         <tr>
@@ -3154,28 +3206,28 @@
             </td>
         </tr>
         <tr>
-                <tr>
-                        <td colspan="8" cellpadding="20"></td>
-                    </tr>
+            <tr>
+                <td colspan="8" cellpadding="20"></td>
+            </tr>
         </tr>
         <tr>
-            <td class = "page five fill">
-                <p class = "page five text">Gemeente - prijsontwikkeling</p>
+            <td class="page five fill">
+                <p class="page five text">Gemeente - prijsontwikkeling</p>
             </td>
-            <td class = "page five fill">
-                <p class = "page five text">+4,4%</p>
+            <td class="page five fill">
+                <p class="page five text">+4,4%</p>
             </td>
-            <td class = "page five fill">
-                <p class = "page five text">+8,6%</p>
+            <td class="page five fill">
+                <p class="page five text">+8,6%</p>
             </td>
-            <td class = "page five fill">
-                <p class = "page five text">+10,4%</p>
+            <td class="page five fill">
+                <p class="page five text">+10,4%</p>
             </td>
-            <td class = "page five fill">
-                <p class = "page five text">+24,0%</p>
+            <td class="page five fill">
+                <p class="page five text">+24,0%</p>
             </td>
-            <td class = "page five fill">
-                <p class = "page five text">+24,3%</p>
+            <td class="page five fill">
+                <p class="page five text">+24,3%</p>
             </td>
         </tr>
         <tr>
@@ -3209,7 +3261,7 @@
 
 
 
-    <h1 class = "page header">DUURZAAMHEID</h1>
+    <h1 class="page header">DUURZAAMHEID</h1>
 
     <p>
         Het verduurzamen van de gebouwde omgeving speelt een steeds belangrijkere rol. De gebouwde omgeving zorgt voor ongeveer 40% van de CO<sub>2</sub>-uitstoot en om de doelstellingen van het klimaatakkoord te behalen voor 2050 moet er ingegrepen worden<sup><a href="#footnote-4" id="footnote-ref-4">[4]</a></sup>.
@@ -3217,32 +3269,32 @@
         totaal 55.000 woningen). De middelste ring van de grafiek geeft de verdeling van energielabels weer specifiek voor tussenwoningen in Roosendaal (voor 11.320 tussenwoningen van de in totaal 30.000 tussenwoningen in de gemeente is dit bekend). De
         binnenste ring van de grafiek geeft dit weer voor de specifieke bouwjaarklasse (1965-1985) van het object in de gemeente (voor 2.255 woningen van de 100.235 met als bouwjaarklasse 1965-1985 is dit bekend).
     </p>
-    
 
-    <table class = "Framing lines around graphs" style= "width: 750px;">
-            <tr>
-                <td class="graph header fill">
-                    <p class="graph header text" style = "text-align: left; font-size: 16px;">Gemeentelijke verdeling van energielabels (buitenste ring), voor het woningtype (middelste ring) en de bouwjaarklasse (binnenste ring)</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <img alt="Afbeeldingsresultaat voor buddha" src="images/Buddha.jpg" width="700px" height="450px" />
-                </td>
-            </tr>
-        </table>
-       
-        <br />
+
+    <table class="Framing lines around graphs" style="width: 750px;">
+        <tr>
+            <td class="graph header fill">
+                <p class="graph header text" style="text-align: left; font-size: 16px;">Gemeentelijke verdeling van energielabels (buitenste ring), voor het woningtype (middelste ring) en de bouwjaarklasse (binnenste ring)</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img alt="Afbeeldingsresultaat voor buddha" src="images/Buddha.jpg" width="700px" height="450px" />
+            </td>
+        </tr>
+    </table>
+
+    <br />
     <p>
         <br /> Vaak zijn kosten voor een energielabelverbetering bekend of kunnen daar kengetallen over gevonden worden (zie bijvoorbeeld: <a href="https://energiebesparingsverkenner.rvo.nl">https://energiebesparingsverkenner.rvo.nl</a>). Wat veelal onbekend
         is betreft de verhoging van de marktwaarde van het object door duurzaamheidsinvesteringen. Onderstaande tabel geeft een schatting van de waardeverhoging aan van een energielabelverbetering voor het specifieke object.
     </p>
 
-    <table class = "framing lines around graphs" style = "width:35%">
-        <td style = "border-right:solid 1px black; width: 50%;">
+    <table class="framing lines around graphs" style="width:35%">
+        <td style="border-right:solid 1px black; width: 50%;">
             <p>Energielabel object:</p>
         </td>
-        <td >
+        <td>
             <p>C</p>
         </td>
     </table>
@@ -3252,47 +3304,47 @@
     <br/>
     <br/>
 
-    <table style = "  transform:translate(-100px, 0px); border-top: #ffffff; border-bottom: #ffffff; width: 65%; height: 50%;">
+    <table style="  transform:translate(-100px, 0px); border-top: #ffffff; border-bottom: #ffffff; width: 65%; height: 50%;">
 
         <tr>
             <td></td>
             <td></td>
             <td>
-                <p style ="text-align: left; font-size: 18px;">Naar energielabel</p>
+                <p style="text-align: left; font-size: 18px;">Naar energielabel</p>
             </td>
         </tr>
         <tr>
-            <td rowspan="8" >
-                <p style ="text-align: left; font-size: 18px;">Van energielabel</p>
+            <td rowspan="8">
+                <p style="text-align: left; font-size: 18px;">Van energielabel</p>
             </td>
-            <td class= "graph header fill"></td>
-            <td colspan="2" class= "graph header fill">
-                <p class= "graph header text">A</p>
+            <td class="graph header fill"></td>
+            <td colspan="2" class="graph header fill">
+                <p class="graph header text">A</p>
             </td>
-            <td colspan="2" class= "graph header fill">
-                <p class= "graph header text">B</p>
+            <td colspan="2" class="graph header fill">
+                <p class="graph header text">B</p>
             </td>
-            <td class= "graph header fill">
-                <p class= "graph header text">C</p>
+            <td class="graph header fill">
+                <p class="graph header text">C</p>
             </td>
-            <td class= "graph header fill">
-                <p class= "graph header text">D</p>
+            <td class="graph header fill">
+                <p class="graph header text">D</p>
             </td>
-            <td class= "graph header fill">
-                <p class= "graph header text">E</p>
+            <td class="graph header fill">
+                <p class="graph header text">E</p>
             </td>
-            <td class= "graph header fill">
-                <p class= "graph header text">F</p>
+            <td class="graph header fill">
+                <p class="graph header text">F</p>
             </td>
-            <td class= "graph header fill">
-                <p class= "graph header text">G</p>
+            <td class="graph header fill">
+                <p class="graph header text">G</p>
             </td>
         </tr>
         <tr>
-            <td class= "graph header fill">
-                <p class= "graph header text">A</p>
+            <td class="graph header fill">
+                <p class="graph header text">A</p>
             </td>
-            <td colspan="2" class = "table grey fill">
+            <td colspan="2" class="table grey fill">
                 <p>EUR 0</p>
             </td>
             <td colspan="2"></td>
@@ -3303,13 +3355,13 @@
             <td></td>
         </tr>
         <tr>
-            <td class= "graph header fill">
-                <p class= "graph header text">B</p>
+            <td class="graph header fill">
+                <p class="graph header text">B</p>
             </td>
             <td colspan="2">
                 <p>EUR 20.100</p>
             </td>
-            <td class = "table grey fill" colspan="2">
+            <td class="table grey fill" colspan="2">
                 <p>EUR 0</p>
             </td>
             <td></td>
@@ -3319,17 +3371,17 @@
             <td></td>
         </tr>
         <tr>
-            <td class = "graph header fill">
-                <p class = "graph header text">C</p>
+            <td class="graph header fill">
+                <p class="graph header text">C</p>
             </td>
-            <td colspan="2" class = "page five fill">
-                <p class = "page five text">EUR 33.000</p>
+            <td colspan="2" class="page five fill">
+                <p class="page five text">EUR 33.000</p>
             </td>
-            <td colspan="2" class = "page five fill">
-                <p class = "page five text">EUR 10.900</p>
+            <td colspan="2" class="page five fill">
+                <p class="page five text">EUR 10.900</p>
             </td>
-            <td class = "table grey fill">
-                <p >EUR 0</p>
+            <td class="table grey fill">
+                <p>EUR 0</p>
             </td>
             <td></td>
             <td></td>
@@ -3337,8 +3389,8 @@
             <td></td>
         </tr>
         <tr>
-            <td class = "graph header fill">
-                <p class = "graph header text">D</p>
+            <td class="graph header fill">
+                <p class="graph header text">D</p>
             </td>
             <td colspan="2">
                 <p>EUR 34.300</p>
@@ -3349,16 +3401,16 @@
             <td>
                 <p>EUR 44.300</p>
             </td>
-            <td class = "table grey fill">
-                <p >EUR 0</p>
+            <td class="table grey fill">
+                <p>EUR 0</p>
             </td>
             <td></td>
             <td></td>
             <td></td>
         </tr>
         <tr>
-            <td class ="graph header fill">
-                <p class ="graph header text">E</p>
+            <td class="graph header fill">
+                <p class="graph header text">E</p>
             </td>
             <td colspan="2">
                 <p>EUR 40.000</p>
@@ -3372,15 +3424,15 @@
             <td>
                 <p>EUR 8.200</p>
             </td>
-            <td class = "table grey fill">
+            <td class="table grey fill">
                 <p>EUR 0</p>
             </td>
             <td></td>
             <td></td>
         </tr>
         <tr>
-            <td class ="graph header fill">
-                <p class ="graph header text">F</p>
+            <td class="graph header fill">
+                <p class="graph header text">F</p>
             </td>
             <td colspan="2">
                 <p>EUR 41.200</p>
@@ -3397,14 +3449,14 @@
             <td>
                 <p>EUR 700</p>
             </td>
-            <td class = "table grey fill">
+            <td class="table grey fill">
                 <p>EUR 0</p>
             </td>
             <td></td>
         </tr>
         <tr>
-            <td class ="graph header fill">
-                <p class ="graph header text">G</p>
+            <td class="graph header fill">
+                <p class="graph header text">G</p>
             </td>
             <td colspan="2">
                 <p>EUR 60.000</p>
@@ -3424,7 +3476,7 @@
             <td>
                 <p>EUR 1.000</p>
             </td>
-            <td class = "table grey fill">
+            <td class="table grey fill">
                 <p>EUR 0</p>
             </td>
         </tr>
@@ -3434,12 +3486,12 @@
     <br/>
     <footer>
         <br />
-            <sub>4</sub>Duurzaamnieuws.nl, Duurzamer maken woningen moet sneller om klimaatakkoord te halen (18 juni 2017), verkregen van: <a href ="https://www.duurzaamnieuws.nl">https://www.duurzaamnieuws.nl</a>
+        <sub>4</sub>Duurzaamnieuws.nl, Duurzamer maken woningen moet sneller om klimaatakkoord te halen (18 juni 2017), verkregen van: <a href="https://www.duurzaamnieuws.nl">https://www.duurzaamnieuws.nl</a>
     </footer>
     <br/>
     <br/>
     <br/>
-    <h1 class = "page header">TECHNOLOGIE</h1>
+    <h1 class="page header">TECHNOLOGIE</h1>
 
     <p>
         <br /> Verschillende algoritmische modellen (machine learning modellen) bepalen een groot deel van de uitkomsten zoals deze in dit rapport worden getoond. De modellen gaan uit van een grote verscheidenheid aan data en trachten alle waardes zo
@@ -3496,39 +3548,39 @@
         <br />
     </p>
 
-    <h1 class = "page header">DISCLAIMER EN PRIVACY STATEMENT</h1>
-    <p style = "margin-bottom: 65%">
+    <h1 class="page header">DISCLAIMER EN PRIVACY STATEMENT</h1>
+    <p style="margin-bottom: 65%">
         <br /> De modellen worden naar beste weten en kunnen geconstrueerd. Toch blijft het waarderen van een woning in enige mate subjectief. Bepaalde invloeden zijn moeilijk modelmatig mee te nemen (bijvoorbeeld staat van onderhoud of erfpacht). Data
         dat wordt gebruikt voor de modellen wordt gecontroleerd ten behoeve van kwaliteit aan de hand van regels. De afnemer erkent dat de in dit rapport gebruikte gegevens (ook) komen van derden en dat daarom de juistheid van deze gegevens niet kan worden
         gegarandeerd. De maker en verspreider van dit rapport is daarom niet aansprakelijk voor enige schade, direct of indirect, die voortvloeit uit de beoordeling, interpretatie of het gebruik door de afnemer van de gegevens in dit rapport.
-        <br />
-        De privacy van de afnemers van dit rapport wordt gerespecteerd. Hoewel de grootste nauwkeurigheid wordt betracht, kan de maker van dit rapport niet aansprakelijk worden gesteld als gegevens (informatie) door derden wederrechtelijk wordt verkregen.
-        
+        <br /> De privacy van de afnemers van dit rapport wordt gerespecteerd. Hoewel de grootste nauwkeurigheid wordt betracht, kan de maker van dit rapport niet aansprakelijk worden gesteld als gegevens (informatie) door derden wederrechtelijk wordt
+        verkregen.
+
     </p>
 
 
-    
+
     <p>
         <img alt="Afbeeldingsresultaat voor buddha" src="images/Buddha.jpg" width="650px" height="550px" />
     </p>
-    <div class = "backpage fill" style = "width:85%">
-  
-        <img alt="Afbeeldingsresultaat voor buddha" src="images/Buddha.jpg" width = "150px" height="188px" style = "padding: 35px; position:absolute;" />
-   
+    <div class="backpage fill" style="width:85%">
 
-    <p class = "backpage other text">
-        A.B.C. Jansen, MRE FRICS
-        <br /> Partner | Directeur Taxaties, Innovatie en Consulting
-        <br /> Mobiel: +31 6 00 00 00 00
-        <br /> Telefoon: +31 20 000 00 00
-        <br /> E-mail: <a href="mailto:abc.jansen@000.com">abc.jansen@000.com</a>
-        <br />
-        <br /> Data Analyse Netherlands B.V.
-        <br /> De markt 0
-        <br /> 0000 AA Amsterdam
-        <br /> The Netherlands
-        <br />
-    </p>
-</div>
+        <img alt="Afbeeldingsresultaat voor buddha" src="images/Buddha.jpg" width="150px" height="188px" style="padding: 35px; position:absolute;" />
+
+
+        <p class="backpage other text">
+            A.B.C. Jansen, MRE FRICS
+            <br /> Partner | Directeur Taxaties, Innovatie en Consulting
+            <br /> Mobiel: +31 6 00 00 00 00
+            <br /> Telefoon: +31 20 000 00 00
+            <br /> E-mail: <a href="mailto:abc.jansen@000.com">abc.jansen@000.com</a>
+            <br />
+            <br /> Data Analyse Netherlands B.V.
+            <br /> De markt 0
+            <br /> 0000 AA Amsterdam
+            <br /> The Netherlands
+            <br />
+        </p>
+    </div>
 
 </body>

@@ -1,0 +1,142 @@
+<table style="border-collapse:collapse;margin-left:12.28pt" cellspacing="0">
+    <tbody>
+        <tr style="height:13pt">
+            <td style="width:164pt;border-bottom-style:solid;border-bottom-width:1pt">
+                <p style="text-indent: 0pt;text-align: left;"><br></p>
+            </td>
+            <td style="width:290pt;border-top-style:solid;border-top-width:1pt;border-bottom-style:solid;border-bottom-width:1pt" colspan="2" bgcolor="#001F5F">
+                <p class="s15" style="padding-left: 5pt;text-indent: 0pt;line-height: 11pt;text-align: left;">Koraaldijk 3</p>
+            </td>
+        </tr>
+        <tr style="height:14pt">
+            <td style="width:164pt;border-top-style:solid;border-top-width:1pt">
+                <p class="s33" style="padding-left: 6pt;text-indent: 0pt;line-height: 12pt;text-align: left;">Bron</p>
+            </td>
+            <td style="width:139pt;border-top-style:solid;border-top-width:1pt">
+                <p class="s16" style="padding-left: 5pt;text-indent: 0pt;line-height: 10pt;text-align: left;">NVM</p>
+            </td>
+            <td style="width:151pt;border-top-style:solid;border-top-width:1pt" rowspan="2" bgcolor="#00AFEF">
+                <p class="s34" style="padding-left: 5pt;text-indent: 0pt;line-height: 26pt;text-align: left;">99,5% match</p>
+            </td>
+        </tr>
+        <tr style="height:15pt">
+            <td style="width:164pt">
+                <p class="s33" style="padding-left: 6pt;text-indent: 0pt;line-height: 12pt;text-align: left;">Postcode</p>
+            </td>
+            <td style="width:139pt">
+                <p class="s16" style="padding-left: 5pt;text-indent: 0pt;line-height: 9pt;text-align: left;">4706KG</p>
+            </td>
+        </tr>
+        <tr style="height:14pt">
+            <td style="width:164pt">
+                <p class="s33" style="padding-left: 6pt;text-indent: 0pt;line-height: 12pt;text-align: left;">Gemeente</p>
+            </td>
+            <td style="width:139pt">
+                <p class="s16" style="padding-left: 5pt;text-indent: 0pt;line-height: 9pt;text-align: left;">Roosendaal</p>
+            </td>
+            <td style="width:151pt" bgcolor="#00AFEF">
+                <p class="s35" style="padding-left: 5pt;text-indent: 0pt;line-height: 13pt;text-align: left;">Indexatie laatste verkoopprijs:</p>
+            </td>
+        </tr>
+        <tr style="height:14pt">
+            <td style="width:164pt">
+                <p class="s33" style="padding-left: 6pt;text-indent: 0pt;line-height: 12pt;text-align: left;">Laatste verkoopdatum</p>
+            </td>
+            <td style="width:139pt">
+                <p class="s16" style="padding-left: 5pt;text-indent: 0pt;line-height: 9pt;text-align: left;">16/01/2018</p>
+            </td>
+            <td style="width:151pt" bgcolor="#00AFEF">
+                <p class="s35" style="padding-left: 5pt;text-indent: 0pt;line-height: 12pt;text-align: left;">EUR 199.949</p>
+            </td>
+        </tr>
+        <tr style="height:13pt">
+            <td style="width:164pt">
+                <p class="s33" style="padding-left: 6pt;text-indent: 0pt;line-height: 11pt;text-align: left;">Laatste verkoopprijs [EUR]</p>
+            </td>
+            <td style="width:139pt">
+                <p class="s16" style="padding-left: 5pt;text-indent: 0pt;line-height: 9pt;text-align: left;">196.800</p>
+            </td>
+            <td style="width:151pt" bgcolor="#00AFEF">
+                <p style="text-indent: 0pt;text-align: left;"><br></p>
+            </td>
+        </tr>
+        <tr style="height:14pt">
+            <td style="width:164pt">
+                <p class="s33" style="padding-left: 6pt;text-indent: 0pt;line-height: 12pt;text-align: left;">Laatste verkoopprijs/m2</p>
+            </td>
+            <td style="width:139pt">
+                <p class="s16" style="padding-left: 5pt;text-indent: 0pt;line-height: 9pt;text-align: left;">1.600</p>
+            </td>
+            <td style="width:151pt" bgcolor="#00AFEF">
+                <p class="s36" style="padding-left: 31pt;padding-right: 47pt;text-indent: 0pt;line-height: 7pt;text-align: center;">16/01/2018 18/04/2018</p>
+                <p class="s37" style="padding-left: 32pt;padding-right: 46pt;text-indent: 0pt;line-height: 6pt;text-align: center;">+1,6%</p>
+            </td>
+        </tr>
+        <tr style="height:11pt">
+            <td style="width:164pt">
+                <p class="s33" style="padding-left: 6pt;text-indent: 0pt;line-height: 10pt;text-align: left;">Woningtype</p>
+            </td>
+            <td style="width:139pt">
+                <p class="s16" style="padding-left: 5pt;text-indent: 0pt;line-height: 8pt;text-align: left;">Tussenwoning</p>
+            </td>
+            <td style="width:151pt" bgcolor="#00AFEF">
+                <p class="s36" style="padding-left: 5pt;text-indent: 0pt;line-height: 7pt;text-align: left;">EUR 196.800 EUR 199.949</p>
+            </td>
+        </tr>
+        <tr style="height:13pt">
+            <td style="width:164pt">
+                <p class="s33" style="padding-left: 6pt;text-indent: 0pt;line-height: 11pt;text-align: left;">Woonoppervlakte [m2]</p>
+            </td>
+            <td style="width:139pt">
+                <p class="s16" style="padding-left: 5pt;text-indent: 0pt;line-height: 9pt;text-align: left;">123</p>
+            </td>
+            <td style="width:151pt" bgcolor="#00AFEF">
+                <p style="text-indent: 0pt;text-align: left;"><br></p>
+            </td>
+        </tr>
+        <tr style="height:13pt">
+            <td style="width:164pt">
+                <p class="s33" style="padding-left: 6pt;text-indent: 0pt;line-height: 12pt;text-align: left;">Inhoud [m3]</p>
+            </td>
+            <td style="width:139pt">
+                <p class="s16" style="padding-left: 5pt;text-indent: 0pt;line-height: 9pt;text-align: left;">369</p>
+            </td>
+            <td style="width:151pt" bgcolor="#00AFEF">
+                <p style="text-indent: 0pt;text-align: left;"><br></p>
+            </td>
+        </tr>
+        <tr style="height:14pt">
+            <td style="width:164pt">
+                <p class="s33" style="padding-left: 6pt;text-indent: 0pt;text-align: left;">Perceeloppervlakte [m2]</p>
+            </td>
+            <td style="width:139pt">
+                <p class="s16" style="padding-left: 5pt;text-indent: 0pt;line-height: 10pt;text-align: left;">230</p>
+            </td>
+            <td style="width:151pt" bgcolor="#00AFEF">
+                <p class="s35" style="padding-left: 5pt;text-indent: 0pt;line-height: 13pt;text-align: left;">Geïndexeerde prijs/m2: 1.626</p>
+            </td>
+        </tr>
+        <tr style="height:13pt">
+            <td style="width:164pt">
+                <p class="s33" style="padding-left: 6pt;text-indent: 0pt;line-height: 12pt;text-align: left;">Bouwjaar</p>
+            </td>
+            <td style="width:139pt">
+                <p class="s16" style="padding-left: 5pt;text-indent: 0pt;line-height: 10pt;text-align: left;">1950</p>
+            </td>
+            <td style="width:151pt" bgcolor="#00AFEF">
+                <p style="text-indent: 0pt;text-align: left;"><br></p>
+            </td>
+        </tr>
+        <tr style="height:12pt">
+            <td style="width:164pt;border-bottom-style:solid;border-bottom-width:1pt">
+                <p class="s33" style="padding-left: 6pt;text-indent: 0pt;line-height: 11pt;text-align: left;">Afstand tot te waarderen object [m]</p>
+            </td>
+            <td style="width:139pt;border-bottom-style:solid;border-bottom-width:1pt">
+                <p class="s16" style="padding-left: 5pt;text-indent: 0pt;line-height: 9pt;text-align: left;">12</p>
+            </td>
+            <td style="width:151pt;border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#00AFEF">
+                <p style="text-indent: 0pt;text-align: left;"><br></p>
+            </td>
+        </tr>
+    </tbody>
+</table>

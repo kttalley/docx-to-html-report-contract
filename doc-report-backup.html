@@ -1,0 +1,1498 @@
+<!-- styling-->
+<style>
+    /* misc general styling */
+        h1,h2,h3,h4{
+            padding: 2%;
+            -webkit-text-fill-color: #0000FF;
+        }
+    body {
+        margin-left: 7.5%;
+        margin-right: 7.5%;
+    }
+
+    table {
+        border-top: 3px solid #808080;
+        border-bottom: 3px solid #808080;
+        width: 500px;
+
+        border-collapse:collapse;
+        margin-left:12.28pt
+
+    } 
+
+    .tables.line{
+        border-bottom: solid 2px grey;
+    }
+   
+   tr, td {
+        /* border: 2px solid #808080; */
+        padding-top: 1%;
+        padding-bottom: 2%;
+        padding-left: 5%;
+        padding-right: 10%;
+        text-align: center;
+        background-color: #ffffff;
+        
+
+    }
+     /* <!-- General Text --> */
+    p{
+        -webkit-text-fill-color: #0077ff;
+        width: 85%;
+        text-align: left;
+        padding: 2%;
+        
+    }
+    td p{
+        -webkit-text-fill-color: #000000;
+        width: 85%;
+        text-align: left;
+        padding: 2%;
+        
+    }
+    footer{
+        border: 25%;
+        border-top: 1px solid;
+    }
+
+    .image.container {
+
+        border: solid 2px #000000;
+        
+    }
+
+    .graph.header.fill {
+        /* border-bottom: 2px solid black; */
+        background-color: #0a32ff;
+        border-bottom: solid 2px;
+        
+       
+    }
+    .graph.header.text {
+        text-align: right;
+        padding-left: 5%;
+        font-size: 24px;
+        -webkit-text-fill-color: #ffffff;
+        
+    }
+
+    /*styling according to assigned classes*/
+
+    .Front.page{
+        position: relative;
+        /* text-align: center; */
+
+    }
+    .Front.page.logo{
+        position: absolute;
+        top: 50%;
+        /* left: 50%; */
+        transform: translate(-490px, -555px);
+    }
+
+    .Front.page.line.above.header{
+        border: 1px solid #0000FF;
+        position: absolute;
+        width: 650px;
+        /* top: 50%; */
+        /* left: 50%; */
+        transform: translate(75px, -385px);
+    }
+
+    .Front.page.header{
+        position: absolute;
+        top: 50%;
+        /* left: 50%; */
+        transform: translate(210px, -410px);
+        text-align: center;
+        -webkit-text-fill-color: #0000FF;
+    }
+    
+
+    .Front.page.line.below.header{
+        border: 1px solid #0000FF;
+        position: absolute;
+        /* top: 50%;
+        left: 50%; */
+        width: 650px;
+        transform: translate(75px, -325px);
+    }
+
+    .Front.page.subheader{
+        position: absolute;
+        top: 50%;
+        /* left: 50%; */
+        transform: translate(255px, -320px);
+        text-align: center;
+        -webkit-text-fill-color: #0000FF;
+    }
+
+    .Front.page.three.lines.at.bottom{
+        position: absolute;
+        top: 50%;
+        /* left: 50%; */
+        transform: translate(255px, 420px);
+        text-align: center;
+        -webkit-text-fill-color: #0000FF;
+    }
+    
+
+    /* line below header for all other pages */
+    .Page.header{
+        border-bottom: 2px solid #0000FF;
+    }
+
+    /* line below header for page one custom template */
+    .Page.one.header{
+        border-bottom: 2px solid #0000FF;
+    }
+
+    /* styling for the page one.  */
+    
+    .Page.one.container{
+
+    }
+    /* first page elements positioned to represent pdf format */
+    .Page.one.text{
+        padding-bottom: 250px;
+
+    }
+
+    .Page.one.bottom.name{
+
+    }
+
+    .Page.one.bottom.title{
+
+    }
+
+    .Page.one.bottom.rest{
+
+    }
+
+    .Page.one.sig{
+
+    }
+
+    .Page.two.dashed.line{
+        border: dashed grey;
+        width: 200px;
+        height: 50px;
+        transform: translate(500px, 0px);
+    }
+
+    .Page.two p{
+        position: relative;
+        transform:translate(420px,10px);
+        width: 300px;
+    }
+    
+    .Big.bubble{
+        position: absolute;
+        
+        background-color: #0000FF; /* big bubble fill */
+        border-radius: 138px;
+        width:220px;
+        height:220px;
+    }
+
+    .Big.bubble.page.two{
+        transform:translate(180px,20px);
+    }
+
+    /* big bubble text primary */
+    .Big.bubble h2{
+        position: relative;
+        transform: translate(30px,50px);
+        font-size: 18px;
+        -webkit-text-fill-color: white;
+    }
+
+    /* big bubble text secondary */
+    .bubble.text.secondary {
+        margin-left: 15px;
+        font-weight: light;
+        font-size: 14px;
+    }
+    /* small bubble fill */
+    .Small.bubble{
+        position: absolute;
+        background-color: #0077ff;
+        border-radius: 100%;
+        width:160px;
+        height:120px;
+    }
+    .Small.bubble.top{
+        transform:translate(40px,0px);
+    }
+    .Small.bubble.bottom{
+        transform:translate(45px,150px);
+    }
+    /* small bubble text primary */
+    .Small.bubble h2{
+        position: relative;
+        transform: translate(30px,50px);
+        font-size: 18px;
+        -webkit-text-fill-color: white;
+    }
+
+    /* big bubble text secondary */
+    .small.text.secondary {
+        transform: translate(0px,10px);
+        text-align: center;
+        font-weight: light;
+        font-size: 14px;
+    }
+
+   
+
+
+</style>
+
+
+<!-- cover page -->
+<body class = "Front page">
+    <div class = "Front page container">
+        <!-- background image-->
+        <img alt="Image result for skyline photo background"src ="images/Front.jpg"/>
+        <!-- logo image-->
+        <img class = "Front page logo" alt="Afbeeldingsresultaat voor logo colliers international"src= "images/Logo.png" />
+        
+        <!-- add top header border line for cover page-->
+        <div class = "Front page line above header"></div>    
+        <h1 class = "Front page header">Koraaldijk 131  Roosendaal</h1>
+        <!-- add lower header border line for cover page-->
+        <div class = "Front page line below header"></div>
+    
+        <h4 class = "Front page subheader">MODELMATIGE WAARDESCHATTING</h4>
+        <!-- add breaks to ensure next 3 lines are footer positioned-->
+        <p class = "Front page three lines at bottom">18 april 2018
+            <br />
+            Colliers International B.V.
+            <br />
+            Buitenveldertselaan 5, 1072VA Amsterdam
+        </p>
+    </div>
+</body>
+
+<!-- page 1-->
+<body>
+    <h1 class = "Page one header">INLEIDING</h1>
+    <!-- logo header needs to go here-->
+    <div class "Page one line below header"></div>
+    <div class = "Page one container">
+
+        <p class = "Page one text">
+            Beste heer/mevrouw, 
+            <br />
+            <br />
+            Hartelijk dank voor uw belangstelling in onze producten en/of diensten. Wij doen ons uiterste best om u zo goed mogelijk te voorzien van informatie en advies. Dat doen wij zoveel mogelijk gebaseerd op data om te komen tot een goede en feitelijke onderbouwing. Dit rapport is mede tot stand gekomen door het toepassen van algoritmes. Wij geloven dat dit in toenemende mate onderdeel gaat zijn van hoe wij werken. De algoritmes zorgen voor efficiëntie, een kwaliteitsslag en innovatie. Diepere inzichten en patronen kunnen worden ontdekt waardoor wij u kunnen voorzien van het meest hoogwaardige advies. Onze experts zijn in staat om een verdere kwaliteitsslag te maken en de resultaten van algoritmes voor u te positioneren. Graag beantwoorden wij uw vragen en wij zijn u graag van dienst!      
+        </p>
+        <p class = "Page one sig">Met vriendelijke groet, </p>
+        <p>
+            <img alt="Image result for signature" src="images/Signature.png" />
+        </p>
+        <!-- image following signature-->
+        <p class = "Page one bottom name">
+            A.B.C. Jansen 
+        </p>
+        <span>
+            <img alt="Afbeeldingsresultaat voor buddha" src="#" />
+            <br />
+            <br />
+            <br />
+
+        <p class = "Page one bottom name">
+            A.B.C. Jansen, MRE FRICS
+        </p>
+        <br />
+        <p class = "Page one bottom title">Partner | Directeur Taxaties, Innovatie en Consulting</p>
+            <br />
+            Mobiel: +31 6 00 00 00 00
+            <br />
+            Telefoon: +31 20 000 00 00<br />
+            E-mail: <a href="mailto:abc.jansen@000.com">abc.jansen@000.com</a>
+            <br />
+            <br />
+            Data Analyse Netherlands B.V. 
+            <br />
+            De markt 0 
+            <br />
+            0000 AA Amsterdam 
+            <br />
+            The Netherlands<br />
+        </p>
+    </span>
+    </div>
+    <footer></footer>
+</body>
+
+<!-- page 2-->
+<body>
+    <p></p>
+    <p></p>
+    <p>	</p>
+    <h1 class = "Page two header">SAMENVATTING</h1>
+    <!--need bordered box around indicate-->
+    <span class = "Page two">
+        <div class = "Big bubble page two">
+            <h2 class = "text primary">
+                MARKTWAARDE:
+            </h2>
+            <h2 class = "bubble text secondary"> 
+                    EUR 235.000
+                    <br />
+                    (EUR 1.567/m<sup>2</sup>)
+            </h2>        
+        </div>
+        <div class = "Small bubble top">
+            <h2 class = "small text secondary">
+                BOVENGRENS
+                <br />
+                MARKTWAARDE:
+                <br />
+                EUR 247.455
+            </h2>
+        </div>
+        <div class = "Small bubble bottom">
+            <h2 class = "small text secondary">
+                ONDERGRENS
+                <br />
+                MARKTWAARDE:
+                <br />
+                EUR 222.545
+            </h2>
+        </div>
+        <table class = "Page two dashed line">
+            <tr>
+                <td style = "border: solid 0px;">BETROUWBAARHEID:</td> 
+                <td style = "border: solid 0px;">zeer hoog (99,4%)</td>
+            </tr>
+            
+            <tr>
+                <td style = "border: solid 0px;">
+                    INDICATIE FOUTMARGE:
+                </td>
+                <td style = "border: solid 0px;"> 5,3% </td>
+            </tr>
+        </p>
+    </table>
+    <p>
+        Het object heeft een geschatte waarde van EUR <strong>235.000</strong>
+        op 18 april 2018 met een betrouwbaarheid van 99,4%. Dit betreft de geschatte marktwaarde <sup> 1 </sup>.
+        Met een indicatie van de foutmarge van 5,3% worden de ondergrens en bovengrens geschat op EUR 222.545 en EUR 247.455.
+    </p>
+</span>
+
+<!-- need blue background to make this tabletitle-->
+
+<table >
+    <td></td>
+    <td class = "graph header fill">
+        <p class = "graph header text">Object</p>
+    </td>
+</table>
+<table >
+    <tr class = "tables line">
+        <td>
+            <p>Straat</p>
+        </td>
+        <td>
+            <p>Koraaldijk</p>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            <p>Huisnummer</p>
+        </td>
+        <td>
+            <p>131</p>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            <p>Postcode</p>
+        </td>
+        <td>
+            <p>4706KG</p>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            <p>Gemeente</p>
+        </td>
+        <td>
+            <p>Roosendaal</p>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            <p>Woningtype</p>
+        </td>
+        <td>
+            <p>Tussenwoning</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>Prijs/m<sup>2</sup></p>
+        </td>
+        <td>
+            <p>1.67<sup>2</sup></p>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            <p>Bouwjaar</p>
+        </td>
+        <td>
+            <p>1980</p>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            <p>Woonoppervlakte [m<sup>2</sup>]</p>
+        </td>
+        <td>
+            <p>150</p>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            <p>Perceeloppervlakte [m<sup>2</sup>]</p>
+        </td>
+        <td>
+            <p>120</p>
+        </td>
+    </tr>
+</table>
+<div style = "
+    position: relative; 
+    transform: translate(520px, -350px);
+    width: 500px;
+    height: 50px;
+    ">
+        <img alt="Afbeeldingsresultaat voor buddha" src="images/Buddha.jpg" width = "500" height = "300"/>
+</div>
+<div class = "table footer"></div>
+<!--end of first table-->
+
+<p>Bovenstaande tabel en foto geven enkele locatie specifieke en bouwkundige karakteristieken van het object. Onderstaande tabel geeft referentieverkopen weer.
+<br />
+<br />
+<br />
+</p>
+<!-- need a table here -->
+<table style = "border-top: solid 0px grey; width: 400px;">
+    <tr class = "tables line" >
+        <td class = "tables line"></td>
+        <td class = "graph header fill">
+            <p class = "graph header text">Straat</p>
+        </td>
+        <td class = "graph header fill">
+            <p class = "graph header text" >Postcode</p>
+        </td>
+        <td class = "graph header fill">
+            <p class = "graph header text" >Prijs/m<sup>2</sup></p> 
+        </td>
+        <td class = "graph header fill">
+            <p class = "graph header text" >Datum</p>
+        </td><!-- column titles-->
+    </tr>
+  
+    <tr>
+        <td class = "graph header fill">
+            <p class = "graph header text" >1</p>
+        </td>
+        <td>
+            <p>  Koraaldijk 3</p>
+        </td>
+        <td> 
+            <p>4706KG</p>
+        </td>
+        <td>
+            <p>1.600</p>
+        </td>
+        <td>
+            </p>16/01/2018 </p>
+        </td>
+    </tr>
+    <tr>
+        <td class = "graph header fill">
+            <p class = "graph header text">2</p>
+        </td>
+        <td>
+            <p>Diamantdijk 50 </p>              
+        </td>
+        <td >
+            <p>4706KA</p>
+        </td>
+        <td>
+            <p>1.267</p>
+        </td>
+        <td>
+            <p>20/04/2017</p>
+        </td>
+    </tr>
+    <tr>
+        <td class = "graph header fill">
+            <p class = "graph header text">3</p>
+        </td>
+        <td>
+            <p>Dolomietdijk 378b</p> 
+        </td>
+        <td>
+            <p>4706AA</p>
+        </td>
+        <td>
+            <p>1.950</p>
+        </td>
+        <td>
+            <p>06/12/2017</p>
+        </td>
+    </tr>
+    <tr>
+        <td class = "graph header fill">
+            <p class = "graph header text" >4</p>
+        </td>
+        <td>
+            <p>Ir. Mr. Dr. van Watersc</p>
+        </td>
+        <td>
+            <p>4706BB</p>
+        </td>
+        <td>
+            <p>1.620</p>
+        </td>
+        <td>
+            <p>30/06/2016</p>
+        </td>
+    </tr>
+    <tr> 
+        <td class = "graph header fill">
+            <p class = "graph header text" >5</p>
+        </td>
+        <td>
+            <p>Chromietdijk 37bis</p>
+        </td>
+        <td>
+            <p>4706ES</p>
+        </td>
+        <td>
+            <p>1.555</p>
+        </td>
+        <td>
+            <p>04/02/2016</p>
+        </td>
+    </tr>
+    <tr>
+        <td class = "graph header fill">
+            <p class = "graph header text" >6</p>
+        </td>
+        <td>
+            <p>Koraaldijk 23</p>
+        </td>
+        <td>
+            <p>4706KK</p>
+        </td>
+        <td>
+            <p>1.250</p>
+        </td>
+        <td>
+            <p>14/12/2015</p>
+        </td>
+    </tr>    
+</table>
+<img 
+    alt="Afbeeldingsresultaat voor buddha" 
+    src="images/Buddha.jpg" 
+    width = "350" 
+    height = "350"
+    style = "position: relative; transform: translate(700px,-400px);"/>
+
+<footer style = "position: relative; transform: translate(0px,-220px);"><!--footnotes for page 2-->
+    <p>
+            
+        <em>“Het geschatte bedrag waartegen een object tussen een bereidwillige koper en een bereidwillige verkoper na behoorlijke marketing in een zakelijke transactie zou worden overgedragen op de waardepeildatum, waarbij de partijen met kennis, prudent en niet onder dwang zouden hebben gehandeld” (International Valuation Standards Council, IVS 104: Bases of Value, 7 april 2016)</em> <a href="#footnote-ref-1">↑</a></p>
+                
+        <br />
+        <sup><a href="#footnote-1" id="footnote-ref-1">[1]</a></sup> 
+        <sup><a href="#footnote-2" id="footnote-ref-2">[2]</a></sup>
+        <br />
+    </p>
+</footer>
+</body>
+<!-- page 3-->
+<body class = "page three">
+    <h1 class = "Page three header" >BETROUWBAARHEID
+        <br />
+    </h1>
+
+    
+
+    <p>
+        De betrouwbaarheid van de modelmatige waardeschatting is afhankelijk van een verscheidenheid aan factoren. Van grote invloed is het aantal kwalitatief goede en vergelijkbare referenties in de directe omgeving. Onderstaande grafieken maken dit duidelijker op buurtniveau, waarin het aantal verkopen in de afgelopen 5 jaar is onderverdeeld naar oppervlakteklasse, bouwjaarklasse en woningtype. Bij minder dan 10 verkopen zijn onderstaande grafieken op gemeenteniveau. 
+    </p>
+        
+    <table style = "border: 2px solid grey; width: 85%">
+        <tr>
+            <td class = "graph header fill">
+                <p class = "graph header text">Aantal verkopen in de afgelopen 5 jaar naar oppervlakteklasse</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img alt="Afbeeldingsresultaat voor buddha" src="images/Buddha.jpg" width = "500px" height = "250px"/>
+            </td>
+        </tr>
+    </table>
+    <br />
+    <br />
+    <br />
+    <table style = "border: 2px solid grey; width = 85%">
+        <tr class = "graph header fill" style = "width:500px">
+            <td class = "graph header fill" >
+                <!-- <p style = "text-align: right" class = "graph header text">Aantal verkopen in de afgelopen 5 jaar naar oppervlakteklasse</p> -->
+            </td>
+            <td class = "graph header fill">
+                                <p class = "graph header text" style = "font-size: 16px; width: 100%"> 
+                                    Aantal verkopen in de afgelopen 5 jaar naar bouwjaarklasse en wonintype 
+                                </p>
+
+                </td>
+            </tr>
+            <tr>
+                <td style = "padding: 1%">
+                    <img alt="Afbeeldingsresultaat voor buddha" src="images/Buddha.jpg" width = "320px" height = "220px"/>
+                </td>
+                <td style = "padding: 1%">
+                    <img alt="Afbeeldingsresultaat voor buddha" src="images/Buddha.jpg" width = "320px" height = "220px"/>
+                </td>
+            </tr>
+        </table>
+    <p>
+        <br />
+    </p>
+    <p>
+        Stichting Taxaties en Validaties (STenV) stelt in het Addendum NEN-EN-ISO 9001:2015 dat de modelwaarde minimaal een betrouwbaarheid dient te hebben van 85%. TVI verduidelijkt dit verder in een nieuwsbrief: “De betrouwbaarheidsindicatie geeft de kans weer dat de transactieprijs voor een object binnen een band-breedte van 30% van de afgegeven modelwaarde ligt” met als voorbeeld: “Wanneer 100 objecten als waardering een modelwaarde van 100.000 euro hebben gekregen waarbij een betrouwbaarheidsindicatie van 85% is afgegeven, betekent dit dat naar verwachting 85 objecten een transactieprijs hebben tussen de 70.000-130.000 euro, 15 transactiegegevens liggen naar verwachting buiten de grenzen”<sup><a href="#footnote-3" id="footnote-ref-3">[3]</a></sup>.
+        
+        Inmiddels wordt in plaats van 30% afwijking vaak een strengere normering van 20% aangehouden. Daarnaast bieden zowel de International Association of Assessing Officers (IAAO) en de Royal Institution of Chartered Surveyors (RICS) een meer kwalitatieve onderbouwing van betrouwbaarheid.
+    </p>
+    <footer>
+        </p>
+        3 TVI, Nieuwsbrief TVI – Taxateur 01-07-2016, verkregen van: http://www.tvi.nl/www/nieuws/
+         <p>
+    </footer>
+    <p>
+        Onderstaande grafieken bieden inzicht in de kwantitatieve betrouwbaarheidsindicator zoals zij door STenV en TVI worden gedefinieerd. Verder dient opgemerkt te worden dat in 77,0% van de gevallen de afwijking kleiner is dan 10% en in 54,4% van de gevallen de afwijking kleiner is dan 5%.
+    </p>
+    <p>
+       
+    </p>
+    <table style = "border: 2px solid grey; width = 85%">
+            <tr class = "graph header fill" style = "width:500px">
+                <td class = "graph header fill" >
+                    <!-- <p style = "text-align: right" class = "graph header text">Aantal verkopen in de afgelopen 5 jaar naar oppervlakteklasse</p> -->
+                </td>
+                <td class = "graph header fill">
+                                    <p class = "graph header text" style = "font-size: 16px; width: 100%"> 
+                                            Betrouwbaarheidsscores “binnen 30%” en “binnen 20%”
+                                    </p>
+    
+                    </td>
+                </tr>
+                <tr>
+                    <td style = "padding: 1%">
+                        <img alt="Afbeeldingsresultaat voor buddha" src="images/Buddha.jpg" width = "320px" height = "150px"/>
+                    </td>
+                    <td style = "padding: 1%">
+                        <img alt="Afbeeldingsresultaat voor buddha" src="images/Buddha.jpg" width = "320px" height = "150px"/>
+                    </td>
+                </tr>
+            </table>
+
+
+
+    <p>
+        <br />
+        <br />
+        <br />
+        Om te komen tot een classificering worden er uitgangspunten gehanteerd: indien de prestatie van het model groter dan of gelijk is aan 85% op de 20% afwijkingsnorm dan geldt de classificatie “zeer betrouwbaar” met daarbij het percentage op de 20% afwijkingsnorm. Indien de prestatie van het model op de 20% afwijkingsnorm kleiner is dan 85%, maar wel groter dan 85% op de 30% afwijkingsnorm, dan geldt de classificatie “betrouwbaar” met daarbij het percentage op de 30% afwijkingsnorm. In alle overige gevallen geldt de classificatie “onbetrouwbaar” met daarbij het percentage op de 30% afwijkingsnorm.
+    </p>
+    <p>
+        Los van bovenstaande is de mediane foutmarge voor de waardeschatting van het object modelmatig bepaald. Een schatting van de mediane absolute foutmarge is 5,3%. Deze inschatting van de foutmarge bepaalt de onder- en bovengrens van de waardering. De betreffende onderbouwing van de waardeschatting wordt hierna verder toegelicht aan de hand van referenties.
+    </p>
+   
+    <table style = "border: 2px solid grey; width = 85%">
+            <tr class = "graph header fill" style = "width:500px">
+                <td class = "graph header fill">
+                                    <p class = "graph header text" style = "font-size: 16px; width: 100%"> 
+                                            Betrouwbaarheidsscores “binnen 30%” en “binnen 20%”
+                                    </p>
+    
+                    </td>
+                </tr>
+                <tr>
+                    <td >
+                            <div class = "Big bubble">
+                                    <h2 class = "text primary">
+                                        MARKTWAARDE:
+                                    </h2>
+                                    <h2 class = "bubble text secondary"> 
+                                            EUR 235.000
+                                            <br />
+                                            (EUR 1.567/m<sup>2</sup>)
+                                    </h2>        
+                                </div>
+                                <div class = "Small bubble top">
+                                    <h2 class = "small text secondary">
+                                        BOVENGRENS
+                                        <br />
+                                        MARKTWAARDE:
+                                        <br />
+                                        EUR 247.455
+                                    </h2>
+                                </div>
+                                <div class = "Small bubble bottom">
+                                    <h2 class = "small text secondary">
+                                        ONDERGRENS
+                                        <br />
+                                        MARKTWAARDE:
+                                        <br />
+                                        EUR 222.545
+                                    </h2>
+                                </div>
+                    </td>
+                </tr>
+            </table>
+
+
+
+
+
+
+
+    <p>
+        Boven- en ondergrens van de marktwaarde
+    </p>
+    <p>
+        EUR 235.000 x (100% + 5,3%)
+    </p>
+    <p>
+        EUR 235.000 x (100% - 5,3%)
+    </p>
+
+    <h1>ONDERBOUWING WAARDESCHATTING</h1>
+    
+    <p>
+        <br />
+        De waardeschatting van EUR 235.000 (EUR 1.567/m<sup>2</sup>) kan worden onderbouwd aan de hand van referenties uit de omgeving. Onderstaand overzicht geeft de top-6 referenties weer met daarbij de karakteristieken. Deze referenties moeten worden vergeleken met het te waarderen object: Koraaldijk 131, 4706 KG in Roosendaal. Koraaldijk 131 is een tussenwoning, en heeft een woonoppervlakte van 150 m<sup>2</sup>, een geschatte inhoud van 450 m<sup>3</sup>, een perceeloppervlakte van 210 m<sup>2</sup> en als bouwjaar 1950. 
+        <br />
+    </p>
+
+    <table>
+        
+        <tr>
+            <td></td>
+            <td colspan="2">
+                <p>Koraaldijk 3</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Bron</p>
+            </td>
+            <td>
+                <p>NVM</p>
+            </td>
+            <td rowspan="2">
+                <p>99,5% match</p>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <p>Postcode</p>
+            </td>
+            <td>
+                <p>4706KG</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Gemeente</p>
+            </td>
+            <td>
+                <p>Roosendaal</p>
+            </td>
+            <td>
+                <p>Indexatie laatste verkoopprijs:</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Laatste verkoopdatum</p>
+            </td>
+            <td>
+                <p>16/01/2018</p>
+            </td>
+            <td>
+                <p>EUR 199.949</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Laatste verkoopprijs [EUR]</p>
+            </td>
+            <td>
+                <p>196.800</p>
+            </td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Laatste verkoopprijs/m<sup>2</sup></p>
+            </td>
+            <td>
+                <p>1.600</p></td><td><p>16/01/2018                                    18/04/2018</p><p>+1,6%</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Woningtype</p>
+                </td>
+                <td>
+                    <p>Tussenwoning</p>
+                </td>
+                <td>
+                    <p>EUR 196.800                                  EUR 199.949 </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Woonoppervlakte [m<sup>2</sup>]</p>
+                </td>
+                <td>
+                    <p>123</p>
+                </td>
+                <td>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p>Inhoud [m<sup>3</sup>]</p>
+                </td>
+                <td>
+                    <p>369</p>
+                </td>
+                <td>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p>Perceeloppervlakte [m<sup>2</sup>]</p>
+                </td>
+                <td>
+                    <p>230</p>
+                </td>
+                <td>
+                    <p>Geïndexeerde prijs/m<sup>2</sup>: 1.626</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p>Bouwjaar</p>
+                </td>
+                <td>
+                    <p>1950</p>
+                </td>
+                <td>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p>Afstand tot te waarderen object [m]</p>
+                </td>
+                <td>
+                    <p>12</p>
+                </td>
+                <td>
+
+                </td>
+            </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td>
+
+            </td>
+            <td colspan="2">
+                <p>Diamantdijk 50</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                    <p>Bron</p>
+                </td>
+                <td>
+                    <p>NVM</p>
+                </td>
+                <td rowspan="3">
+                    <p>90,5% match</p>
+                    <p>Indexatie laatste verkoopprijs:</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p>Postcode</p>
+                </td>
+                <td>
+                    <p>4706KG</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p>Gemeente</p>
+                </td>
+                <td>
+                    <p>Roosendaal</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p>Laatste verkoopdatum</p>
+                </td>
+                <td>
+                    <p>20/04/2017</p>
+                </td>
+                <td>
+                    <p>EUR 168.992</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Laatste verkoopprijs [EUR]</p>
+                </td>
+                <td>
+                    <p>164.710</p>
+                </td>
+                <td>
+
+                </td>
+            </tr>
+            <tr>
+                <td><p>Laatste verkoopprijs/m<sup>2</sup></p>
+                </td>
+                <td>
+                    <p>1.267</p></td>
+                    <td>
+                        <p>20/04/2017                                    18/04/2018</p>
+
+                        <p>+2,6%</p>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <p>Woningtype</p>
+                    </td>
+                    <td>
+                        <p>Tussenwoning</p>
+                    </td>
+                    <td>
+                        <p>EUR 164.710                                  EUR 168.992 </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Woonoppervlakte [m<sup>2</sup>]</p>
+                    </td>
+                    <td>
+                        <p>130</p>
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Inhoud [m<sup>3</sup>]</p>
+                    </td>
+                    <td>
+                        <p>390</p>
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Perceeloppervlakte [m<sup>2</sup>]</p>
+                    </td>
+                    <td>
+                        <p>210</p>
+                    </td>
+                    <td>
+                        <p>Geïndexeerde prijs/m<sup>2</sup>: 1.300</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Bouwjaar</p>
+                    </td>
+                    <td>
+                        <p>1960</p>
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Afstand tot te waarderen object [m]</p>
+                    </td>
+                    <td>
+                        <p>20</p></td>
+                        <td>
+
+                        </td>
+                    </tr>
+    </table>
+
+    <table>
+                    <tr>
+                        <td>
+
+                        </td>
+                        <td colspan="2">
+                            <p>Dolomietdijk 378b</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Bron</p>
+                        </td>
+                        <td>
+                            <p>NVM</p>
+                        </td>
+                        <td rowspan="3">
+                            <p>88,1% match</p>
+                            <p>Indexatie laatste verkoopprijs:</p>
+                        </td>
+                    </tr>
+                    <tr><td><p>Postcode</p></td><td><p>4706KG</p></td></tr><tr><td><p>Gemeente</p></td><td><p>Etten-Leur</p></td></tr><tr><td><p>Laatste verkoopdatum</p></td><td><p>06/12/2017</p></td><td><p>EUR 293.378</p></td></tr><tr><td><p>Laatste verkoopprijs [EUR]</p></td><td><p>292.500</p></td><td></td></tr><tr><td><p>Laatste verkoopprijs/m<sup>2</sup></p></td><td><p>1.950</p></td><td><p>06/12/2017                                    18/04/2018</p><p>+0,3%</p></td></tr><tr><td><p>Woningtype</p></td><td><p>Tussenwoning</p></td><td><p>EUR 292.500                                  EUR 293.378 </p></td></tr><tr><td><p>Woonoppervlakte [m<sup>2</sup>]</p></td><td><p>150</p></td><td></td></tr><tr><td><p>Inhoud [m<sup>3</sup>]</p></td><td><p>450</p></td><td></td></tr><tr><td><p>Perceeloppervlakte [m<sup>2</sup>]</p></td><td><p>200</p></td><td><p>Geïndexeerde prijs/m<sup>2</sup>: 1.956</p></td></tr><tr><td><p>Bouwjaar</p></td><td><p>1940</p></td><td></td></tr><tr><td><p>Afstand tot te waarderen object [m]</p></td><td><p>46</p></td><td></td></tr>
+    </table>
+
+    <p>
+    <br />
+    </p>
+    <table>
+                        <tr><td></td><td colspan="2"><p>Ir. Mr. Dr. van Waterschoot van der Grachtstraat 1</p></td></tr><tr><td><p>Bron</p></td><td><p>NVM</p></td><td rowspan="3"><p>77,0% match</p></td></tr><tr><td><p>Postcode</p></td><td><p>4706BB</p></td></tr><tr><td><p>Gemeente</p></td><td><p>Roosendaal</p></td></tr><tr><td><p>Laatste verkoopdatum</p></td><td><p>30/06/2016</p></td><td><p>Indexatie laatste verkoopprijs:</p></td></tr><tr><td><p>Laatste verkoopprijs [EUR]</p></td><td><p>194.400</p></td><td><p>EUR 190.512</p></td></tr><tr><td><p>Laatste verkoopprijs/m<sup>2</sup></p></td><td><p>1.620</p></td><td></td></tr><tr><td><p>Woningtype</p></td><td><p>Tussenwoning</p></td><td><p>30/06/2016                                    18/04/2018</p><p>-2,0%</p></td></tr><tr><td><p>Woonoppervlakte [m<sup>2</sup>]</p></td><td><p>120</p></td><td><p>EUR 194.400                                  EUR 190.512 </p></td></tr><tr><td><p>Inhoud [m<sup>3</sup>]</p></td><td><p>360</p></td><td></td></tr><tr><td><p>Perceeloppervlakte [m<sup>2</sup>]</p></td><td><p>210</p></td><td><p>Geïndexeerde prijs/m<sup>2</sup>: 1.588</p></td></tr><tr><td><p>Bouwjaar</p></td><td><p>1966</p></td><td></td></tr><tr><td><p>Afstand tot te waarderen object [m]</p></td><td><p>76</p></td><td></td></tr>
+    </table>
+                        
+    <table>
+                    <tr><td></td><td colspan="2"><p>Chromietdijk 37bis</p></td></tr><tr><td><p>Bron</p></td><td><p>NVM</p></td><td rowspan="2"><p>63,4% match</p></td></tr><tr><td><p>Postcode</p></td><td><p>4706KG</p></td></tr><tr><td><p>Gemeente</p></td><td><p>Breda</p></td><td><p>Indexatie laatste verkoopprijs:</p></td></tr><tr><td><p>Laatste verkoopdatum</p></td><td><p>04/02/2016</p></td><td><p>EUR 229.910</p></td></tr><tr><td><p>Laatste verkoopprijs [EUR]</p></td><td><p>230.140</p></td><td></td></tr><tr><td><p>Laatste verkoopprijs/m<sup>2</sup></p></td><td><p>1.555</p></td><td><p>04/02/2016                                    18/04/2018</p><p>-0,1%</p></td></tr><tr><td><p>Woningtype</p></td><td><p>Tussenwoning</p></td><td><p>EUR 230.140                                  EUR 229.910 </p></td></tr><tr><td><p>Woonoppervlakte [m<sup>2</sup>]</p></td><td><p>148</p></td><td></td></tr><tr><td><p>Inhoud [m<sup>3</sup>]</p></td><td><p>474</p></td><td></td></tr><tr><td><p>Perceeloppervlakte [m<sup>2</sup>]</p></td><td><p>155</p></td><td><p>Geïndexeerde prijs/m<sup>2</sup>: 1.553</p></td></tr><tr><td><p>Bouwjaar</p></td><td><p>2000</p></td><td></td></tr><tr><td><p>Afstand tot te waarderen object [m]</p></td><td><p>176</p></td><td></td></tr>
+    </table>
+                    
+    <table>
+                    <tr><td></td><td colspan="2"><p>Koraaldijk 23</p></td></tr><tr><td><p>Bron</p></td><td><p>NVM</p></td><td rowspan="2"><p>48,6% match</p></td></tr><tr><td><p>Postcode</p></td><td><p>4706KK</p></td></tr><tr><td><p>Gemeente</p></td><td><p>Noordwijk aan Zee</p></td><td><p>Indexatie laatste verkoopprijs:</p></td></tr><tr><td><p>Laatste verkoopdatum</p></td><td><p>14/12/2015</p></td><td><p>EUR 276.250</p></td></tr><tr><td><p>Laatste verkoopprijs [EUR]</p></td><td><p>250.000</p></td><td></td></tr><tr><td><p>Laatste verkoopprijs/m<sup>2</sup></p></td><td><p>1.250</p></td><td><p>14/12/2015                                    18/04/2018</p><p>+10,5%%</p></td></tr><tr><td><p>Woningtype</p></td><td><p>Tussenwoning</p></td><td><p>EUR 196.800                                  EUR 276.250 </p></td></tr><tr><td><p>Woonoppervlakte [m<sup>2</sup>]</p></td><td><p>200</p></td><td></td></tr><tr><td><p>Inhoud [m<sup>3</sup>]</p></td><td><p>603</p></td><td></td></tr><tr><td><p>Perceeloppervlakte [m<sup>2</sup>]</p></td><td><p>1.200</p></td><td><p>Geïndexeerde prijs/m<sup>2</sup>: 1.381</p></td></tr><tr><td><p>Bouwjaar</p></td><td><p>2010</p></td><td></td></tr><tr><td><p>Afstand tot te waarderen object [m]</p></td><td><p>25.238</p></td><td></td></tr>
+    </table>
+                    
+    <h1>MARKTWAARDES, VRAAGRPIJZEN EN LOOPTIJDEN OP LOKAAL NIVEAU</h1>
+    <p>
+        <br />
+        Het gemiddelde verschil tussen marktwaarde en vraagprijzen is in de gemeente in de afgelopen 2 jaren voor transacties met hetzelfde woningtype (tussenwoning) -11,4%, daar waar dit percentage in de wijk en buurt respectievelijk -14,6% en -15,8% is. Onderstaande tabel geeft voor de buurt, wijk, gemeente en Nederland als geheel weer wat de gemiddelde vraagprijs en marktwaarde is geweest in de afgelopen 2 jaren. Het verschil tussen de twee in Euro’s en procenten, de gemiddelde looptijd in dagen en op hoeveel transacties dit is berust wordt ook weergegeven.
+    </p>
+                    
+    <table>
+                        <tr><td></td><td><p>Buurt</p></td><td><p>Wijk</p></td><td><p>Gemeente</p></td><td><p>Nederland</p></td></tr><tr><td><p>Gemiddelde marktwaarde</p><p>Gemiddelde vraagprijs</p><p>Verschil (EUR)</p><p>Verschil (%)</p></td><td><p>EUR 300.500</p><p>EUR 256.627</p><p>EUR 43.873</p><p>-14,6%</p></td><td><p>EUR 282.340</p><p>EUR 237.730</p><p>EUR 44.610</p><p>-15,8%</p></td><td><p>EUR 334.987</p><p>EUR 296.798</p><p>EUR 38.189</p><p>-11,4%</p></td><td><p>EUR 230.000</p><p>EUR 248.400</p><p>EUR 18.400</p><p>8,0%</p></td></tr>
+                        <tr><td><p>Gemiddelde looptijd [dagen]</p></td><td><p>36</p></td><td><p>55</p></td><td><p>80</p></td><td><p>56</p></td></tr><tr></tr><td><p>Aantal transacties</p></td><td><p>4</p></td><td><p>55</p></td><td><p>109</p></td><td><p>109.990</p></td></tr>
+    </table>
+                    
+    <p>
+    De analyse voor het verschil tussen marktwaarde en vaagprijzen en voor looptijd kan ook over tijd worden uitgevoerd. Onderstaande grafieken doen dit over de afgelopen 8 jaren. 
+        <br />
+    </p>
+
+    <p>
+
+        Gemiddeld verschil tussen marktwaarde en vraagprijs over tijd
+
+    </p>
+
+    <p>
+
+        <img alt="Afbeeldingsresultaat voor buddha" src="#"/>
+
+    </p>
+
+    <p>
+
+        <br />
+
+    </p>
+
+    <p>Gemiddelde looptijd over tijd</p>
+
+    <p>
+        <img alt="Afbeeldingsresultaat voor buddha" src="#"/>
+    </p>
+
+    <h1>ADVISERING VRAAGPRIJSBEPALING</h1>
+                    
+    <p>
+        De geschatte looptijd (hoeveel dagen het object naar verwachting te koop zal staan) bij een gegeven vraagprijs kan modelmatig worden bepaald. Alhoewel dit slechts een indicatie is kan het helpen bij de vraagprijsbepaling. Het verlagen van de vraagprijs kan resulteren in een hogere looptijd in bepaalde gevallen. Een verklaring hiervoor kan zijn dat in die prijsklasse de woning concurreert met meer woningen in de directe omgeving, waardoor de looptijd toeneemt. Onderstaande tabel geeft de looptijd weer bij verschillende vraagprijzen. De middelste vraagprijs (gearceerd) is hierbij tot stand gekomen aan de hand van de modelmatige schatting van de marktwaarde en de uitkomsten van de analyse op de vorige bladzijde.
+    </p>
+                    
+    <table>
+                        
+                        <tr>
+                            <td>
+                                <p>Vraagprijs</p>
+                            </td>
+                            <td>
+                                <p>Looptijd [dagen]</p></td></tr><tr><td><p>EUR 235.000</p></td><td><p>100</p></td></tr><tr><td><p>EUR 240.000</p></td><td><p>130</p></td></tr><tr><td><p>EUR 245.000</p></td><td><p>133</p></td></tr><tr><td><p>EUR 250.000</p></td><td><p>115</p></td></tr><tr><td><p>EUR 255.000</p></td><td><p>120</p></td></tr><tr><td><p>EUR 261.790</p></td><td><p>122</p></td></tr><tr><td><p>EUR 265.000</p></td><td><p>130</p></td></tr><tr><td><p>EUR 270.000</p></td><td><p>160</p></td></tr><tr><td><p>EUR 275.000</p></td><td><p>201</p></td></tr><tr><td><p>EUR 280.000</p></td><td><p>250</p></td></tr><tr><td><p>EUR 285.000</p></td><td><p>300</p></td>
+                            
+                        </tr>
+    </table>
+                            
+    <p>
+        Onderstaande grafiek is gebaseerd op bovenstaande tabel, maar maakt het mogelijk om het verband tussen vraagprijs en looptijd beter te duiden. 
+        <br />
+
+    </p>
+
+    <p>
+
+        <img alt="Afbeeldingsresultaat voor buddha" src="#"/>
+        <br />
+    </p>
+    <p>Gemiddelde verschil tussen marktwaarde en vraagprijs over tijd</p>
+        
+    <h1>BENCHMARK VAN DE BUURT T.O.V. WIJK, GEMEENTE EN LANDELIJK</h1>
+
+    <p>
+        De buurt waarin het object zich bevindt kan op een groot aantal variabelen worden vergeleken met de wijk en gemeente. Ook kan de gemeente worden gebenchmarkt met Nederland als geheel. Onderstaande tabel geeft dit weer.
+    </p>
+        
+    <table>
+
+        <tr>
+
+            <td></td>
+
+            <td><p>Buurt</p></td>
+
+            <td><p>Wijk</p></td>
+                <td><p>Gemeente</p></td>
+                <td><p>Landelijk</p></td>
+            </tr>
+            
+            <tr>
+                <td><p>Wonen</p></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                </tr><tr>
+                <td><p>Aantal woningen</p></td>
+                <td><p>103</p>
+                </td><td><p>225</p></td>
+                <td><p>3.654</p>
+                </td><td><p>7.362.665</p></td>
+            </tr>
+                
+            <tr>
+                <td><p>% tussenwoningen</p></td>
+                <td><p>58%</p></td>
+                <td><p>45%</p></td>
+                <td><p>33%</p></td>
+                <td><p>95%</p></td>
+        </tr>
+            
+            <tr>
+                <td>
+                    <p>% hoekwoningen</p>
+                </td>
+                <td>
+                    <p>10%</p>
+                </td>
+                <td>
+                    <p>12%</p>
+                </td>
+                <td>
+                    <p>31%</p>
+                </td>
+                <td>
+                    <p>9%</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>% 2-onder-1-kap woningen</p>
+                </td>
+                <td>
+                    <p>2%</p>
+                </td>
+                <td>
+                    <p>4%</p>
+                </td>
+                <td>
+                    <p>6%</p>
+                </td>
+                <td>
+                    <p>8%</p>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <p>% vrijstaande woningen</p>
+                </td>
+                <td>
+                    <p>1%</p>
+                </td>
+                <td>
+                    <p>2%</p>
+                </td>
+                <td>
+                    <p>3%</p>
+                </td>
+                <td>
+                    <p>4%</p>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <p>% appartementen</p>
+                </td>
+                <td>
+                    <p>54%</p>
+                </td>
+                <td>
+                    <p>66%</p>
+                </td>
+                <td>
+                    <p>23%</p>
+                </td>
+                <td>
+                    <p>89%</p>
+                </td>
+            </tr>
+            
+            <tr><td><p>% onder 60 m<sup>2</sup></p></td><td><p>12%</p></td><td><p>5%</p></td><td><p>15%</p></td><td><p>5%</p></td></tr><tr><td><p>% 60 – 120 m<sup>2</sup></p></td><td><p>35%</p></td><td><p>84%</p></td><td><p>48%</p></td><td><p>7%</p></td></tr><tr><td><p>% 120 – 180 m<sup>2</sup></p></td><td><p>45%</p></td><td><p>98%</p></td><td><p>69%</p></td><td><p>9%</p></td></tr><tr><td><p>% boven 180 m<sup>2</sup></p></td><td><p>0%</p></td><td><p>0%</p></td><td><p>15%</p></td><td><p>22%</p></td></tr><tr><td><p>% voor 1945</p></td><td><p>1%</p></td><td><p>0%</p></td><td><p>5%</p></td><td><p>9%</p></td></tr><tr><td><p>% 1945 – 1965</p></td><td><p>45%</p></td><td><p>6%</p></td><td><p>43%</p></td><td><p>81%</p></td></tr><tr><td><p>% 1965 – 1985</p></td><td><p>2%</p></td><td><p>8%</p></td><td><p>7%</p></td><td><p>66%</p></td></tr><tr><td><p>% 1985 – 2005</p></td><td><p>78%</p></td><td><p>11%</p></td><td><p>45%</p></td><td><p>66%</p></td></tr><tr><td><p>% na 2005</p></td><td><p>0%</p></td><td><p>1%</p></td><td><p>1%</p></td><td><p>55%</p></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td><p>Demografisch</p></td><td></td><td></td><td></td><td></td></tr><tr><td><p>Aantal inwoners</p></td><td><p>200</p></td><td><p>1.265</p></td><td><p>447.365</p></td><td><p>17.365.987</p></td></tr><tr><td><p>% mannen</p></td><td><p>50%</p></td><td><p>46%</p></td><td><p>20%</p></td><td><p>66%</p></td></tr><tr><td><p>% vrouwen</p></td><td><p>50%</p></td><td><p>54%</p></td><td><p>80%</p></td><td><p>34%</p></td></tr><tr><td><p>% tussen 0-25 jaar</p></td><td><p>2%</p></td><td><p>24%</p></td><td><p>65%</p></td><td><p>22%</p></td></tr><tr><td><p>% tussen 25-65 jaar</p></td><td><p>88%</p></td><td><p>85%</p></td><td><p>1%</p></td><td><p>26%</p></td></tr><tr><td><p>% 65 jaar en ouder</p></td><td><p>22%</p></td><td><p>92%</p></td><td><p>99%</p></td><td><p>8%</p></td></tr><tr><td><p>% Westerse allochtonen</p></td><td><p>88%</p></td><td><p>45%</p></td><td><p>98%</p></td><td><p>1%</p></td></tr><tr><td><p>% niet-Westerse allochtonen</p></td><td><p>22%</p></td><td><p>2%</p></td><td><p>1%</p></td><td><p>29%</p></td></tr><tr><td><p>Gemiddelde huishoudensgrootte</p></td><td><p>2,2</p></td><td><p>3.4</p></td><td><p>2,1</p></td><td><p>1,9</p></td></tr><tr><td><p>Bevolkingsdichtheid</p></td><td><p>2.354</p></td><td><p>200</p></td><td><p>1.264</p></td><td><p>44</p></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td><p>Economisch/financieel</p></td><td></td><td></td><td></td><td></td></tr><tr><td><p>% inkomstenontvangers</p></td><td><p>55%</p></td><td><p>65%</p></td><td><p>77%</p></td><td><p>89%</p></td></tr><tr><td><p>Gemiddeld inkomen inkomstenontvanger [EUR]</p></td><td><p>77.654</p></td><td><p>123.854</p></td><td><p>20.365</p></td><td><p>10.254</p></td></tr><tr><td><p>Gemiddeld inkomen per inwoner [EUR]</p></td><td><p>10.236</p></td><td><p>15.235</p></td><td><p>145.236</p></td><td><p>2.654</p></td></tr><tr><td><p>Gemiddelde WOZ-waarde [EUR]</p></td><td><p>1.235.658</p></td><td><p>200.102</p></td><td><p>458.659</p></td><td><p>203.654</p></td></tr><tr><td><p>% huishoudens met laag inkomen</p></td><td><p>1%</p></td><td><p>22%</p></td><td><p>55%</p></td><td><p>87%</p></td></tr><tr><td><p>Aantal bedrijfsvestigingen</p></td><td><p>187</p></td><td><p>200</p></td><td><p>9.364</p></td><td><p>1.256.369</p></td></tr><tr><td><p>Aantal personenauto’s per huishouden</p></td><td><p>5</p></td><td><p>2</p></td><td><p>1</p></td><td><p>0</p></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td><p>Sociaal</p></td><td></td><td></td><td></td><td></td></tr><tr><td><p>% bijstand</p></td><td><p>98%</p></td><td><p>20%</p></td><td><p>2%</p></td><td><p>14%</p></td></tr><tr><td><p>% AO uitkering</p></td><td><p>25%</p></td><td><p>44%</p></td><td><p>8%</p></td><td><p>98%</p></td></tr><tr><td><p>% WW uitkering</p></td><td><p>23%</p></td><td><p>15%</p></td><td><p>69%</p></td><td><p>7%</p></td></tr><tr><td><p>% AOW uitkering</p></td><td><p>98%</p></td><td><p>68%</p></td><td><p>2%</p></td><td><p>1%</p></td></tr><tr><td><p>% sociale huurwoningen</p></td><td><p>99%</p></td><td><p>25%</p></td><td><p>99%</p></td><td><p>22%</p></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td><p>Nabijheid voorzieningen [km]</p></td><td></td><td></td><td></td><td></td></tr><tr><td><p>Gemiddelde afstand tot ziekenhuis</p></td><td><p>1,3</p></td><td><p>0,8</p></td><td><p>0,1</p></td><td><p>0,3</p></td></tr><tr><td><p>Gemiddelde afstand tot dagelijkse boodschappen</p></td><td><p>3,4</p></td><td><p>2,4</p></td><td><p>42,3</p></td><td><p>54,3</p></td></tr><tr><td><p>Gemiddelde afstand tot cafés</p></td><td><p>8,9</p></td><td><p>9,4</p></td><td><p>44,3</p></td><td><p>92,2</p></td></tr><tr><td><p>Gemiddelde afstand tot restaurants</p></td><td><p>4,4</p></td><td><p>2,5</p></td><td><p>6,6</p></td><td><p>1,3</p></td></tr><tr><td><p>Gemiddelde afstand tot kinderdagverblijf</p></td><td><p>4,6</p></td><td><p>64,2</p></td><td><p>104,4</p></td><td><p>50,2</p></td></tr><tr><td><p>Gemiddelde afstand tot buitenschoolse opvang</p></td><td><p>2,6</p></td><td><p>9,5</p></td><td><p>88,2</p></td><td><p>8,2</p></td></tr><tr><td><p>Gemiddelde afstand tot treinstation</p></td><td><p>9,2</p></td><td><p>1,5</p></td><td><p>0,3</p></td><td><p>8,2</p></td></tr><tr><td><p>Gemiddelde afstand tot zwembad</p></td><td><p>8,2</p></td><td><p>8,8</p></td><td><p>8,4</p></td><td><p>8,0</p></td></tr><tr><td><p>Gemiddelde afstand tot bioscoop</p></td><td><p>7,0</p></td><td><p>3,0</p></td><td><p>3,3</p></td><td><p>5,5</p>
+            </td>
+            
+        </tr>
+    </table>
+
+    <h1>PRIJSONTWIKKELING</h1>
+    <p>
+        <br />
+        Bij de modelmatige waardeschatting wordt gebruik gemaakt van indexatie. Ook bij de onderbouwing hiervan zijn de marktwaardes van referenties geïndexeerd naar de waardepeildatum. De historische prijsontwikkeling (tot aan 8 jaar terug) is in onderstaande grafiek weergegeven voor de buurt, wijk en gemeente van het object.
+    </p>
+        
+    <p>
+        <img alt="Afbeeldingsresultaat voor buddha" src="#" />
+        <br />
+        <br />
+    </p>
+    <p>
+        Jaar op jaar verandering in de marktwaarde/m<sup>2</sup>
+    </p>
+    <p>
+        Marktwaarde/m<sup>2</sup> 
+    </p>
+
+    <p>
+        <br />
+    </p>
+
+    <p>
+        <img alt="Afbeeldingsresultaat voor buddha" src="#"/>
+    </p>
+
+    <p>
+        Bovenstaande prijsontwikkelingen kunnen vergelijken worden met de buurten en wijken in de gemeente die over de afgelopen jaren de hoogste en laagste prijsontwikkeling hebben gehad. Ook kan de gemeente worden vergeleken met de landelijke prijsontwikkeling. Onderstaande tabel geeft dit weer. 
+    </p>
+
+    <table>
+        <tr>
+            <td>
+
+            </td>
+            <td>
+                <p>12 maanden</p>
+            </td>
+            <td><p>2 jaar</p></td><td><p>3 jaar</p></td><td><p>5 jaar</p></td><td><p>8 jaar</p></td></tr><tr><td><p>Object - prijsontwikkeling</p></td><td><p>+3,2%</p></td><td><p>+7,1%</p></td><td><p>+10,0%</p></td><td><p>+11,2%</p></td><td><p>+6,3%</p></td></tr><tr><td><p>Buurt met hoogste prijsontwikkeling</p></td><td><p>+5,4%</p></td><td><p>+8,2%</p></td><td><p>+10,0%</p></td><td><p>+12,4%</p></td><td><p>+7,0%</p></td></tr><tr><td><p>Buurt met laagste prijsontwikkeling</p></td><td><p>-1,8%</p></td><td><p>-2,4%</p></td><td><p>-1,0%</p></td><td><p>+2,4%</p></td><td><p>+1,0%</p></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td><p>Wijk - prijsontwikkeling</p></td><td><p>+1,0%</p></td><td><p>+2,2%</p></td><td><p>+2,4%</p></td><td><p>+5,5%</p></td><td><p>+1,8%</p></td></tr><tr><td><p>Wijk met hoogste prijsontwikkeling</p></td><td><p>+4,0%</p></td><td><p>+4,6%</p></td><td><p>+8,3%</p></td><td><p>+11,8%</p></td><td><p>+20,3%</p></td></tr><tr><td><p>Wijk met laagste prijsontwikkeling</p></td><td><p>-1,0%</p></td><td><p>-4,0%</p></td><td><p>-5,4%</p></td><td><p>-3,5%</p></td><td><p>-12,4%</p></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td><p>Gemeente - prijsontwikkeling</p></td><td><p>+4,4%</p></td><td><p>+8,6%</p></td><td><p>+10,4%</p></td><td><p>+24,0%</p></td><td><p>+24,3%</p></td></tr><tr><td><p>Landelijke prijsontwikkeling</p></td><td><p>+2,0%</p></td><td><p>+4,5%</p></td><td><p>+10,3%</p></td><td><p>+14,5%</p></td><td><p>-0,1%</p>
+            </td>
+        </tr>
+    </table>
+
+    <p>  </p>
+
+    <h1>DUURZAAMHEID</h1>
+
+    <h1>
+        Het verduurzamen van de gebouwde omgeving speelt een steeds belangrijkere rol. De gebouwde omgeving zorgt voor ongeveer 40% van de CO<sub>2</sub>-uitstoot en om de doelstellingen van het klimaatakkoord te behalen voor 2050 moet er ingegrepen worden<sup><a href="#footnote-4" id="footnote-ref-4">[4]</a></sup>. 
+        Voor een deel (bijv. sociale huurwoningen en kantoren) is dit gereguleerd. Onderstaande grafiek geeft de verdeling van energielabels weer in Roosendaal, daar waar het energielabel bekend is in de buitenste ring (voor 50.900 woningen van de in totaal 55.000 woningen). De middelste ring van de grafiek geeft de verdeling van energielabels weer specifiek voor tussenwoningen in Roosendaal (voor 11.320 tussenwoningen van de in totaal 30.000 tussenwoningen in de gemeente is dit bekend). De binnenste ring van de grafiek geeft dit weer voor de specifieke bouwjaarklasse (1965-1985) van het object in de gemeente (voor 2.255 woningen van de 100.235 met als bouwjaarklasse 1965-1985 is dit bekend). 
+    </h1>
+
+    <p>
+        Gemeentelijke verdeling van energielabels (buitenste ring), voor het woningtype (middelste ring) en de bouwjaarklasse (binnenste ring)
+    </p>
+
+    <p>
+        <img alt="Afbeeldingsresultaat voor buddha" src="#"/>
+    </p>
+
+    <h1>
+        <br />
+        Vaak zijn kosten voor een energielabelverbetering bekend of kunnen daar kengetallen over gevonden worden (zie bijvoorbeeld: <a href="https://energiebesparingsverkenner.rvo.nl">https://energiebesparingsverkenner.rvo.nl</a>).
+        Wat veelal onbekend is betreft de verhoging van de marktwaarde van het object door duurzaamheidsinvesteringen. Onderstaande tabel geeft een schatting van de waardeverhoging aan van een energielabelverbetering voor het specifieke object. 
+    </h1>
+    
+    <table>
+            <td colspan="2">
+                    <p>Energielabel object:</p>
+                </td>
+                <td colspan="2">
+                    <p>C</p>
+                </td>
+    </table>
+
+
+    <table>
+        <tr>
+            <td>
+                
+            </td>
+          
+            <td colspan="6"></td></tr><tr><td></td><td colspan="10"></td></tr><tr><td></td><td></td><td colspan="9"><p>Naar energielabel</p></td></tr><tr><td rowspan="8"><p>Van energielabel</p></td><td></td><td colspan="2"><p>A</p></td><td colspan="2"><p>B</p></td><td><p>C</p></td><td><p>D</p></td><td><p>E</p></td><td><p>F</p></td><td><p>G</p></td></tr><tr><td><p>A</p></td><td colspan="2"><p>EUR 0</p></td><td colspan="2"></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td><p>B</p></td><td colspan="2"><p>EUR 20.100</p></td><td colspan="2"><p>EUR 0</p></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td><p>C</p></td><td colspan="2"><p>EUR 33.000</p></td><td colspan="2"><p>EUR 10.900</p></td><td><p>EUR 0</p></td><td></td><td></td><td></td><td></td></tr><tr><td><p>D</p></td><td colspan="2"><p>EUR 34.300</p></td><td colspan="2"><p>EUR 12.000</p></td><td><p>EUR 44.300</p></td><td><p>EUR 0</p></td><td></td><td></td><td></td></tr><tr><td><p>E</p></td><td colspan="2"><p>EUR 40.000</p></td><td colspan="2"><p>EUR 13.500</p></td><td><p>EUR 88.000</p></td><td><p>EUR 8.200</p></td><td><p>EUR 0</p></td><td></td><td></td></tr><tr><td><p>F</p></td><td colspan="2"><p>EUR 41.200</p></td><td colspan="2"><p>EUR 18.000</p></td><td><p>EUR 120.500</p></td><td><p>EUR 9.000</p></td><td><p>EUR 700</p></td><td><p>EUR 0</p></td><td></td></tr><tr><td><p>G</p></td><td colspan="2"><p>EUR 60.000</p></td><td colspan="2"><p>EUR 22.600</p></td><td><p>EUR 200.000</p></td><td><p>EUR 9.500</p></td><td><p>EUR 900</p></td><td><p>EUR 1.000</p></td><td><p>EUR 0</p>
+            </td>
+        </tr>
+    </table>
+    
+    <h1>TECHNOLOGIE</h1>
+    
+    <p>
+        <br />
+        Verschillende algoritmische modellen (machine learning modellen) bepalen een groot deel van de uitkomsten zoals deze in dit rapport worden getoond. De modellen gaan uit van een grote verscheidenheid aan data en trachten alle waardes zo nauwkeurig mogelijk te voorspellen. 
+    </p>
+
+    <h2>Automated Valuation Model (AVM)</h2>
+    
+    <p>
+        Het AVM berekent de marktwaarde van het object aan de hand van gegevens van verkochte woningen. De marktwaarde is hier gedefinieerd als de leegwaarde van het object. Bij het construeren van dit algoritme zijn veel woningkenmerken en locatiegegevens gebruikt van verschillende bronnen. Gezamenlijk bepalen ongeveer 140 variabelen hoe marktwaarde wordt berekend. De laatste test geeft aan dat de mediane foutmarge van het AVM 5,4% is en dat 99,8%/80,4% een afwijking heeft die valt binnen de gestelde bandbreedte voor betrouwbaarheid (85% van de waarderingen binnen 30% afwijking/85% van de waarderingen binnen 20% afwijking). Indien een object wordt voorzien van een waardeschatting wordt slechts een (zeer) beperkte hoeveelheid variabelen opgevraagd. Dat kan alleen omdat aan de hand van opgegeven locatiegegevens het merendeel van de variabelen wordt toegevoegd. Vervolgens kan het algoritme komen tot een waardeschatting.
+    </p>
+
+    <h2>Betrouwbaarheid</h2>
+    
+    <p>
+        Voor een inschatting van betrouwbaarheid wordt een vijftal modellen gebruikt. Basis voor deze modellen zijn een groot aantal (honderdduizenden) AVM testwaarderingen. Voor de testwaarderingen is de absolute afwijking berekend van de werkelijke transactieprijs. Van elke testwaardering is tevens een groot aantal woningkenmerken en locatiegegevens bekend. Het eerste classificeringsmodel voorspelt of de afwijking kleiner is dan 30%, het tweede classificeringsmodel voorspelt of de afwijking kleiner is dan 20%, het derde classificeringsmodel voorspelt of de afwijking kleiner is dan 10% en het vierde classificeringsmodel voorspelt of deze afwijking kleiner is dan 5%. Vervolgens voorspelt een vijfde model de absolute afwijking (foutmarge).    
+    </p>
+    
+    <h2>Referenties</h2>
+    
+    <p>
+        Referenties worden bepaald aan de hand van een aantal geprogrammeerde regels. Hierin worden zowel woningkenmerken als locatiegegevens meegenomen. Voorbeelden zijn de afstand tot het te waarderen object, woonoppervlakte, woningtype en bouwjaar. Voor overeenkomsten krijgt een referentie pluspunten en voor afwijkingen ten opzichte van het te waarderen object wordt het aantal pluspunten verminderd en/of zijn er minpunten. Daarnaast zijn er een aantal harde regels (bijv: voor appartementen worden er ook alleen meergezinswoningen als referentie meegeleverd en dus niet tussenwoningen of vrijstaande woningen).   
+    </p>
+
+    <h2>Looptijd</h2>
+    
+    <p>
+        Van verkochte woningen is bekend hoe lang zij te koop stonden (gedefinieerd in dagen). Aan de hand van woningkenmerken, locatiegegevens en economische variabelen is een model geconstrueerd dat looptijd voorspelt.  
+    </p>
+    
+    <h2>Prijsontwikkeling/indexatie</h2>
+    
+    <p>
+        Het indexatiemodel voorspelt de marktwaarde/m<sup>2</sup> op een vergelijkbare manier zoals het AVM dat doet. Vervolgens wordt per buurt, wijk en gemeente een “typische” woning geconstrueerd. Dit gebeurt onder andere aan de hand van gemiddelde groottes, een gemiddeld bouwjaar en het meest voorkomend woningtype van woningen in de buurt. Met het indexatiemodel wordt vervolgens de marktwaarde/m<sup>2</sup> geschat op verschillende momenten in de tijd. 
+    </p>
+    
+    <h2>Duurzaamheid</h2>
+    
+    <p>
+        Verschillende woningen worden met het AVM voorspeld, met telkens een ander energielabel (elke woning wordt voorspeld als zijnde energielabel A, dan B, dan C en zo tot aan G). Zo ontstaat voor alle woningen een verschil in marktwaarde als van een energielabel wordt gegaan naar een ander energielabel. Deze data wordt schoon gemaakt (foutieve of rare waardes worden verwijderd) en vormt vervolgens input voor een tweede model. Dit tweede model voorspelt het verschil in marktwaarde als wordt gegaan van een slechter naar een beter label aan de hand van woningkenmerken en locatiegegevens.    
+    </p>
+    
+    <p>
+        <br />
+    </p>
+    
+    <h1>DISCLAIMER EN PRIVACY STATEMENT</h1>
+    <p>
+        <br />
+        De modellen worden naar beste weten en kunnen geconstrueerd. Toch blijft het waarderen van een woning in enige mate subjectief. Bepaalde invloeden zijn moeilijk modelmatig mee te nemen (bijvoorbeeld staat van onderhoud of erfpacht). Data dat wordt gebruikt voor de modellen wordt gecontroleerd ten behoeve van kwaliteit aan de hand van regels. De afnemer erkent dat de in dit rapport gebruikte gegevens (ook) komen van derden en dat daarom de juistheid van deze gegevens niet kan worden gegarandeerd. De maker en verspreider van dit rapport is daarom niet aansprakelijk voor enige schade, direct of indirect, die voortvloeit uit de beoordeling, interpretatie of het gebruik door de afnemer van de gegevens in dit rapport. 
+    </p>
+    
+    <p>
+        De privacy van de afnemers van dit rapport wordt gerespecteerd. Hoewel de grootste nauwkeurigheid wordt betracht, kan de maker van dit rapport niet aansprakelijk worden gesteld als gegevens (informatie) door derden wederrechtelijk wordt verkregen.
+    </p>
+    <p>
+        <img alt="Afbeeldingsresultaat voor buddha" src="#" />
+    </p>
+    
+    <p>
+        <img alt="Afbeeldingsresultaat voor buddha" src="#"/>
+    </p>
+
+    <p>
+        A.B.C. Jansen, MRE FRICS
+        <br />
+        Partner | Directeur Taxaties, Innovatie en Consulting
+        <br />
+        Mobiel: +31 6 00 00 00 00
+        <br />
+        Telefoon: +31 20 000 00 00
+        <br />
+        E-mail: <a href="mailto:abc.jansen@000.com">abc.jansen@000.com</a>
+        <br />
+        <br />
+        Data Analyse Netherlands B.V. 
+        <br />
+        De markt 0 
+        <br />
+        0000 AA Amsterdam 
+        <br />
+        The Netherlands
+        <br />
+    </p>
+        
+    <ol>
+        <li id="footnote-1">
+            <p> <em>“Het geschatte bedrag waartegen een object tussen een bereidwillige koper en een bereidwillige verkoper na behoorlijke marketing in een zakelijke transactie zou worden overgedragen op de waardepeildatum, waarbij de partijen met kennis, prudent en niet onder dwang zouden hebben gehandeld” (International Valuation Standards Council, IVS 104: Bases of Value, 7 april 2016)</em> <a href="#footnote-ref-1">↑</a></p>
+        </li>
+            
+        <li id="footnote-2">
+            <p> De geschatte AVM prijs gedeeld door de woonoppervlakte <a href="#footnote-ref-2">↑</a></p>
+        </li>
+        <li id="footnote-3">
+            <p> TVI, <em>Nieuwsbrief TVI – Taxateur 01-07-2016</em>, verkregen van: <a href="http://www.tvi.nl/www/nieuws/">http://www.tvi.nl/www/nieuws/</a> <a href="#footnote-ref-3">↑</a></p>
+        </li>
+        <li id="footnote-4">
+            <p> Duurzaamnieuws.nl, <em>Duurzamer maken woningen moet sneller om klimaatakkoord te halen (18 juni 2017)</em>, verkregen van: <a href="https://www.duurzaamnieuws.nl">https://www.duurzaamnieuws.nl</a> <a href="#footnote-ref-4">↑</a></p>
+        </li>
+    </ol>
+</body>
