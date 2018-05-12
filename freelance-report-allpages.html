@@ -74,10 +74,11 @@
         border: 25%;
         border-top: 1px solid;
         font-size: 10px; /* Footer text */
+        -webkit-text-fill-color: #000000;
     }
     /* Footer text hyperlinks */
     footer, a {
-
+        -webkit-text-fill-color: #0ba6e0
     }
 
     .Front.page {
@@ -137,10 +138,13 @@
         -webkit-text-fill-color: #0000FF;
     }
     /* Front page 3 lines at bottom */
-    .Front.page.three.lines.at.bottom {
+    .Front.page.lines.at.bottom {
         position: relative;
-        top: 50%;
-        transform: translate(-100px, -200px);
+        top: 700px;
+        width: 100%;
+        transform: translate(-40px,0px);
+        /* left: -190px; */
+        
         text-align: center;
         -webkit-text-fill-color: #0000FF;
     }
@@ -160,10 +164,11 @@
     }
     /* Page 1 bottom name (so the A.B.C. Jansen, MRE FRICS) */
     .Page.one.bottom.name{
-
+        transform: translate(200px, 0px);
     }
     /* Page 1 bottom title (so the Partner | Directeur Taxaties, Innovatie en Consulting) */
     .Page.one.bottom.title{
+        transform: translate(200px, -200px);
 
     }
     /* Page 1 bottom rest */
@@ -277,6 +282,7 @@
     /* Backpage fill */
     .backpage.fill{
         background-color:#0077ff;
+        padding-bottom: 150px;
     }
     /* Backpage text name (so the A.B.C. Jansen, MRE FRICS)*/
     .backpage.text{
@@ -317,14 +323,16 @@
         <!-- add lower header border line for cover page-->
         <div class="Front page line below header"></div>
 
-        <h4 class="Front page subheader">MODELMATIGE WAARDESCHATTING</h4>
+        <h4 class="Front page subheader" style="text-align: left;">MODELMATIGE WAARDESCHATTING
+                <p class="Front page three lines at bottom">18 april 2018 <br />
+                    Colliers International B.V.
+                   <br /> Buitenveldertselaan 5, 1072VA Amsterdam
+               </p>
+        </h4>
         <!-- add breaks to ensure next 3 lines are footer positioned-->
-        <p class="Front page three lines at bottom">18 april 2018
-            <br /> Colliers International B.V.
-            <br /> Buitenveldertselaan 5, 1072VA Amsterdam
-        </p>
     </div>
 </body>
+
 
 <!-- page 1-->
 
@@ -344,40 +352,40 @@
         </p>
         <p class="Page one sig">Met vriendelijke groet, </p>
         <p>
-            <img alt="Image result for signature" src="images/Signature.png" />
+            <img alt="Image result for signature" src="images/Signature.png"  />
         </p>
-        <!-- image following signature-->
-        <p class="Page one bottom name">
-            A.B.C. Jansen
-        </p>
-        <span>
-            <img alt="Afbeeldingsresultaat voor buddha" src="#" />
-            <br />
-            <br />
-            <br />
-
-        <p class = "Page one bottom name">
-            A.B.C. Jansen, MRE FRICS
-        </p>
+                                <p >
+                                    A.B.C. Jansen
+                                </p>
         <br />
-        <p class = "Page one bottom title">Partner | Directeur Taxaties, Innovatie en Consulting</p>
-            <br />
-            Mobiel: +31 6 00 00 00 00
-            <br />
-            Telefoon: +31 20 000 00 00<br />
-            E-mail: <a href="mailto:abc.jansen@000.com">abc.jansen@000.com</a>
-            <br />
-            <br />
-            Data Analyse Netherlands B.V. 
-            <br />
-            De markt 0 
-            <br />
-            0000 AA Amsterdam 
-            <br />
-            The Netherlands<br />
-        </p>
-    </span>
-    </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <!-- image following signature-->
+        <div class = "page one" style = "width:85%">
+            
+            <img alt="Afbeeldingsresultaat voor buddha" src="images/Buddha.jpg" width = "150px" height="188px" style = "padding: 35px; position:absolute;" />
+            
+        
+            <p class = "page one bottom name" >
+                A.B.C. Jansen, MRE FRICS
+                <br /> Partner | Directeur Taxaties, Innovatie en Consulting
+                <br /> Mobiel: +31 6 00 00 00 00
+                <br /> Telefoon: +31 20 000 00 00
+                <br /> E-mail: <a href="mailto:abc.jansen@000.com">abc.jansen@000.com</a>
+                <br />
+                <br /> Data Analyse Netherlands B.V.
+                <br /> De markt 0
+                <br /> 0000 AA Amsterdam
+                <br /> The Netherlands
+                <br />
+            </p>
+        </div>
+        <br />
+        <br />
+        <br />
     <footer></footer>
 </body>
 
@@ -441,7 +449,7 @@
 
     <!-- need blue background to make this tabletitle-->
 
-    <table style="border-top: solid 1px #ffffff; width: 500px;">
+    <table style="border-top: solid 1px #ffffff; width: 500px; position: relative;">
         <tr class="graph header fill">
             <td></td>
             <td class="graph header fill">
@@ -534,7 +542,7 @@
     width: 500px;
     height: 50px;
     ">
-        <img alt="Afbeeldingsresultaat voor buddha" src="images/Buddha.jpg" width="500" height="300" />
+        <img alt="Afbeeldingsresultaat voor buddha" src="images/Buddha.jpg" width="500" height="300" style = "position: absolute";/>
     </div>
     <div class="table footer"></div>
     <!--end of first table-->
@@ -544,8 +552,8 @@
         <br />
         <br />
     </p>
-    <!-- need a table here -->
-    <table class = "border-top: solid 0px white; width: 50%">
+
+    <table style="border-top: solid 1px #ffffff; width: 500px; position: relative;">
         <tr class="graph header fill">
             <td class="graph header fill"></td>
             <td class="graph header fill">
@@ -666,13 +674,23 @@
             </td>
         </tr>
     </table>
-    <img alt="Afbeeldingsresultaat voor buddha" src="images/Buddha.jpg" width="350" height="350" style="position: relative; transform: translate(800px,-400px);" />
+    <div style="
+    position: relative; 
+    transform: translate(650px, -450px);
+    width: 500px;
+    height: 50px;
+    ">
+    <img alt="Afbeeldingsresultaat voor buddha" src="images/Buddha.jpg" width="450" height="450" style="position: absolute;" />    </div>
 
-    <footer style="position: relative; transform: translate(0px,-220px);">
+    
+
+    <footer >
         <!--footnotes for page 2-->
         <p>
 
-            <em>“Het geschatte bedrag waartegen een object tussen een bereidwillige koper en een bereidwillige verkoper na behoorlijke marketing in een zakelijke transactie zou worden overgedragen op de waardepeildatum, waarbij de partijen met kennis, prudent en niet onder dwang zouden hebben gehandeld” (International Valuation Standards Council, IVS 104: Bases of Value, 7 april 2016)</em>            <a href="#footnote-ref-1">↑</a></p>
+            <em>“Het geschatte bedrag waartegen een object tussen een bereidwillige koper en een bereidwillige verkoper na behoorlijke marketing in een zakelijke transactie zou worden overgedragen op de waardepeildatum, waarbij de partijen met kennis, prudent en niet onder dwang zouden hebben gehandeld” (International Valuation Standards Council, IVS 104: Bases of Value, 7 april 2016)</em>          
+              <a href="#footnote-ref-1">↑</a>
+            </p>
 
         <br />
         <sup><a href="#footnote-1" id="footnote-ref-1">[1]</a></sup>
@@ -743,7 +761,7 @@
     </p>
     <footer>
         </p>
-        3 TVI, Nieuwsbrief TVI – Taxateur 01-07-2016, verkregen van: http://www.tvi.nl/www/nieuws/
+        3 TVI, Nieuwsbrief TVI – Taxateur 01-07-2016, verkregen van: <a href = "http://www.tvi.nl/www/nieuws/">http://www.tvi.nl/www/nieuws/</a>
         <p>
     </footer>
     <p>
@@ -774,7 +792,7 @@
             </td>
         </tr>
     </table>
-
+    
 
 
     <p>
@@ -858,7 +876,21 @@
         </tr>
     </table>
 
-
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
     <br />
     <br />
     <br />
@@ -1725,6 +1757,15 @@
     <br />
     <br />
     <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
 
 
     <h1 class="page header">MARKTWAARDES, VRAAGRPIJZEN EN LOOPTIJDEN OP LOKAAL NIVEAU</h1>
@@ -1859,6 +1900,15 @@
             </td>
         </tr>
     </table>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
     <br />
     <br />
     <br />
@@ -3480,21 +3530,5 @@
         <br />
     </p>
 </div>
-    <footer>
-    <ol>
-        <li id="footnote-1">
-            <p> <em>“Het geschatte bedrag waartegen een object tussen een bereidwillige koper en een bereidwillige verkoper na behoorlijke marketing in een zakelijke transactie zou worden overgedragen op de waardepeildatum, waarbij de partijen met kennis, prudent en niet onder dwang zouden hebben gehandeld” (International Valuation Standards Council, IVS 104: Bases of Value, 7 april 2016)</em>                <a href="#footnote-ref-1">↑</a></p>
-        </li>
 
-        <li id="footnote-2">
-            <p> De geschatte AVM prijs gedeeld door de woonoppervlakte <a href="#footnote-ref-2">↑</a></p>
-        </li>
-        <li id="footnote-3">
-            <p> TVI, <em>Nieuwsbrief TVI – Taxateur 01-07-2016</em>, verkregen van: <a href="http://www.tvi.nl/www/nieuws/">http://www.tvi.nl/www/nieuws/</a> <a href="#footnote-ref-3">↑</a></p>
-        </li>
-        <li id="footnote-4">
-            <p> Duurzaamnieuws.nl, <em>Duurzamer maken woningen moet sneller om klimaatakkoord te halen (18 juni 2017)</em>, verkregen van: <a href="https://www.duurzaamnieuws.nl">https://www.duurzaamnieuws.nl</a> <a href="#footnote-ref-4">↑</a></p>
-        </li>
-    </ol>
-</footer>
 </body>
