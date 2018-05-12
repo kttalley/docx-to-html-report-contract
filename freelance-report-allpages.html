@@ -10,8 +10,10 @@
     }
 
     body {
-        margin-left: 7.5%;
-        margin-right: 7.5%;
+        max-width: 100%;
+        overflow-x: hidden;
+        margin-left: 20%;
+        
     }
     /* <!-- General Text --> */
     p {
@@ -82,6 +84,14 @@
         position: relative;
         /* text-align: center; */
     }
+    .sticky.header.logo{
+        position: fixed;
+        float: right;
+        transform: translate(1350%, 45%);
+        top: 0;
+        width: 5%;
+        height: 5%;
+    }
 
     .Front.page.logo {
         position: absolute;
@@ -106,6 +116,7 @@
         transform: translate(210px, -410px);
         text-align: center;
         -webkit-text-fill-color: #0000FF;
+        border-bottom: rgba(255,255,255,0);
     }
     /* Front page line below */
     .Front.page.line.below.header {
@@ -128,9 +139,9 @@
     /* Front page 3 lines at bottom */
     .Front.page.three.lines.at.bottom {
         position: absolute;
-        top: 50%;
+        ;
         /* left: 50%; */
-        transform: translate(255px, 420px);
+        transform: translate(40px, -200px);
         text-align: center;
         -webkit-text-fill-color: #0000FF;
     }
@@ -284,8 +295,10 @@
 
 
 <!-- cover page -->
-
-<body class="Front page">
+<div class = "sticky header logo" >
+    <img src = "images/Logo.png" style = "width: 120px; height: 65px" />
+</div>
+<body >
     <div class="Front page container">
         <!-- background image-->
         <img alt="Image result for skyline photo background" src="images/Front.jpg" />
@@ -526,7 +539,7 @@
         <br />
     </p>
     <!-- need a table here -->
-    <table class = "border-top: solid 0px white; width: 400px;">
+    <table class = "border-top: solid 0px white; width: 50%">
         <tr class="graph header fill">
             <td class="graph header fill"></td>
             <td class="graph header fill">
@@ -647,7 +660,7 @@
             </td>
         </tr>
     </table>
-    <img alt="Afbeeldingsresultaat voor buddha" src="images/Buddha.jpg" width="350" height="350" style="position: relative; transform: translate(700px,-400px);" />
+    <img alt="Afbeeldingsresultaat voor buddha" src="images/Buddha.jpg" width="350" height="350" style="position: relative; transform: translate(800px,-400px);" />
 
     <footer style="position: relative; transform: translate(0px,-220px);">
         <!--footnotes for page 2-->
@@ -2876,8 +2889,10 @@
 
         </tr>
     </table>
-
-    <h1>PRIJSONTWIKKELING</h1>
+    <br />
+    <br />
+    <br />
+    <h1 class = "page header">PRIJSONTWIKKELING</h1>
     <p>
         <br /> Bij de modelmatige waardeschatting wordt gebruik gemaakt van indexatie. Ook bij de onderbouwing hiervan zijn de marktwaardes van referenties geïndexeerd naar de waardepeildatum. De historische prijsontwikkeling (tot aan 8 jaar terug) is
         in onderstaande grafiek weergegeven voor de buurt, wijk en gemeente van het object.
@@ -3181,7 +3196,7 @@
     <br/>
     <br/>
 
-    <table style = "border-top: #ffffff;">
+    <table style = "  transform:translate(-100px, 0px); border-top: #ffffff; border-bottom: #ffffff; width: 65%; height: 50%;">
 
         <tr>
             <td></td>
@@ -3238,7 +3253,7 @@
             <td colspan="2">
                 <p>EUR 20.100</p>
             </td>
-            <td colspan="2">
+            <td class = "table grey fill" colspan="2">
                 <p>EUR 0</p>
             </td>
             <td></td>
@@ -3248,17 +3263,17 @@
             <td></td>
         </tr>
         <tr>
-            <td>
-                <p>C</p>
+            <td class = "graph header fill">
+                <p class = "graph header text">C</p>
             </td>
-            <td colspan="2">
-                <p>EUR 33.000</p>
+            <td colspan="2" class = "page five fill">
+                <p class = "page five text">EUR 33.000</p>
             </td>
-            <td colspan="2">
-                <p>EUR 10.900</p>
+            <td colspan="2" class = "page five fill">
+                <p class = "page five text">EUR 10.900</p>
             </td>
-            <td>
-                <p>EUR 0</p>
+            <td class = "table grey fill">
+                <p >EUR 0</p>
             </td>
             <td></td>
             <td></td>
@@ -3266,8 +3281,8 @@
             <td></td>
         </tr>
         <tr>
-            <td>
-                <p>D</p>
+            <td class = "graph header fill">
+                <p class = "graph header text">D</p>
             </td>
             <td colspan="2">
                 <p>EUR 34.300</p>
@@ -3278,16 +3293,16 @@
             <td>
                 <p>EUR 44.300</p>
             </td>
-            <td>
-                <p>EUR 0</p>
+            <td class = "table grey fill">
+                <p >EUR 0</p>
             </td>
             <td></td>
             <td></td>
             <td></td>
         </tr>
         <tr>
-            <td>
-                <p>E</p>
+            <td class ="graph header fill">
+                <p class ="graph header text">E</p>
             </td>
             <td colspan="2">
                 <p>EUR 40.000</p>
@@ -3301,15 +3316,15 @@
             <td>
                 <p>EUR 8.200</p>
             </td>
-            <td>
+            <td class = "table grey fill">
                 <p>EUR 0</p>
             </td>
             <td></td>
             <td></td>
         </tr>
         <tr>
-            <td>
-                <p>F</p>
+            <td class ="graph header fill">
+                <p class ="graph header text">F</p>
             </td>
             <td colspan="2">
                 <p>EUR 41.200</p>
@@ -3326,14 +3341,14 @@
             <td>
                 <p>EUR 700</p>
             </td>
-            <td>
+            <td class = "table grey fill">
                 <p>EUR 0</p>
             </td>
             <td></td>
         </tr>
         <tr>
-            <td>
-                <p>G</p>
+            <td class ="graph header fill">
+                <p class ="graph header text">G</p>
             </td>
             <td colspan="2">
                 <p>EUR 60.000</p>
@@ -3353,13 +3368,22 @@
             <td>
                 <p>EUR 1.000</p>
             </td>
-            <td>
+            <td class = "table grey fill">
                 <p>EUR 0</p>
             </td>
         </tr>
     </table>
-
-    <h1>TECHNOLOGIE</h1>
+    <br/>
+    <br/>
+    <br/>
+    <footer>
+        <br />
+            <sub>4</sub>Duurzaamnieuws.nl, Duurzamer maken woningen moet sneller om klimaatakkoord te halen (18 juni 2017), verkregen van: <a href ="https://www.duurzaamnieuws.nl">https://www.duurzaamnieuws.nl</a>
+    </footer>
+    <br/>
+    <br/>
+    <br/>
+    <h1 class = "page header">TECHNOLOGIE</h1>
 
     <p>
         <br /> Verschillende algoritmische modellen (machine learning modellen) bepalen een groot deel van de uitkomsten zoals deze in dit rapport worden getoond. De modellen gaan uit van een grote verscheidenheid aan data en trachten alle waardes zo
@@ -3416,23 +3440,25 @@
         <br />
     </p>
 
-    <h1>DISCLAIMER EN PRIVACY STATEMENT</h1>
-    <p>
+    <h1 class = "page header">DISCLAIMER EN PRIVACY STATEMENT</h1>
+    <p style = "margin-bottom: 65%">
         <br /> De modellen worden naar beste weten en kunnen geconstrueerd. Toch blijft het waarderen van een woning in enige mate subjectief. Bepaalde invloeden zijn moeilijk modelmatig mee te nemen (bijvoorbeeld staat van onderhoud of erfpacht). Data
         dat wordt gebruikt voor de modellen wordt gecontroleerd ten behoeve van kwaliteit aan de hand van regels. De afnemer erkent dat de in dit rapport gebruikte gegevens (ook) komen van derden en dat daarom de juistheid van deze gegevens niet kan worden
         gegarandeerd. De maker en verspreider van dit rapport is daarom niet aansprakelijk voor enige schade, direct of indirect, die voortvloeit uit de beoordeling, interpretatie of het gebruik door de afnemer van de gegevens in dit rapport.
-    </p>
-
-    <p>
+        <br />
         De privacy van de afnemers van dit rapport wordt gerespecteerd. Hoewel de grootste nauwkeurigheid wordt betracht, kan de maker van dit rapport niet aansprakelijk worden gesteld als gegevens (informatie) door derden wederrechtelijk wordt verkregen.
-    </p>
-    <p>
-        <img alt="Afbeeldingsresultaat voor buddha" src="#" />
+        
     </p>
 
+
+    
     <p>
-        <img alt="Afbeeldingsresultaat voor buddha" src="#" />
+        <img alt="Afbeeldingsresultaat voor buddha" src="images/Buddha.jpg" width="85%" height="55%" />
     </p>
+    <div class = "backpage fill" style = "width:85%">
+  
+        <img alt="Afbeeldingsresultaat voor buddha" src="images/Buddha.jpg" width = "30%" height="30%" style = "padding: 35px" />
+   
 
     <p>
         A.B.C. Jansen, MRE FRICS
@@ -3463,4 +3489,5 @@
             <p> Duurzaamnieuws.nl, <em>Duurzamer maken woningen moet sneller om klimaatakkoord te halen (18 juni 2017)</em>, verkregen van: <a href="https://www.duurzaamnieuws.nl">https://www.duurzaamnieuws.nl</a> <a href="#footnote-ref-4">↑</a></p>
         </li>
     </ol>
+</div>
 </body>
