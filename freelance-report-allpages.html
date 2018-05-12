@@ -138,10 +138,9 @@
     }
     /* Front page 3 lines at bottom */
     .Front.page.three.lines.at.bottom {
-        position: absolute;
-        ;
-        /* left: 50%; */
-        transform: translate(40px, -200px);
+        position: relative;
+        top: 50%;
+        transform: translate(-100px, -200px);
         text-align: center;
         -webkit-text-fill-color: #0000FF;
     }
@@ -280,24 +279,31 @@
         background-color:#0077ff;
     }
     /* Backpage text name (so the A.B.C. Jansen, MRE FRICS)*/
+    .backpage.text{
+        transform: translate(260px,16px);
+    }
     .backpage.text.name {
+        -webkit-text-fill-color: white;
 
     }
     /* Backpage text title  so the Partner | Directeur Taxaties, innovatie en Consulting)*/
     .backpage.text.title{
-
+        font-size: 14px;
+        -webkit-text-fill-color: white;
     }
     /* Backpage other text */
     .backpage.other.text{
-
+        /* transform: translate(260px,16px); */
+        -webkit-text-fill-color: white;
     }
 </style>
 
 
-<!-- cover page -->
-<div class = "sticky header logo" >
+<!-- <div class = "sticky header logo" >
     <img src = "images/Logo.png" style = "width: 120px; height: 65px" />
-</div>
+</div> -->
+
+<!-- cover page -->
 <body >
     <div class="Front page container">
         <!-- background image-->
@@ -3453,14 +3459,14 @@
 
     
     <p>
-        <img alt="Afbeeldingsresultaat voor buddha" src="images/Buddha.jpg" width="85%" height="55%" />
+        <img alt="Afbeeldingsresultaat voor buddha" src="images/Buddha.jpg" width="650px" height="550px" />
     </p>
     <div class = "backpage fill" style = "width:85%">
   
-        <img alt="Afbeeldingsresultaat voor buddha" src="images/Buddha.jpg" width = "30%" height="30%" style = "padding: 35px" />
+        <img alt="Afbeeldingsresultaat voor buddha" src="images/Buddha.jpg" width = "150px" height="188px" style = "padding: 35px; position:absolute;" />
    
 
-    <p>
+    <p class = "backpage other text">
         A.B.C. Jansen, MRE FRICS
         <br /> Partner | Directeur Taxaties, Innovatie en Consulting
         <br /> Mobiel: +31 6 00 00 00 00
@@ -3473,7 +3479,8 @@
         <br /> The Netherlands
         <br />
     </p>
-
+</div>
+    <footer>
     <ol>
         <li id="footnote-1">
             <p> <em>“Het geschatte bedrag waartegen een object tussen een bereidwillige koper en een bereidwillige verkoper na behoorlijke marketing in een zakelijke transactie zou worden overgedragen op de waardepeildatum, waarbij de partijen met kennis, prudent en niet onder dwang zouden hebben gehandeld” (International Valuation Standards Council, IVS 104: Bases of Value, 7 april 2016)</em>                <a href="#footnote-ref-1">↑</a></p>
@@ -3489,5 +3496,5 @@
             <p> Duurzaamnieuws.nl, <em>Duurzamer maken woningen moet sneller om klimaatakkoord te halen (18 juni 2017)</em>, verkregen van: <a href="https://www.duurzaamnieuws.nl">https://www.duurzaamnieuws.nl</a> <a href="#footnote-ref-4">↑</a></p>
         </li>
     </ol>
-</div>
+</footer>
 </body>
