@@ -1,7 +1,6 @@
 <!-- styling-->
 <style>
-    /* misc general styling */
-
+    /* Header color (all headers) */
     h1,
     h2,
     h3,
@@ -14,40 +13,7 @@
         margin-left: 7.5%;
         margin-right: 7.5%;
     }
-
-    table {
-        border-top: 3px solid #808080;
-        border-bottom: 3px solid #808080;
-        width: 500px;
-        border-collapse: collapse;
-        margin-left: 12.28pt
-    }
-
-    .page.five.fill.right.part.table {
-        background-color: #0077ff;
-    }
-
-    .page.five.text.right.part.table {
-        -webkit-text-fill-color: #ffff;
-    }
-
-    .tables.line {
-        border-bottom: solid 2px grey;
-    }
-
-    tr,
-    td {
-        /* border: 2px solid #808080; */
-        padding-top: 1%;
-        padding-bottom: 2%;
-        padding-left: 5%;
-        padding-right: 10%;
-        text-align: center;
-        background-color: #ffffff;
-    }
-
     /* <!-- General Text --> */
-
     p {
         -webkit-text-fill-color: #0077ff;
         width: 85%;
@@ -55,36 +21,61 @@
         padding: 2%;
     }
 
+    /* <!-- tables line --> */
+    table {
+        border-top: 3px solid #808080;
+        border-bottom: 3px solid #808080;
+        width: 85%;
+        border-collapse: collapse;
+    }
+
+    /* Table row and datum */
+    tr,
+    td {
+        padding-top: 1%;
+        padding-bottom: 2%;
+        padding-left: 5%;
+        padding-right: 5%;
+        background-color: #ffffff; /* background table fill */
+        text-align: center;
+    }
+    /* table text */
     td p {
+        text-align: center;
+        font-size: 16px;
         -webkit-text-fill-color: #000000;
+        font-family: 'lato';
         width: 85%;
         text-align: left;
         padding: 2%;
+    }
+    /* Table and graph header fill */
+    .graph.header.fill {
+        background-color: #0a32ff;
+        border-bottom: solid 2px #808080;
+    }
+    /* Table and graph header text */
+    .graph.header.text {
+        text-align: right;
+        padding-left: 5%;
+        font-size: 24px;
+        -webkit-text-fill-color: #ffffff; /*tables secondary text */
+    }
+    /* Framing lines around graphs */
+    .Framing.lines.around.graphs{
+        border: 2px solid grey;
+
     }
 
     footer {
         border: 25%;
         border-top: 1px solid;
+        font-size: 10px; /* Footer text */
     }
+    /* Footer text hyperlinks */
+    footer, a {
 
-    .image.container {
-        border: solid 2px #000000;
     }
-
-    .graph.header.fill {
-        /* border-bottom: 2px solid black; */
-        background-color: #0a32ff;
-        border-bottom: solid 2px #808080;
-    }
-
-    .graph.header.text {
-        text-align: right;
-        padding-left: 5%;
-        font-size: 24px;
-        -webkit-text-fill-color: #ffffff;
-    }
-
-    /*styling according to assigned classes*/
 
     .Front.page {
         position: relative;
@@ -97,7 +88,7 @@
         /* left: 50%; */
         transform: translate(-490px, -555px);
     }
-
+    /* Front page line above header */
     .Front.page.line.above.header {
         border: 1px solid #0000FF;
         position: absolute;
@@ -106,7 +97,7 @@
         /* left: 50%; */
         transform: translate(75px, -385px);
     }
-
+    /* Front page header */
     .Front.page.header {
         position: absolute;
         top: 50%;
@@ -115,7 +106,7 @@
         text-align: center;
         -webkit-text-fill-color: #0000FF;
     }
-
+    /* Front page line below */
     .Front.page.line.below.header {
         border: 1px solid #0000FF;
         position: absolute;
@@ -124,7 +115,7 @@
         width: 650px;
         transform: translate(75px, -325px);
     }
-
+    /* Front page subheader */
     .Front.page.subheader {
         position: absolute;
         top: 50%;
@@ -133,7 +124,7 @@
         text-align: center;
         -webkit-text-fill-color: #0000FF;
     }
-
+    /* Front page 3 lines at bottom */
     .Front.page.three.lines.at.bottom {
         position: absolute;
         top: 50%;
@@ -144,42 +135,45 @@
     }
 
     /* line below header for all other pages */
-
     .Page.header {
         border-bottom: 2px solid #0000FF;
     }
 
     /* line below header for page one custom template */
-
     .Page.one.header {
         border-bottom: 2px solid #0000FF;
     }
-
-    /* styling for the page one.  */
-
-    .Page.one.container {}
-
-    /* first page elements positioned to represent pdf format */
-
+    /* Page 1 (after frontpage) text */
     .Page.one.text {
         padding-bottom: 250px;
     }
+    /* Page 1 bottom name (so the A.B.C. Jansen, MRE FRICS) */
+    .Page.one.bottom.name{
 
-    .Page.one.bottom.name {}
+    }
+    /* Page 1 bottom title (so the Partner | Directeur Taxaties, Innovatie en Consulting) */
+    .Page.one.bottom.title{
 
-    .Page.one.bottom.title {}
+    }
+    /* Page 1 bottom rest */
+    .Page.one.bottom.rest{
 
-    .Page.one.bottom.rest {}
+    }
 
-    .Page.one.sig {}
 
+    /* Page 2 dashed line */
     .Page.two.dashed.line {
         border: dashed grey;
         width: 200px;
         height: 50px;
         transform: translate(500px, 0px);
-    }
+        background-color:#ffffff; /* page 2 fill in dashed line figure */
+        /*page 2 text dashed line figure */
+        font-family: 'lato';
+        -webkit-text-fill-color: #808080;
+        font-size: 12px;
 
+    }
     .Page.two p {
         position: relative;
         transform: translate(420px, 10px);
@@ -251,10 +245,39 @@
         font-weight: light;
         font-size: 14px;
     }
-
+    /*page 4 bubbles text above arrows */
     .text.above.arrows {
         position: absolute;
         -webkit-text-fill-color: #464444;
+    }
+    /*page 5 fill right part table */
+    .page.five.fill.right.part.table {
+        background-color: #0077ff; /*tables secondary fill */
+    }
+    /*page 5 text right part table */
+    .page.five.text.right.part.table {
+        -webkit-text-fill-color: #ffff; /* tables secondary text */
+    }
+    /*page 11 table grey fill*/
+    .page.eleven.table.grey.fill{
+        background-color:#808080;
+    }
+
+    /* Backpage fill */
+    .backpage.fill{
+        background-color:#0077ff;
+    }
+    /* Backpage text name (so the A.B.C. Jansen, MRE FRICS)*/
+    .backpage.text.name {
+
+    }
+    /* Backpage text title  so the Partner | Directeur Taxaties, innovatie en Consulting)*/
+    .backpage.text.title{
+
+    }
+    /* Backpage other text */
+    .backpage.other.text{
+        
     }
 </style>
 
@@ -398,14 +421,14 @@
 
     <!-- need blue background to make this tabletitle-->
 
-    <table style="border-top: solid 1px #ffffff;">
-        <td></td>
-        <td class="graph header fill">
-            <p class="graph header text">Object</p>
-        </td>
-    </table>
-    <table>
-        <tr class="tables line">
+    <table style="border-top: solid 1px #ffffff; width: 500px;">
+        <tr class="graph header fill">
+            <td></td>
+            <td class="graph header fill">
+                <p class="graph header text">Object</p>
+            </td>
+        </tr>
+        <tr>
             <td>
                 <p>Straat</p>
             </td>
@@ -502,9 +525,9 @@
         <br />
     </p>
     <!-- need a table here -->
-    <table style="border-top: solid 0px grey; width: 400px;">
-        <tr class="tables line">
-            <td class="tables line"></td>
+    <table class = "border-top: solid 0px white; width: 400px;">
+        <tr class="graph header fill">
+            <td class="graph header fill"></td>
             <td class="graph header fill">
                 <p class="graph header text">Straat</p>
             </td>
@@ -652,7 +675,7 @@
         op buurtniveau, waarin het aantal verkopen in de afgelopen 5 jaar is onderverdeeld naar oppervlakteklasse, bouwjaarklasse en woningtype. Bij minder dan 10 verkopen zijn onderstaande grafieken op gemeenteniveau.
     </p>
 
-    <table style="border: 2px solid grey; width: 750px;">
+    <table class = "Framing lines around graphs" style= "width: 750px;">
         <tr>
             <td class="graph header fill">
                 <p class="graph header text">Aantal verkopen in de afgelopen 5 jaar naar oppervlakteklasse</p>
@@ -667,7 +690,7 @@
     <br />
     <br />
     <br />
-    <table style="border: 2px solid grey; width: 750px;">
+    <table class = "Framing lines around graphs" style="width: 750px;">
         <tr class="graph header fill">
             <td class="graph header fill">
                 <!-- <p style = "text-align: right" class = "graph header text">Aantal verkopen in de afgelopen 5 jaar naar oppervlakteklasse</p> -->
@@ -710,7 +733,7 @@
     <p>
 
     </p>
-    <table style="border: 2px solid grey; width: 750px;">
+    <table class = "Framing lines around graphs" style="width: 750px;">
         <tr class="graph header fill" style="width:500px">
             <td class="graph header fill">
                 <!-- <p style = "text-align: right" class = "graph header text">Aantal verkopen in de afgelopen 5 jaar naar oppervlakteklasse</p> -->
@@ -746,7 +769,7 @@
         onderbouwing van de waardeschatting wordt hierna verder toegelicht aan de hand van referenties.
     </p>
 
-    <table style="border: 2px solid grey; width: 750px;">
+    <table class = "Framing lines around graphs" style=" width: 750px;">
         <tr class="graph header fill" style="width:500px;">
             <td class="graph header fill">
                 <p class="graph header text">
@@ -779,8 +802,9 @@
                 <svg height="400" width="500" style="position: absolute; transform: translate(-110px, -100px);">
                         <line x1="-200" y1="220" x2="180" y2="0" style="stroke:#464444;stroke-width:2" />
                         <polygon points = "160, 0, 300, -300, 180, 20"
-                        style="fill:#464444;"/>
-                    </svg>
+
+                        style="fill:#464444;"/> <!-- page 4 arrows fill -->
+                        
                 <p class="text above arrows" style="transform: translate(180px, -180px);">
                     EUR 235.000 x (100% + 5,3%)
                 </p>
@@ -789,7 +813,7 @@
                 <svg height="500" width="900" style="position: absolute; transform: translate(-110px, -100px);">
                         <line x1="-200" y1="10" x2="180" y2="200" style="stroke:#464444;stroke-width:2" />
                         <polygon points = "175, 190, 200, 205, 170, 210"
-                        style="fill:#464444"/>
+                        style="fill:#464444"/> <!-- page 4 arrows fill -->
                     </svg>
                 <p class="text above arrows" style="transform: translate(180px, 120px);">
                     EUR 235.000 x (100% - 5,3%)
@@ -834,7 +858,7 @@
         <br />
     </p>
 
-    <table style="border-top: solid 1px #ffffff;">
+    <table style="border-top: solid 1px #ffffff; width: 55%;">
 
         <tr class="graph header fill">
             <td></td>
@@ -986,7 +1010,7 @@
     <br />
     <br />
 
-    <table style="border-top: solid 1px #ffffff;">
+    <table style="border-top: solid 1px #ffffff;  width: 55%;">
         <tr class="graph header fill">
             <td>
 
@@ -1134,7 +1158,7 @@
     <br />
     <br />
 
-    <table style="border-top: solid 1px #ffffff;">
+    <table style="border-top: solid 1px #ffffff;  width: 55%;">
         <tr class="graph header fill">
             <td>
 
@@ -1178,7 +1202,7 @@
             <td>
                 <p>06/12/2017</p>
             </td>
-            <td  class = "page five fill right part table">
+            <td class="page five fill right part table">
             </td>
         </tr>
         <tr>
@@ -1200,10 +1224,7 @@
                 <p>1.950</p>
             </td>
             <td class="page five fill right part table">
-                    <p class="page five text right part table">06/12/2017 <br />
-
-
-                EUR 292.500</p>
+                <p class="page five text right part table">06/12/2017 <br /> EUR 292.500</p>
 
             </td>
         </tr>
@@ -1227,7 +1248,7 @@
             </td>
             <td class="page five fill right part table">
             </td>
-            
+
         </tr>
         <tr>
             <td>
@@ -1238,8 +1259,7 @@
             </td>
 
             <td class="page five fill right part table">
-                <p class="page five text right part table">18/04/2018<br />
-                EUR 293.378 </p>
+                <p class="page five text right part table">18/04/2018<br /> EUR 293.378 </p>
             </td>
         </tr>
         <tr>
@@ -1277,11 +1297,11 @@
     <br/>
     <br/>
 
-    <table style="border-top: solid 1px #ffffff;">
-        <tr class = "graph header fill">
+    <table style="border-top: solid 1px #ffffff;  width: 55%;">
+        <tr class="graph header fill">
             <td></td>
-            <td colspan="2" class = "graph header fill">
-                <p class = "graph header text">Ir. Mr. Dr. van Waterschoot van der Grachtstraat 1</p>
+            <td colspan="2" class="graph header fill">
+                <p class="graph header text">Ir. Mr. Dr. van Waterschoot van der Grachtstraat 1</p>
             </td>
         </tr>
         <tr>
@@ -1291,8 +1311,8 @@
             <td>
                 <p>NVM</p>
             </td>
-            <td rowspan="3"  class = "page five fill right part table">
-                <p  class = "page five text right part table" style="font-size: 28px">77,0% match</p>
+            <td rowspan="3" class="page five fill right part table">
+                <p class="page five text right part table" style="font-size: 28px">77,0% match</p>
             </td>
         </tr>
         <tr>
@@ -1318,10 +1338,9 @@
             <td>
                 <p>30/06/2016</p>
             </td>
-            <td  class = "page five fill right part table">
-                <p  class = "page five text right part table">Indexatie laatste verkoopprijs:
-                    <br />
-                    EUR 190.512
+            <td class="page five fill right part table">
+                <p class="page five text right part table">Indexatie laatste verkoopprijs:
+                    <br /> EUR 190.512
                 </p>
             </td>
         </tr>
@@ -1332,7 +1351,7 @@
             <td>
                 <p>194.400</p>
             </td>
-            <td class ="page five fill right part table">
+            <td class="page five fill right part table">
             </td>
         </tr>
         <tr>
@@ -1342,7 +1361,7 @@
             <td>
                 <p>1.620</p>
             </td>
-            <td class = "page five fill right part table"></td>
+            <td class="page five fill right part table"></td>
         </tr>
         <tr>
             <td>
@@ -1351,75 +1370,74 @@
             <td>
                 <p>Tussenwoning</p>
             </td>
-            <td class = "page five fill right part table">
-                <p class = "page five text right part table">30/06/2016 <br />
-                    EUR 194.400 </p>
-                    
-                </td>
-            </tr>
-            <tr>
-                <td >
-                    <p>Woonoppervlakte [m<sup>2</sup>]</p>
-                </td>
-                <td>
-                    <p>120</p>
-                </td>
-                <td class ="page five fill right part table">
-                    <p class ="page five text right part table" style="font-size:28px;">-2,0%</p>
-                    <p class ="page five text right part table">18/04/2018  EUR 190.512 </p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>Inhoud [m<sup>3</sup>]</p>
-                </td>
-                <td>
-                    <p>360</p>
-                </td>
-                <td class ="page five fill right part table">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>Perceeloppervlakte [m<sup>2</sup>]</p>
-                </td>
-                <td>
-                    <p>210</p>
-                </td>
-                <td class ="page five fill right part table">
-                    <p class ="page five text right part table">Geïndexeerde prijs/m<sup>2</sup>: 1.588</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>Bouwjaar</p>
-                </td>
-                <td>
-                    <p>1966</p>
-                </td>
-                <td class ="page five fill right part table"></td>
-            </tr>
-            <tr>
+            <td class="page five fill right part table">
+                <p class="page five text right part table">30/06/2016 <br /> EUR 194.400 </p>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Woonoppervlakte [m<sup>2</sup>]</p>
+            </td>
+            <td>
+                <p>120</p>
+            </td>
+            <td class="page five fill right part table">
+                <p class="page five text right part table" style="font-size:28px;">-2,0%</p>
+                <p class="page five text right part table">18/04/2018 EUR 190.512 </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Inhoud [m<sup>3</sup>]</p>
+            </td>
+            <td>
+                <p>360</p>
+            </td>
+            <td class="page five fill right part table">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Perceeloppervlakte [m<sup>2</sup>]</p>
+            </td>
+            <td>
+                <p>210</p>
+            </td>
+            <td class="page five fill right part table">
+                <p class="page five text right part table">Geïndexeerde prijs/m<sup>2</sup>: 1.588</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Bouwjaar</p>
+            </td>
+            <td>
+                <p>1966</p>
+            </td>
+            <td class="page five fill right part table"></td>
+        </tr>
+        <tr>
             <td>
                 <p>Afstand tot te waarderen object [m]</p>
             </td>
             <td>
                 <p>76</p>
             </td>
-            <td class ="page five fill right part table"></td>
+            <td class="page five fill right part table"></td>
         </tr>
     </table>
     <br />
     <br />
     <br />
-    
 
 
-    <table style="border-top: solid 1px #ffffff;">
-        <tr class = "graph header fill">
+
+    <table style="border-top: solid 1px #ffffff;  width: 55%;">
+        <tr class="graph header fill">
             <td></td>
-            <td colspan="2" class = "graph header fill">
-                <p class = "graph header text">Chromietdijk 37bis</p>
+            <td colspan="2" class="graph header fill">
+                <p class="graph header text">Chromietdijk 37bis</p>
             </td>
         </tr>
         <tr>
@@ -1429,8 +1447,8 @@
             <td>
                 <p>NVM</p>
             </td>
-            <td rowspan="2" class = "page five fill right part table">
-                <p class = "page five text right part table" style = "font-size: 28px;">63,4% match</p>
+            <td rowspan="2" class="page five fill right part table">
+                <p class="page five text right part table" style="font-size: 28px;">63,4% match</p>
             </td>
         </tr>
         <tr>
@@ -1448,10 +1466,9 @@
             <td>
                 <p>Breda</p>
             </td>
-            <td class = "page five fill right part table">
-                <p class = "page five text right part table">Indexatie laatste verkoopprijs:
-                    <br />
-                    EUR 229.910
+            <td class="page five fill right part table">
+                <p class="page five text right part table">Indexatie laatste verkoopprijs:
+                    <br /> EUR 229.910
                 </p>
             </td>
         </tr>
@@ -1462,7 +1479,7 @@
             <td>
                 <p>04/02/2016</p>
             </td>
-            <td class = "page five fill right part table">
+            <td class="page five fill right part table">
             </td>
         </tr>
         <tr>
@@ -1472,7 +1489,7 @@
             <td>
                 <p>230.140</p>
             </td>
-            <td class = "page five fill right part table"></td>
+            <td class="page five fill right part table"></td>
         </tr>
         <tr>
             <td>
@@ -1481,22 +1498,21 @@
             <td>
                 <p>1.555</p>
             </td>
-            <td class = "page five fill right part table">
-                <p class = "page five text right part table">04/02/2016
-                    <br />
-                     EUR 230.140</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p>Woningtype</p>
-                    </td>
-                    <td>
-                        <p>Tussenwoning</p>
-                    </td>
-                    <td class = "page five fill right part table">
-                            <p class = "page five text right part table" style = "font-size: 28px;">-0,1%</p>
-            
+            <td class="page five fill right part table">
+                <p class="page five text right part table">04/02/2016
+                    <br /> EUR 230.140</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Woningtype</p>
+            </td>
+            <td>
+                <p>Tussenwoning</p>
+            </td>
+            <td class="page five fill right part table">
+                <p class="page five text right part table" style="font-size: 28px;">-0,1%</p>
+
             </td>
         </tr>
         <tr>
@@ -1506,11 +1522,10 @@
             <td>
                 <p>148</p>
             </td>
-            <td class = "page five fill right part table">
-                <p class = "page five text right part table">
+            <td class="page five fill right part table">
+                <p class="page five text right part table">
                     18/04/2018
-                    <br />
-                    EUR 229.910
+                    <br /> EUR 229.910
                 </p>
             </td>
         </tr>
@@ -1521,7 +1536,7 @@
             <td>
                 <p>474</p>
             </td>
-            <td class = "page five fill right part table"></td>
+            <td class="page five fill right part table"></td>
         </tr>
         <tr>
             <td>
@@ -1530,8 +1545,8 @@
             <td>
                 <p>155</p>
             </td>
-            <td class = "page five fill right part table">
-                <p class = "page five text right part table">Geïndexeerde prijs/m<sup>2</sup>: 1.553</p>
+            <td class="page five fill right part table">
+                <p class="page five text right part table">Geïndexeerde prijs/m<sup>2</sup>: 1.553</p>
             </td>
         </tr>
         <tr>
@@ -1541,7 +1556,7 @@
             <td>
                 <p>2000</p>
             </td>
-            <td class = "page five fill right part table"></td>
+            <td class="page five fill right part table"></td>
         </tr>
         <tr>
             <td>
@@ -1550,17 +1565,17 @@
             <td>
                 <p>176</p>
             </td>
-            <td class = "page five fill right part table"></td>
+            <td class="page five fill right part table"></td>
         </tr>
     </table>
     <br />
     <br />
     <br />
-    <table style="border-top: solid 1px #ffffff;">
-        <tr class = "graph header fill">
+    <table style="border-top: solid 1px #ffffff;  width: 55%;">
+        <tr class="graph header fill">
             <td></td>
-            <td colspan="2" class = "graph header fill">
-                <p class = "graph header text">Koraaldijk 23</p>
+            <td colspan="2" class="graph header fill">
+                <p class="graph header text">Koraaldijk 23</p>
             </td>
         </tr>
         <tr>
@@ -1570,8 +1585,8 @@
             <td>
                 <p>NVM</p>
             </td>
-            <td rowspan="2" class = "page five fill right part table">
-                <p class = "page five text right part table" style = "font-size: 28px;">48,6% match</p>
+            <td rowspan="2" class="page five fill right part table">
+                <p class="page five text right part table" style="font-size: 28px;">48,6% match</p>
             </td>
         </tr>
         <tr>
@@ -1589,10 +1604,9 @@
             <td>
                 <p>Noordwijk aan Zee</p>
             </td>
-            <td class = "page five fill right part table">
-                <p class = "page five text right part table">Indexatie laatste verkoopprijs:
-                    <br />
-                    EUR 276.250</p>
+            <td class="page five fill right part table">
+                <p class="page five text right part table">Indexatie laatste verkoopprijs:
+                    <br /> EUR 276.250</p>
             </td>
         </tr>
         <tr>
@@ -1602,7 +1616,7 @@
             <td>
                 <p>14/12/2015</p>
             </td>
-            <td class= "page five fill right part table">
+            <td class="page five fill right part table">
             </td>
         </tr>
         <tr>
@@ -1612,7 +1626,7 @@
             <td>
                 <p>250.000</p>
             </td>
-            <td class= "page five fill right part table"></td>
+            <td class="page five fill right part table"></td>
         </tr>
         <tr>
             <td>
@@ -1621,44 +1635,42 @@
             <td>
                 <p>1.250</p>
             </td>
-            <td class= "page five fill right part table">
-                <p class= "page five text right part table">14/12/2015 <br />
-                    EUR 196.800 </p> 
-                    
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>Woningtype</p>
-                </td>
-                <td>
-                    <p>Tussenwoning</p>
-                </td>
-                <td class = "page five fill right part table">
-                    <p class = "page five text right part table" style="font-size: 28px;">+10,5%</p>
-                </td>
-            </tr>
-            <tr>
-                <td >
-                    <p>Woonoppervlakte [m<sup>2</sup>]</p>
-                </td>
-                <td>
-                    <p>200</p>
-                </td>
-            <td class = "page five fill right part table">
-                <p class = "page five text right part table">18/04/2018 <br />
-                EUR 276.250
+            <td class="page five fill right part table">
+                <p class="page five text right part table">14/12/2015 <br /> EUR 196.800 </p>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Woningtype</p>
+            </td>
+            <td>
+                <p>Tussenwoning</p>
+            </td>
+            <td class="page five fill right part table">
+                <p class="page five text right part table" style="font-size: 28px;">+10,5%</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Woonoppervlakte [m<sup>2</sup>]</p>
+            </td>
+            <td>
+                <p>200</p>
+            </td>
+            <td class="page five fill right part table">
+                <p class="page five text right part table">18/04/2018 <br /> EUR 276.250
                 </p>
-                </td>
-            </tr>
-            <tr>
+            </td>
+        </tr>
+        <tr>
             <td>
                 <p>Inhoud [m<sup>3</sup>]</p>
             </td>
             <td>
                 <p>603</p>
             </td>
-            <td class = "page five fill right part table"></td>
+            <td class="page five fill right part table"></td>
         </tr>
         <tr>
             <td>
@@ -1667,8 +1679,8 @@
             <td>
                 <p>1.200</p>
             </td>
-            <td class = "page five fill right part table">
-                <p class = "page five text right part table">Geïndexeerde prijs/m<sup>2</sup>: 1.381</p>
+            <td class="page five fill right part table">
+                <p class="page five text right part table">Geïndexeerde prijs/m<sup>2</sup>: 1.381</p>
             </td>
         </tr>
         <tr>
@@ -1678,7 +1690,7 @@
             <td>
                 <p>2010</p>
             </td>
-            <td class = "page five fill right part table"></td>
+            <td class="page five fill right part table"></td>
         </tr>
         <tr>
             <td>
@@ -1687,7 +1699,7 @@
             <td>
                 <p>25.238</p>
             </td>
-            <td class = "page five fill right part table"></td>
+            <td class="page five fill right part table"></td>
         </tr>
     </table>
     <br />
@@ -1695,7 +1707,7 @@
     <br />
 
 
-    <h1 class = "page header">MARKTWAARDES, VRAAGRPIJZEN EN LOOPTIJDEN OP LOKAAL NIVEAU</h1>
+    <h1 class="page header">MARKTWAARDES, VRAAGRPIJZEN EN LOOPTIJDEN OP LOKAAL NIVEAU</h1>
     <p>
         <br /> Het gemiddelde verschil tussen marktwaarde en vraagprijzen is in de gemeente in de afgelopen 2 jaren voor transacties met hetzelfde woningtype (tussenwoning) -11,4%, daar waar dit percentage in de wijk en buurt respectievelijk -14,6% en
         -15,8% is. Onderstaande tabel geeft voor de buurt, wijk, gemeente en Nederland als geheel weer wat de gemiddelde vraagprijs en marktwaarde is geweest in de afgelopen 2 jaren. Het verschil tussen de twee in Euro’s en procenten, de gemiddelde looptijd
@@ -1703,19 +1715,19 @@
     </p>
 
     <table style="border-top: solid 1px #ffffff;">
-        <tr class ="graph header fill">
+        <tr class="graph header fill">
             <td></td>
-            <td class ="graph header fill">
-                <p class ="graph header text">Buurt</p>
+            <td class="graph header fill">
+                <p class="graph header text">Buurt</p>
             </td>
-            <td class ="graph header fill">
-                <p class ="graph header text">Wijk</p>
+            <td class="graph header fill">
+                <p class="graph header text">Wijk</p>
             </td>
-            <td class ="graph header fill">
-                <p class ="graph header text">Gemeente</p>
+            <td class="graph header fill">
+                <p class="graph header text">Gemeente</p>
             </td>
-            <td class ="graph header fill">
-                <p class ="graph header text">Nederland</p>
+            <td class="graph header fill">
+                <p class="graph header text">Nederland</p>
             </td>
         </tr>
         <tr>
@@ -1792,45 +1804,46 @@
     </p>
     <table style="border: 2px solid grey; width: 700px;">
         <tr>
-            <td class = "graph header fill">
-            <p class = "graph header text" style = "text-align: left">
-        
-                Gemiddeld verschil tussen marktwaarde en vraagprijs over tijd
-                    </p>
-            </td>
-        </tr>
-    <tr>
-        <td>
-        <p>
+            <td class="graph header fill">
+                <p class="graph header text" style="text-align: left">
 
-        <img alt="Afbeeldingsresultaat voor buddha" src="images/Buddha.jpg" width="700px" height="350px" />
-            
-    </p>
-</td>
-</tr>
-</table>
-<br />
-<br />
-<br />
-
-    <table style="border: 2px solid grey; width: 700px;">
-        <tr>
-            <td class = "graph header fill">
-                <p class = "graph header text" style = "text-align: left">Gemiddelde looptijd over tijd</p>
+                    Gemiddeld verschil tussen marktwaarde en vraagprijs over tijd
+                </p>
             </td>
         </tr>
         <tr>
             <td>
-        <p>
-        <img alt="Afbeeldingsresultaat voor buddha" src="images/Buddha.jpg" width="700px" height="350px" />
-    </p></td>
-</tr>
-</table>
-<br />
-<br />
-<br />
+                <p>
 
-    <h1 class = "page header">ADVISERING VRAAGPRIJSBEPALING</h1>
+                    <img alt="Afbeeldingsresultaat voor buddha" src="images/Buddha.jpg" width="700px" height="350px" />
+
+                </p>
+            </td>
+        </tr>
+    </table>
+    <br />
+    <br />
+    <br />
+
+    <table style="border: 2px solid grey; width: 700px;">
+        <tr>
+            <td class="graph header fill">
+                <p class="graph header text" style="text-align: left">Gemiddelde looptijd over tijd</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <img alt="Afbeeldingsresultaat voor buddha" src="images/Buddha.jpg" width="700px" height="350px" />
+                </p>
+            </td>
+        </tr>
+    </table>
+    <br />
+    <br />
+    <br />
+
+    <h1 class="page header">ADVISERING VRAAGPRIJSBEPALING</h1>
 
     <p>
         De geschatte looptijd (hoeveel dagen het object naar verwachting te koop zal staan) bij een gegeven vraagprijs kan modelmatig worden bepaald. Alhoewel dit slechts een indicatie is kan het helpen bij de vraagprijsbepaling. Het verlagen van de vraagprijs
@@ -1841,11 +1854,11 @@
     <table style="border: 2px solid grey; width: 700px; ">
 
         <tr>
-            <td class = "graph header fill" style = "text-align: left">
-                <p class = "graph header text">Vraagprijs</p>
+            <td class="graph header fill" style="text-align: left">
+                <p class="graph header text">Vraagprijs</p>
             </td>
-            <td class = "graph header fill">
-                <p class = "graph header text" style = "text-align: left">Looptijd [dagen]</p>
+            <td class="graph header fill">
+                <p class="graph header text" style="text-align: left">Looptijd [dagen]</p>
             </td>
         </tr>
         <tr>
@@ -1889,11 +1902,11 @@
             </td>
         </tr>
         <tr>
-            <td class = "page five fill right part table">
-                <p class ="page five text right part table">EUR 261.790</p>
+            <td class="page five fill right part table">
+                <p class="page five text right part table">EUR 261.790</p>
             </td>
             <td class="page five fill right part table">
-                <p class = "page five text right part table">122</p>
+                <p class="page five text right part table">122</p>
             </td>
         </tr>
         <tr>
@@ -1950,17 +1963,18 @@
     <br />
     <br />
     <table style="border: 2px solid grey; width: 700px;">
-            <tr>
-                <td class = "graph header fill">
-                    <p class = "graph header text" style = "text-align: left">Gemiddelde verschil tussen marktwaarde en vraagprijs over tijd</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-            <p>
-            <img alt="Afbeeldingsresultaat voor buddha" src="images/Buddha.jpg" width="700px" height="350px" />
-        </p></td>
-    </tr>
+        <tr>
+            <td class="graph header fill">
+                <p class="graph header text" style="text-align: left">Gemiddelde verschil tussen marktwaarde en vraagprijs over tijd</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <img alt="Afbeeldingsresultaat voor buddha" src="images/Buddha.jpg" width="700px" height="350px" />
+                </p>
+            </td>
+        </tr>
     </table>
     <br />
     <br />
@@ -1972,41 +1986,38 @@
     <br />
     <br />
 
-    <h1 class = "page header">BENCHMARK VAN DE BUURT T.O.V. WIJK, GEMEENTE EN LANDELIJK</h1>
+    <h1 class="page header">BENCHMARK VAN DE BUURT T.O.V. WIJK, GEMEENTE EN LANDELIJK</h1>
 
     <p>
         De buurt waarin het object zich bevindt kan op een groot aantal variabelen worden vergeleken met de wijk en gemeente. Ook kan de gemeente worden gebenchmarkt met Nederland als geheel. Onderstaande tabel geeft dit weer.
     </p>
 
-    <table>
+    <table cellpadding=0 cellspacing=0 style="border-top: solid 1px #ffffff; padding-top:0.2%; width: 85%;">
 
-        <tr>
+        <tr class="graph header fill">
 
             <td></td>
 
-            <td>
-                <p>Buurt</p>
+            <td class="graph header fill">
+                <p class="graph header text">Buurt</p>
             </td>
 
-            <td>
-                <p>Wijk</p>
+            <td class="graph header fill">
+                <p class="graph header text">Wijk</p>
             </td>
-            <td>
-                <p>Gemeente</p>
+            <td class="graph header fill">
+                <p class="graph header text">Gemeente</p>
             </td>
-            <td>
-                <p>Landelijk</p>
+            <td class="graph header fill">
+                <p class="graph header text">Landelijk</p>
             </td>
         </tr>
 
         <tr>
-            <td>
-                <p>Wonen</p>
+            <td colspan="6" class="page five fill right part table">
+                <p class="page five text right part table" style="font-size: 18px;">Wonen</p>
             </td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+
         </tr>
         <tr>
             <td>
@@ -2269,20 +2280,23 @@
             </td>
         </tr>
         <tr>
+            <!-- <td></td>
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
+            <td></td> -->
         </tr>
+        <!-- <br />
+        <br />
+        <br /> -->
         <tr>
-            <td>
-                <p>Demografisch</p>
+            <td colspan="6" class="page five fill right part table">
+                <p class="page five text right part table" style="font-size: 18px;">Demografisch</p>
             </td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+
+
+
+
         </tr>
         <tr>
             <td>
@@ -2455,20 +2469,20 @@
             </td>
         </tr>
         <tr>
+            <!-- <td></td>
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
+            <td></td> -->
         </tr>
         <tr>
-            <td>
-                <p>Economisch/financieel</p>
+            <td colspan="6" class="page five fill right part table">
+                <p class="page five text right part table">Economisch/financieel</p>
             </td>
+            <!-- <td></td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
+            <td></td> -->
         </tr>
         <tr>
             <td>
@@ -2590,20 +2604,20 @@
             </td>
         </tr>
         <tr>
+            <!-- <td></td>
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
+            <td></td> -->
         </tr>
         <tr>
-            <td>
-                <p>Sociaal</p>
+            <td colspan="6" class="page five fill right part table">
+                <p class="page five text right part table">Sociaal</p>
             </td>
+            <!-- <td></td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
+            <td></td> -->
         </tr>
         <tr>
             <td>
@@ -2691,20 +2705,20 @@
             </td>
         </tr>
         <tr>
+            <!-- <td></td>
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
+            <td></td> -->
         </tr>
         <tr>
-            <td>
-                <p>Nabijheid voorzieningen [km]</p>
+            <td colspan="6" class="page five fill right part table">
+                <p class="page five text right part table">Nabijheid voorzieningen [km]</p>
             </td>
+            <!-- <td></td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
+            <td></td> -->
         </tr>
         <tr>
             <td>
@@ -2868,50 +2882,77 @@
         in onderstaande grafiek weergegeven voor de buurt, wijk en gemeente van het object.
     </p>
 
-    <p>
-        <img alt="Afbeeldingsresultaat voor buddha" src="#" />
+    <table style="border: 2px solid grey; width: 700px;">
+            <tr>
+                <td class="graph header fill">
+                    <p class="graph header text" style="text-align: left">
+                            Marktwaarde/m<sup>2</sup>
+                        
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+    
+                        <img alt="Afbeeldingsresultaat voor buddha" src="images/Buddha.jpg" width="700px" height="350px" />
+    
+                    </p>
+                </td>
+            </tr>
+        </table>
         <br />
         <br />
-    </p>
-    <p>
-        Jaar op jaar verandering in de marktwaarde/m<sup>2</sup>
-    </p>
-    <p>
-        Marktwaarde/m<sup>2</sup>
-    </p>
+        <br />
+        <table style="border: 2px solid grey; width: 700px;">
+                <tr>
+                    <td class="graph header fill">
+                        <p class="graph header text" style="text-align: left">
+                                Jaar op jaar verandering in de marktwaarde/m<sup>2</sup>
+                            
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+        
+                            <img alt="Afbeeldingsresultaat voor buddha" src="images/Buddha.jpg" width="700px" height="350px" />
+        
+                        </p>
+                    </td>
+                </tr>
+            </table>
+       
 
-    <p>
-        <br />
-    </p>
-
-    <p>
-        <img alt="Afbeeldingsresultaat voor buddha" src="#" />
-    </p>
+    <br />
+    <br />
+    <br />
 
     <p>
         Bovenstaande prijsontwikkelingen kunnen vergelijken worden met de buurten en wijken in de gemeente die over de afgelopen jaren de hoogste en laagste prijsontwikkeling hebben gehad. Ook kan de gemeente worden vergeleken met de landelijke prijsontwikkeling.
         Onderstaande tabel geeft dit weer.
     </p>
 
-    <table>
-        <tr>
+    <table style = "border-top: #ffffff">
+        <tr class = "graph header fill">
             <td>
 
             </td>
-            <td>
-                <p>12 maanden</p>
+            <td class = "graph header fill">
+                <p class = "graph header text">12 maanden</p>
             </td>
-            <td>
-                <p>2 jaar</p>
+            <td class = "graph header fill">
+                <p class = "graph header text">2 jaar</p>
             </td>
-            <td>
-                <p>3 jaar</p>
+            <td class = "graph header fill">
+                <p class = "graph header text">3 jaar</p>
             </td>
-            <td>
-                <p>5 jaar</p>
+            <td class = "graph header fill">
+                <p class = "graph header text">5 jaar</p>
             </td>
-            <td>
-                <p>8 jaar</p>
+            <td class = "graph header fill">
+                <p class = "graph header text">8 jaar</p>
             </td>
         </tr>
         <tr>
